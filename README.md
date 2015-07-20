@@ -27,7 +27,7 @@
   - Hybrid mobile app : Phonegap
   - Data Base : MySQL 
 
-# Professional Skill(依照最近撰寫的專案各別介紹)
+# Professional Skill(依最近撰寫的專案個別介紹)
  
 - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
  - 熟悉前端3D技術，使用Three.js帶給使用者難忘的瀏覽體驗。

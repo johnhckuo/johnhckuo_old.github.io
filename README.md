@@ -12,8 +12,11 @@
  -  HTML & CSS3
   - CSS framework: Bootstrap
   - Responsive Web Design
- - Scripting and Programming Language
-  -Javascript/CSS/HTML
+ - FrontEnd Programming Language
+  - Javascript/CSS/HTML
+ - BackEnd Programming Language
+  - PHP
+  - Java
  - Familiar Framework: 
   - Three.js
   - D3.js

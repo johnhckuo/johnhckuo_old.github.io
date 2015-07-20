@@ -13,14 +13,7 @@
   - CSS framework: Bootstrap
   - Responsive Web Design
  - Scripting and Programming Language
-  - Javascript
-  - CSS
-  - HTML
-  - Python
-  - PHP
-  - C
-  - Java
-  - NodeJS
+  -Javascript/CSS/HTML
  - Familiar Framework: 
   - Three.js
   - D3.js
@@ -30,24 +23,7 @@
   - Hybrid mobile app : Phonegap
   - Data Base : MySQL 
 
-
-# My Latest Work
-
- - Three.js
-  - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
-  - 小島地形隨機產生器: http://johnhckuo.github.io/Island_Generator/
-  - 白天/夜晚光影變化模擬: http://johnhckuo.github.io/Day-and-Night/
- - D3.js
-  - 台灣即時災害視覺化網站: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
- - Python
-  - 網路爬蟲程式(用於快速抓取台灣開放資料) : https://github.com/johnhckuo/Selenium_Project
- - CSS
-  - 健身俱樂部網站(靜態): http://johnhckuo.github.io/FitnessClub_WebPage/
- - Canvas.js
-  - 動態更新圖表: http://johnhckuo.github.io/Dynamic_Chart/
-
-
-# Professional Skill(依照My Latest Work的專案各別介紹)
+# Professional Skill(依照最近撰寫的專案各別介紹)
  
 - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
  - 熟悉前端3D技術，使用Three.js帶給使用者難忘的瀏覽體驗。

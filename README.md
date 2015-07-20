@@ -20,6 +20,7 @@
  - Familiar Framework: 
   - Three.js
   - D3.js
+  - Angular.js
   - Canvas.js
  - Tools:
   - Version control systems : Git & Github

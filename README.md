@@ -43,7 +43,7 @@
  
 - 白天/夜晚光影變化模擬: http://johnhckuo.github.io/Day-and-Night/
  - 熟悉3D空間中之陰影和光源變化之計算。
- - 以照使用者需求客製化地形(此Project為模擬MineCraft地形)。
+ - 依照使用者需求客製化地形(此Project為模擬MineCraft地形)。
  
 - 台灣即時災害視覺化網站: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
  - 熟悉將資料結構轉化為線上動態圖表的能力(D3.js、C3.js、Canvas.js)。

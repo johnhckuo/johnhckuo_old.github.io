@@ -50,7 +50,7 @@
  - 使用 Ajax 完成前端效果及取得 API 。
  - 適當使用 Wireframe、Gliffy及Cacoo 工具作為輔助，建立與設計師溝通的視覺化語言。
  
-- 網路爬蟲程式(用於快速抓取台灣開放資料) : https://github.com/johnhckuo/Selenium_Project
+- 網路爬蟲程式(用於快速抓取台灣政府之Open Data) : https://github.com/johnhckuo/Selenium_Project
  - 具備剖析其他網站之DOM元素，並使用Python依照其XPath自動化抓取該欄位資料。
  
 - 健身俱樂部網站(靜態): http://johnhckuo.github.io/FitnessClub_WebPage/

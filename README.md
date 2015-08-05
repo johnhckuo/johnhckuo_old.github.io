@@ -57,6 +57,9 @@
  - 熟悉版本控制系統。
  - 優化工作流，適當使用框架，建立開發標準及收集使用者回饋。
  
+- CSS 3D Gallery展示: http://johnhckuo.github.io/CSS3D_Carousel/
+ - 運用CSS 3D搭配HTML5製作出互動式立體相簿，提升使用體驗。
+ 
 - 動態更新圖表: http://johnhckuo.github.io/Dynamic_Chart/
  - 使用 Third-party API 與 HTTP Server溝通。
  - Third-party API 與 HTTP Server溝通。

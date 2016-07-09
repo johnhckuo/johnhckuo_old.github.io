@@ -29,11 +29,22 @@
   - Data Base : MySQL 
 
 # Professional Skill<br>(依最近撰寫的專案個別介紹)
- 
+
+- Web-Based AR應用: https://github.com/johnhckuo/simple_web_AR
+ - 使用Twisted Web Socket、Python、OpenCV、Three.js串起整個網頁AR架構
+ - 用於辨識簡單圓形，並在對應的圓形上Render出一個對應的3D物件
+
+- 電腦視覺應用程式
+ - 傅立葉轉換： https://github.com/johnhckuo/Fourier-Transform
+ - 圖像Equalization： https://github.com/johnhckuo/Image_Equalization
+ - MSE計算： https://github.com/johnhckuo/MSE_calculator
+
 - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
  - 熟悉前端3D技術，使用Three.js帶給使用者難忘的瀏覽體驗。
  - 熟悉3D圖檔(如Stl、Obj)格式原理，可剖析其中資料並運用Three.js呈現於網頁中。
- 
+
+- 太陽系統模擬(建置中)：https://github.com/johnhckuo/Solar_System
+
 - 小島地形隨機產生器: http://johnhckuo.github.io/Island_Generator/
  - 具備撰寫演算法和資料結構的能力，並會分析其時間複雜度，加以改善。
  - 具備良好英文能力(多益TOEIC 835分)，可順暢瀏覽國外最新技術文件。

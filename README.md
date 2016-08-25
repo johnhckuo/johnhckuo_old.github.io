@@ -16,8 +16,9 @@
   - Javascript/CSS/HTML
  - BackEnd Programming Language
   - PHP
-  - Java
+  - Node.js
   - Python
+  - Java
  - Familiar Framework: 
   - Three.js
   - D3.js
@@ -40,7 +41,7 @@
  - MSE計算： https://github.com/johnhckuo/MSE_calculator
 
 - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
- - 使用Three.js帶給使用者難忘的3D前端瀏覽體驗。
+ - 使用Three.js帶給使用者難忘的3D繪圖體驗。
  - 剖析3D圖檔(如Stl、Obj)格式，並運用Three.js呈現於網頁中。
 
 - 太陽系統模擬(建置中)：https://github.com/johnhckuo/Solar_System
@@ -71,7 +72,6 @@
  
 - 動態更新圖表: http://johnhckuo.github.io/Dynamic_Chart/
  - 使用 Third-party API 與 HTTP Server溝通。
- - Third-party API 與 HTTP Server溝通。
 
 # Personal Attributes 
 

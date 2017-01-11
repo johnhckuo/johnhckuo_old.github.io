@@ -1,7 +1,7 @@
 # 郭閎中 (Hung-Chung Kuo)
 
  - Birthday: May 7th , 1993
- - Education: 國立政治大學-資訊管理學碩士 (就讀中)
+ - Education: Master Degree, Department of Management Information Systems, National Chengchi University
  - Personal Website: https://github.com/johnhckuo
  - Location: Taipei
  - E-Mail: johnhckuo@gmail.com
@@ -9,25 +9,27 @@
 
 # Professional Tools
 
- -  HTML & CSS3
-  - CSS framework: Bootstrap
-  - Responsive Web Design
  - FrontEnd Programming Language
   - Javascript/CSS/HTML
+  
  - BackEnd Programming Language
   - PHP
   - Node.js
+  - Javascript/CSS/HTML
   - Python
   - Java
- - Familiar Framework: 
-  - Three.js
-  - D3.js
-  - Angular.js
-  - Canvas.js
+  - Solidity
+  
+ - Familiar Fields: 
+  - Web Development
+  - Blockchain Appications
+  - IOT applications
+  - Data Analyzation
+ 
  - Tools:
   - Version control systems : Git & Github
   - Hybrid mobile app : Phonegap
-  - Data Base : MySQL 
+  - Database : MySQL 
 
 # Professional Skill<br>(依最近撰寫的專案個別介紹)
 

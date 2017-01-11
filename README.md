@@ -31,6 +31,18 @@
 
 # Professional Skill<br>(依最近撰寫的專案個別介紹)
 
+- 區塊鏈Oracle Service使用教學: https://github.com/johnhckuo/Oraclize-Tutorial
+ - 以Oraclize為例，分享其使用方式以及使用注意事項。
+ - 建立區塊鏈應用程式和外部資料來源的介接。
+ 
+- 區塊鏈智能合約-撰寫教學: https://github.com/johnhckuo/Smart-Contract-Manipulation
+ - 以Ethereum為平台，分享一些撰寫智能合約的技巧和須知。
+ - 以Truffle和TestRPC為架構進行介紹。
+ 
+- 以區塊鏈實作智能保險合約範本: https://github.com/johnhckuo/Insurance-Smart-Contract
+ - 以Ethereum為平台，建立最基本的壽險智能合約。
+ - 以Truffle為架構進行開發。
+ 
 - Web-Based AR應用: https://github.com/johnhckuo/simple_web_AR
  - 使用Twisted Web Socket、Python、OpenCV、Three.js串起整個網頁AR架構。
  - 用於辨識簡單圓形，並在對應的圓形上Render出一個對應的3D物件。

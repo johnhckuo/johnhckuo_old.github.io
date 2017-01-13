@@ -22,8 +22,8 @@
   
  - Familiar Fields: 
   - Web Development
-  - Blockchain Appications
-  - IOT applications
+  - Blockchain Applications
+  - IOT Applications
   - Data Analyzation
  
  - Tools:

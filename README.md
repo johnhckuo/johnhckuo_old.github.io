@@ -15,10 +15,7 @@
  - BackEnd Programming Language
   - PHP
   - Node.js
-  - Javascript/CSS/HTML
   - Python
-  - Java
-  - Solidity
   
  - Familiar Fields: 
   - Web Development

@@ -23,13 +23,11 @@
  - Familiar Fields: 
   - Web Development
   - Blockchain Applications
-  - IOT Applications
-  - Data Analyzation
+  - Service Science & UX
  
  - Tools:
   - Version control systems : Git & Github
   - Hybrid mobile app : Phonegap
-  - Database : MySQL 
 
 # Professional Skill<br>(依最近撰寫的專案個別介紹)
 

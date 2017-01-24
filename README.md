@@ -1,10 +1,10 @@
 # 郭閎中 (Hung-Chung Kuo)
 
->`Hello and welcome to my page. :D `
+>Hello and welcome to my page. :D 
 
->`My name is John, a passionate programmer with interdisciplinary talents.  `
+>My name is John, a passionate programmer with interdisciplinary talents.  
 
->`I hold over 5 years of programming experience and is currently diving into the research of UX and blockchain applications. `
+>I hold over 5 years of programming experience and is currently diving into the research of UX and blockchain applications. 
 
  - Birthday: May 7th , 1993
  - Education: Master Degree, Department of Management Information Systems, National Chengchi University

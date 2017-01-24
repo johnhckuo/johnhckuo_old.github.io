@@ -1,5 +1,11 @@
 # 郭閎中 (Hung-Chung Kuo)
 
+>`Hello and welcome to my page. :D `
+
+>`My name is John, a passionate programmer with interdisciplinary talents.  `
+
+>`I hold over 5 years of programming experience and is currently diving into the research of UX and blockchain applications. `
+
  - Birthday: May 7th , 1993
  - Education: Master Degree, Department of Management Information Systems, National Chengchi University
  - Personal Website: https://github.com/johnhckuo
@@ -7,7 +13,7 @@
  - E-Mail: johnhckuo@gmail.com
  - Mobile: 0988-771-030
 
-# Professional Tools
+# Professional Skills
 
  - FrontEnd Programming Language
   - Javascript/CSS/HTML
@@ -16,17 +22,20 @@
   - PHP
   - Node.js
   - Python
+  - Solidity
   
  - Familiar Fields: 
   - Web Development
   - Blockchain Applications
   - Service Science & UX
+  - Marketing
  
  - Tools:
   - Version control systems : Git & Github
   - Hybrid mobile app : Phonegap
+  - Smart Contract Development framework : Truffle
 
-# Professional Skill<br>(依最近撰寫的專案個別介紹)
+# Portfolio<br>
 
 - 區塊鏈Oracle Service使用教學: https://github.com/johnhckuo/Oraclize-Tutorial
  

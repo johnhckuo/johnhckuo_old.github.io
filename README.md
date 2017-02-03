@@ -1,4 +1,4 @@
-# 郭閎中 (Hung-Chung Kuo)
+# Hung-Chung Kuo
 
 >Hello and welcome to my page. :D 
 

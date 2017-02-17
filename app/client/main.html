@@ -1,0 +1,160 @@
+<head>
+  <title>D3</title>
+</head>
+
+<body>
+  <div class="header flexbox">
+      <ul class="flexbox">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>lala</li>
+        <li>lala</li>
+        <li>lala</li>
+      </ul>
+  </div>
+  <div id="title" class="flexbox layout">
+      <div class="titleContainer flexbox">
+        <h1>Hung-Chung Kuo !</h1>
+        <h3>A passionate programmer</h3>
+
+      </div>
+      {{> arrowDown}}
+  </div>
+
+  <div id="intro" class="flexbox layout">
+      <h1>About Me</h1>
+
+      <div class="flexbox">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+  </div>
+  <div id="specialty" class="flexbox layout">
+      <div id="specialtyContainer" class="flexbox specialtyContainer">
+
+
+      </div>
+  </div>
+  <div id="experience" class="flexbox">
+      <div id="experienceContainer" class="flexbox">
+        <section id="cd-timeline" class="cd-container">
+           {{#each timelineSections}}
+             {{> timelineSection}}
+           {{/each}}
+           <div class="cd-timeline-block" id='one'>
+       			<div class="cd-timeline-content" >
+       				<h2>Title of section 1</h2>
+       				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+       				<a href="#0" class="cd-read-more">Read more</a>
+       				<span class="cd-date">Jan 14</span>
+       			</div> <!-- cd-timeline-content -->
+       		</div> <!-- cd-timeline-block -->
+
+        </section>
+      </div>
+  </div>
+  <div id="portfolio" class="flexbox layout">
+
+    <ul class="slide-wrap" id="example">
+      <li class="pos1">
+        <div class="inner">
+          <a href="#">
+            <div class="">
+              hihi
+            </div>
+            <span class="pic-tit">1</span>
+          </a>
+        </div>
+      </li>
+      <li class="pos2 flip-container">
+        <div class="inner flipper" id="flipper">
+            <div class="front flexbox">
+                <img src="https://unsplash.it/300/390?image=943"/>
+                <span class="pic-tit">2</span>
+                {{> flip}}
+            </div>
+            <div class="back flexbox">
+                fefef
+            </div>
+        </div>
+      </li>
+      <li class="pos3">
+        <div class="inner">
+          <a href="#">
+            <img src="https://unsplash.it/300/390?image=942"/>
+            <span class="pic-tit">3</span>
+          </a>
+        </div>
+      </li>
+      {{#each specialtySlides}}
+        {{> specialtySlide}}
+      {{/each}}
+    </ul>
+    <i class="arrow prev" id="jprev">&lt;</i>
+    <i class="arrow next" id="jnext">&gt;</i>
+
+
+  </div>
+  <div id="footer" class="flexbox">
+      <h2>Copyrights</h2>
+  </div>
+
+  {{> init}}
+</body>
+
+<template name="specialtySlide">
+    <li>
+      <div class="inner">
+        <a href="#">
+          <div class="">
+            {{content}}
+          </div>
+          <span class="pic-tit">{{title}}</span>
+        </a>
+      </div>
+    </li>
+</template>
+
+<template name="timelineSection">
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <img src="https://codyhouse.co/demo/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">
+    </div>
+    <div class="cd-timeline-content" >
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+      <a href="#" class="cd-read-more">Read more</a>
+      <span class="cd-date">{{date}}</span>
+    </div>
+  </div>
+</template>
+
+<template name="init">
+</template>
+
+<template name="flip">
+  <button type="submit" class="btn btn-success" id='next'>Next</button>
+</template>
+
+<template name="arrowDown">
+  <a href="#section2" data-title="" id="arrow-down">Get started</a>
+</template>
+
+<template name="chooseCharacters">
+  <div class="btn-group" role="group" id="characters">
+    <button type="button" class="btn btn-default" id="seller" value='seller'>Seller</button>
+    <button type="button" class="btn btn-default" id="buyer" value='buyer'>Buyer</button>
+  </div>
+</template>
+
+<template name="previous">
+  <button type="submit" class="btn btn-danger" id='next'>Back</button>
+</template>
+
+<template name="submit">
+  <button type="submit" class="btn btn-primary" id='next'>Register</button>
+</template>
+
+<template name="next">
+  <button type="submit" class="btn btn-success" id='next'>Next</button>
+</template>

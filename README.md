@@ -32,48 +32,20 @@
  
  - Tools:
   - Version control systems : Git & Github
+  - Web Development Framework : Meteor, Angular.js
   - Hybrid mobile app : Phonegap
   - Smart Contract Development framework : Truffle
 
 # Portfolio<br>
 
-- 區塊鏈Oracle Service使用教學: https://github.com/johnhckuo/Oraclize-Tutorial
- 
- `Ethereum` `Solidity` `Blockchain`
- 
- - 以Oraclize為例，分享其使用方式以及使用注意事項。
- - 建立區塊鏈應用程式和外部資料來源的介接。
- 
-- 區塊鏈智能合約-撰寫教學: https://github.com/johnhckuo/Smart-Contract-Manipulation
-
- `Ethereum` `Truffle` `Solidity` `Blockchain`
-
- - 以Ethereum為平台，分享一些撰寫智能合約的技巧和須知。
- - 以Truffle和TestRPC為架構進行介紹。
- 
-- 以區塊鏈實作智能保險合約範本: https://github.com/johnhckuo/Insurance-Smart-Contract
-
- `Ethereum` `Solidity` `Blockchain`
-
- - 以Ethereum為平台，建立最基本的壽險智能合約。
- - 以Truffle為架構進行開發。
- 
 - Web-Based AR應用: https://github.com/johnhckuo/simple_web_AR
 
  `Node.js` `Python` `Web Development` `Augmented Reality`
 
  - 使用Twisted Web Socket、Python、OpenCV、Three.js串起整個網頁AR架構。
  - 用於辨識簡單圓形，並在對應的圓形上Render出一個對應的3D物件。
-
-- 電腦視覺應用程式
-
- `Python` `Computer Vision`
-
- - 傅立葉轉換： https://github.com/johnhckuo/Fourier-Transform
- - 圖像Equalization： https://github.com/johnhckuo/Image_Equalization
- - MSE計算： https://github.com/johnhckuo/MSE_calculator
-
-- 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
+ 
+ - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
 
  `Three.js` `Web Development` `3D Animation`
 
@@ -100,6 +72,37 @@
  
  - 3D空間中之陰影和光源變化之計算。
  - 此Project為模擬MineCraft地形。
+
+- 電腦視覺應用程式
+
+ `Python` `Computer Vision`
+
+ - 傅立葉轉換： https://github.com/johnhckuo/Fourier-Transform
+ - 圖像Equalization： https://github.com/johnhckuo/Image_Equalization
+ - MSE計算： https://github.com/johnhckuo/MSE_calculator
+
+- 區塊鏈Oracle Service使用教學: https://github.com/johnhckuo/Oraclize-Tutorial
+ 
+ `Ethereum` `Solidity` `Blockchain`
+ 
+ - 以Oraclize為例，分享其使用方式以及使用注意事項。
+ - 建立區塊鏈應用程式和外部資料來源的介接。
+ 
+- 區塊鏈智能合約-撰寫教學: https://github.com/johnhckuo/Smart-Contract-Manipulation
+
+ `Ethereum` `Truffle` `Solidity` `Blockchain`
+
+ - 以Ethereum為平台，分享一些撰寫智能合約的技巧和須知。
+ - 以Truffle和TestRPC為架構進行介紹。
+ 
+- 以區塊鏈實作智能保險合約範本: https://github.com/johnhckuo/Insurance-Smart-Contract
+
+ `Ethereum` `Solidity` `Blockchain`
+
+ - 以Ethereum為平台，建立最基本的壽險智能合約。
+ - 以Truffle為架構進行開發。
+ 
+
  
 - 台灣即時災害視覺化網站: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
 

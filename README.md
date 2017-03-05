@@ -45,7 +45,7 @@
  - 使用Twisted Web Socket、Python、OpenCV、Three.js串起整個網頁AR架構。
  - 用於辨識簡單圓形，並在對應的圓形上Render出一個對應的3D物件。
  
- - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
+- 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
 
  `Three.js` `Web Development` `3D Animation`
 

@@ -44,7 +44,7 @@
  - Building a web-based AR App by using Twisted Web Socket, Python, OpenCV, and Three.js
  - App will identify some certain patterns and render corresponding 3D object on certain points.
  
-- 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
+- Web-based 3D Modeling System: http://johnhckuo.github.io/3D_Modeling_System/
 
  `Three.js` `Web Development` `3D Animation`
 
@@ -65,22 +65,22 @@
 
  - Simulate fireflies flying route and handle the transform of light.
  
-- 白天/夜晚光影變化模擬: http://johnhckuo.github.io/Day-and-Night/
+- Day/Night Transition Simulator: http://johnhckuo.github.io/Day-and-Night/
 
  `Three.js` `Web Development` `3D Animation`
  
- - 3D空間中之陰影和光源變化之計算。
- - 此Project為模擬MineCraft地形。
+ - Simulate the transition of terrain shadow and color in Three.js.
+ - Randomly generated Minecraft-style terrain.
 
-- 電腦視覺應用程式
+- Applications of Computer Vision
 
  `Python` `Computer Vision`
 
- - 傅立葉轉換： https://github.com/johnhckuo/Fourier-Transform
- - 圖像Equalization： https://github.com/johnhckuo/Image_Equalization
- - MSE計算： https://github.com/johnhckuo/MSE_calculator
+ - Fourier-Transform： https://github.com/johnhckuo/Fourier-Transform
+ - Image Equalization： https://github.com/johnhckuo/Image_Equalization
+ - MSE Calculator： https://github.com/johnhckuo/MSE_calculator
 
-- 區塊鏈Oracle Service使用教學: https://github.com/johnhckuo/Oraclize-Tutorial
+- Blockchain Oracle Service Tutorial: https://github.com/johnhckuo/Oraclize-Tutorial
  
  `Ethereum` `Solidity` `Blockchain`
  

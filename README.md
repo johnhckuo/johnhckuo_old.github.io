@@ -16,55 +16,54 @@
 # Professional Skills
 
  - FrontEnd Programming Language
-  - Javascript/CSS/HTML
+   - Javascript/CSS/HTML
   
  - BackEnd Programming Language
-  - PHP
-  - Node.js
-  - Python
-  - Solidity
+   - PHP
+   - Node.js
+   - Python
+   - Solidity
   
  - Familiar Fields: 
-  - Web Development
-  - Blockchain Applications
-  - Service Science & UX
-  - Marketing
+   - Web Development
+   - Blockchain Applications
+   - Marketing
  
  - Tools:
-  - Version control systems : Git & Github
-  - Web Development Framework : Meteor, Angular.js
-  - Hybrid mobile app : Phonegap
-  - Smart Contract Development framework : Truffle
+   - Version control systems : Git & Github
+   - Web Development Framework : Meteor, Angular.js
+   - Hybrid mobile app : Phonegap
+   - Smart Contract Development framework : Truffle
 
 # Portfolio<br>
 
-- Web-Based AR應用: https://github.com/johnhckuo/simple_web_AR
+- Web-Based AR Application: https://github.com/johnhckuo/simple_web_AR
 
  `Node.js` `Python` `Web Development` `Augmented Reality`
 
- - 使用Twisted Web Socket、Python、OpenCV、Three.js串起整個網頁AR架構。
- - 用於辨識簡單圓形，並在對應的圓形上Render出一個對應的3D物件。
+ - Building a web-based AR App by using Twisted Web Socket, Python, OpenCV, and Three.js
+ - App will identify some certain patterns and render corresponding 3D object on certain points.
  
 - 線上3D繪圖系統: http://johnhckuo.github.io/3D_Modeling_System/
 
  `Three.js` `Web Development` `3D Animation`
 
- - 使用Three.js帶給使用者難忘的3D繪圖體驗。
- - 剖析3D圖檔(如Stl、Obj)格式，並運用Three.js呈現於網頁中。
+ - An web-based 3D modeling application which enable users to create their 3D content without installing sophiticated software.
+ - This application can parse certain 3D file (STL, OBJ) and render it on the website using Three.js. 
 
-- 太陽系統模擬(建置中)：https://github.com/johnhckuo/Solar_System
+- Solar System Simulator(Working on it :p)：https://github.com/johnhckuo/Solar_System
 
-- 小島地形隨機產生器: http://johnhckuo.github.io/Island_Generator/
+- Island Terrain Generator: http://johnhckuo.github.io/Island_Generator/
 
  `Three.js` `Web Development` `3D Animation`
 
- - 撰寫產生隨機地形的演算法，並分析其時間複雜度，加以改善。
+ - Randomly generating island terrain using diamond-square algorithm.
  
-- 螢火蟲飛行路徑模擬: http://johnhckuo.github.io/Fireflies/
+- Fireflies Simulator: http://johnhckuo.github.io/Fireflies/
 
  `Three.js` `Web Development` `3D Animation`
 
- - 模擬3D光源移動以及照明。
+ - Simulate fireflies flying route and handle the transform of light.
  
 - 白天/夜晚光影變化模擬: http://johnhckuo.github.io/Day-and-Night/
 
@@ -136,10 +135,3 @@
 
  - 使用 Third-party API 與 HTTP Server溝通。
 
-# Personal Attributes 
-
- - 注重細節，願意為了提升使用者的瀏覽體驗而多花時間和心力。
- - 喜歡嘗試新興技術，所學不只侷限於目前所熟習的知識。
- - 善於團隊合作，能夠快速融入團隊氣氛，並一起為目標努力。
-
- 

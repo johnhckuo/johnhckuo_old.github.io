@@ -103,7 +103,7 @@
  
 
  
-### Taiwan real-time disaster visualizer: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
+### Taiwan real-time disaster visualizer(Data sources currently unavailable): http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
 
  `D3.js` `Canvas.js` `C3.js` `Ajax` `Web Development`
  

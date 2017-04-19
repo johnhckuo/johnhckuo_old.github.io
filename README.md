@@ -37,42 +37,42 @@
 
 # Portfolio<br>
 
-- Web-Based AR Application: https://github.com/johnhckuo/simple_web_AR
+### Web-Based AR Application: https://github.com/johnhckuo/simple_web_AR
 
  `Node.js` `Python` `Web Development` `Augmented Reality`
 
  - Building a web-based AR App by using Twisted Web Socket, Python, OpenCV, and Three.js
  - App will identify some certain patterns and render corresponding 3D object on certain points.
  
-- Web-based 3D Modeling System: http://johnhckuo.github.io/3D_Modeling_System/
+### Web-based 3D Modeling System: http://johnhckuo.github.io/3D_Modeling_System/
 
  `Three.js` `Web Development` `3D Animation`
 
  - An web-based 3D modeling application which enable users to create their 3D content without installing sophiticated software.
  - This application can parse certain 3D file (STL, OBJ) and render it on the website using Three.js. 
 
-- Solar System Simulator(Working on it :p)：https://github.com/johnhckuo/Solar_System
+### Solar System Simulator(Working on it :p)：https://github.com/johnhckuo/Solar_System
 
-- Island Terrain Generator: http://johnhckuo.github.io/Island_Generator/
+### Island Terrain Generator: http://johnhckuo.github.io/Island_Generator/
 
  `Three.js` `Web Development` `3D Animation`
 
  - Randomly generating island terrain using diamond-square algorithm.
  
-- Fireflies Simulator: http://johnhckuo.github.io/Fireflies/
+### Fireflies Simulator: http://johnhckuo.github.io/Fireflies/
 
  `Three.js` `Web Development` `3D Animation`
 
  - Simulate fireflies flying route and handle the transform of light.
  
-- Day/Night Transition Simulator: http://johnhckuo.github.io/Day-and-Night/
+### Day/Night Transition Simulator: http://johnhckuo.github.io/Day-and-Night/
 
  `Three.js` `Web Development` `3D Animation`
  
  - Simulate the transition of terrain shadow and color in Three.js.
  - Randomly generated Minecraft-style terrain.
 
-- Applications of Computer Vision
+### Applications of Computer Vision
 
  `Python` `Computer Vision`
 
@@ -80,58 +80,58 @@
  - Image Equalization： https://github.com/johnhckuo/Image_Equalization
  - MSE Calculator： https://github.com/johnhckuo/MSE_calculator
 
-- Blockchain Oracle Service Tutorial: https://github.com/johnhckuo/Oraclize-Tutorial
+### Blockchain Oracle Service Tutorial: https://github.com/johnhckuo/Oraclize-Tutorial
  
  `Ethereum` `Solidity` `Blockchain`
  
- - 以Oraclize為例，分享其使用方式以及使用注意事項。
- - 建立區塊鏈應用程式和外部資料來源的介接。
+ - Record some basic tutorials and reminders of using Oracalize
+ - Using Oraclize to build the connection between blockchain and third-party API
  
-- 區塊鏈智能合約-撰寫教學: https://github.com/johnhckuo/Smart-Contract-Manipulation
+### Blockchain Smart Contract Tutorial: https://github.com/johnhckuo/Smart-Contract-Manipulation
 
  `Ethereum` `Truffle` `Solidity` `Blockchain`
 
- - 以Ethereum為平台，分享一些撰寫智能合約的技巧和須知。
- - 以Truffle和TestRPC為架構進行介紹。
+ - Share some basic Ethereum smart contract 101 and Solidity programming tutorial.
+ - This demo used Truffle & Testrpc as our testing framework.
  
-- 以區塊鏈實作智能保險合約範本: https://github.com/johnhckuo/Insurance-Smart-Contract
+### Decentralized Insurace Smart Contract: https://github.com/johnhckuo/Insurance-Smart-Contract
 
  `Ethereum` `Solidity` `Blockchain`
 
- - 以Ethereum為平台，建立最基本的壽險智能合約。
- - 以Truffle為架構進行開發。
+ - Building a decentrailze insurance application using Ethereum platform.
+ - This project uses Truffle as our testing framework.
  
 
  
-- 台灣即時災害視覺化網站: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
+### Taiwan real-time disaster visualizer: http://johnhckuo.github.io/Taiwan_RealTime_Disaster/
 
  `D3.js` `Canvas.js` `C3.js` `Ajax` `Web Development`
  
- - 將資料結構轉化為線上動態圖表的能力(D3.js、C3.js、Canvas.js)。
- - 使用 Ajax 完成前端效果及取得 API 。
- - 使用 Wireframe、Gliffy及Cacoo 工具作為輔助。
+ - Fetch the open data released by government and visualize these data for greater convenience(D3.js、C3.js、Canvas.js).
+ - Using Ajax to dynamically updating disaster data.
+ - Using Wireframe、Gliffy, and Cacoo as interface designing tools.
  
-- 網路爬蟲程式(快速抓取台灣政府之Open Data) : https://github.com/johnhckuo/Selenium_Project
+### Web Crawler(built to fetch the open data from Taiwan government) : https://github.com/johnhckuo/Selenium_Project
 
  `Python` `Selenium` `Data Crawler`
 
- - 剖析其他網站之DOM元素，並使用Python依照其XPath自動化抓取該欄位資料。
+ - parse the DOM element of the open data page, and use Python & Selenium to fetch these data according to its XPath.
  
-- 健身俱樂部網站(靜態): http://johnhckuo.github.io/FitnessClub_WebPage/
+### Fitness Club Website: http://johnhckuo.github.io/FitnessClub_WebPage/
 
  `HTML` `CSS` `Javascript` `Web Development`
 
- - 優化工作流，適當使用框架，建立開發標準及收集使用者回饋。
+ - Using HTML/CSS to build an elaborate fitness club official website.
  
-- CSS 3D Gallery展示: http://johnhckuo.github.io/CSS3D_Carousel/
+### CSS 3D Gallery: http://johnhckuo.github.io/CSS3D_Carousel/
 
  `CSS3D` `Web Development`
 
- - 運用CSS 3D搭配HTML5製作出互動式立體相簿，提升使用體驗。
+ - Using CSS 3D & HTML5 to build an interactive 3D gallery.
  
-- 動態更新圖表: http://johnhckuo.github.io/Dynamic_Chart/
+### Dynamic Charts: http://johnhckuo.github.io/Dynamic_Chart/
 
  `Canvas.js` `Web Development`
 
- - 使用 Third-party API 與 HTTP Server溝通。
+ - using Third-party API to communicate with HTTP Server.
 

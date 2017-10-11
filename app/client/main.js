@@ -90,9 +90,12 @@ Template.arrowDown.events({
 
 Template.body.helpers({
   timelineSections: [
-    { title: 'This is task 1', content: 'sss', date: '111'},
-    { title: 'This is task 2', content: 'sss', date: '222'},
-    { title: 'This is task 3', content: 'sss', date: '333'},
+    { title: 'HTC Vive VR Service Developer Intern', content: 'Develop viveport VR advertisement SDK and assetbundle using Unity', date: '2017.03 - 2017.08'},
+    { title: 'Blockchain Research Assistant', content: 'Applying Ethereum smart contract in insurance domain', date: '2016.09 - 2017.01'},
+    { title: 'KPMG IT Consultant Intern', content: 'Conducting a market research and user experience research on the new App produced by KPMG, and propose some suggestions on features and modification of user experience.', date: '2016.01 - 2016.03'},
+    { title: 'XYZPriting Front-end Developer Intern', content: 'Responsible for the web development of China using Angular.js and Sass. Using Source Tree to co-work with other engineers. And adding/updating new features of the websites using JavaScript/HTML and some modern packages, e.g. Bootstrap, jQuery.', date: '2015.09 - 2016.01'},
+    { title: 'Founder of IMPioneer Voluntary Group', content: 'This voluntary group holds a computer science camp at schools that lack teaching resources during each summer.', date: '2013.07 - 2014.06'},
+    { title: 'Lecturer of Web Developing Camp', content: 'Lecturing web development tutorial to students from senior high school.', date: '2014.06 - 2014.07'},
   ],
   specialtySlides: [
       { title: 'This is task 1', content: 'sss'},

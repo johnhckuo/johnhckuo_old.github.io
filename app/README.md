@@ -1,9 +1,9 @@
 
 
-# johnhckuo.github.io
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-:star2: John's website and blog
+# johnhckuo.github.io
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Powered by
@@ -17,7 +17,7 @@
 - [Google Fonts](https://fonts.google.com/)
   - [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - [Google Analytics](https://analytics.google.com/)
-- [HTML5 Up]https://html5up.net/
+- [HTML5 Up](https://html5up.net/)
 
 ## Installation and Building
 

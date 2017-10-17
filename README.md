@@ -56,8 +56,6 @@ UX and blockchain applications.
  - An web-based 3D modeling application which enable users to create their 3D content without installing sophiticated software.
  - This application can parse certain 3D file (STL, OBJ) and render it on the website using Three.js. 
 
-### [Solar System Simulator(Working on it :p)](https://github.com/johnhckuo/Solar_System)
-
 ### [Island Terrain Generator](http://johnhckuo.github.io/Island_Generator/)
 
  `Three.js` `Web Development` `3D Animation`
@@ -76,6 +74,8 @@ UX and blockchain applications.
  
  - Simulate the transition of terrain shadow and color in Three.js.
  - Randomly generated Minecraft-style terrain.
+
+### [Solar System Simulator(Working on it :p)](https://github.com/johnhckuo/Solar_System)
 
 ### Applications of Computer Vision
 

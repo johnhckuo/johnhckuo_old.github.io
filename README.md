@@ -1,4 +1,4 @@
-# Hung-Chung Kuo :neckbeard:
+# About me :neckbeard:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Hello! My name is John, a passionate programmer with interdisciplinary talents.  

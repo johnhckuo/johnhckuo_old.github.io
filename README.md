@@ -36,11 +36,13 @@ UX and blockchain applications.
 
 # Portfolio<br>
 
-### [Web-Based AR Application](https://blockfarm.herokuapp.com/)
+### [Blockfarm](https://blockfarm.herokuapp.com/)
 
- `Ethereum` `Truffle` `Solidity`
+ `Ethereum` `Blockcypher` `Oracle` `Solidity`
 
- - A farming decentralized application built upon Ethereum platform. 
+ - A stress-relieving farming game built on top of Ethereum platform. 
+ - Featuring multi-party bartering system which is stored and executed by smart contract on Ethereum testnet.
+ - Using Ethereum wallet API of [Blockcypher](https://www.blockcypher.com/) to ensure seamless user gaming experience.
 
 ### [Web-Based AR Application](https://github.com/johnhckuo/simple_web_AR)
 

@@ -12,7 +12,7 @@ UX and blockchain applications.
  - Location: Taipei
  - E-Mail: johnhckuo@gmail.com
 
-# Professional Skills
+## Professional Skills
 
  - FrontEnd Programming Language
    - Javascript/CSS/HTML
@@ -34,7 +34,7 @@ UX and blockchain applications.
    - Hybrid mobile app : Phonegap
    - Smart Contract Development framework : Truffle
 
-# Portfolio<br>
+## Portfolio<br>
 
 ### [Blockfarm](https://blockfarm.herokuapp.com/)
 

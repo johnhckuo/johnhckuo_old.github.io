@@ -18,8 +18,8 @@
 
 ```bash
 # clone repository
-git clone https://github.com/johnhckuo/About_me.git
-cd About_me
+git clone https://github.com/johnhckuo/johnhckuo.github.io.git
+cd johnhckuo.github.io
 
 # install required gems and dependencies
 bundle install

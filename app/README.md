@@ -1,7 +1,7 @@
 
 # johnhckuo.github.io
 
-John Kuo's website & blog :neckbeard:
+:neckbeard: John Kuo's website & blog :neckbeard:
 
 ## Installation and Building
 

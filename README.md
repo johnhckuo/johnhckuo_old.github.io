@@ -115,7 +115,8 @@ UX and blockchain applications.
  - Fetch the open data released by government and visualize these data for greater convenience(D3.js、C3.js、Canvas.js).
  - Using Ajax to dynamically updating disaster data.
  - Using Wireframe、Gliffy, and Cacoo as interface designing tools.
- - * Data sources currently unavailable
+ 
+ \* Data sources currently unavailable
  
 ### [Web Crawler](https://github.com/johnhckuo/Selenium_Project)
 

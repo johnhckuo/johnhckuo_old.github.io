@@ -263,10 +263,19 @@ $baseurl: '{{ site.baseurl }}/images';
 					height: 1px;
 				}
 			}
-
+			
 			p {
 				color: _palette(fg);
 				top: 0;
+			}
+			
+			&.style1{
+				h2{
+					color:_palette(fg2);
+				}
+				p{
+					color: _palette(fg2);
+				}
 			}
 
 			@include breakpoint(small) {

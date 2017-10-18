@@ -932,7 +932,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			&:before {
 				display: block;
-				color: _palette(accent2, bg);
+				color: _palette(accent2, bg2);
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;

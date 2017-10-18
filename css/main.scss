@@ -501,7 +501,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style1 {
-			color: _palette(accent2, bg);
+			color: _palette(accent2, bg2);
 		}
 
 		&.style2 {
@@ -616,6 +616,9 @@ $baseurl: '{{ site.baseurl }}/images';
 
 					@include breakpoint(small) {
 						padding: 0 1em !important;
+					}
+					&.label{
+						margin-top:15px;
 					}
 				}
 			}
@@ -1057,8 +1060,8 @@ $baseurl: '{{ site.baseurl }}/images';
 /* Wrapper */
 
 	@mixin wrapper($p) {
-		background-color: _palette($p, bg);
-		color: _palette($p, fg);
+		background-color: _palette($p, bg2);
+		color: _palette($p, fg2);
 
 		// Basic
 

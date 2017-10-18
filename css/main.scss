@@ -263,12 +263,12 @@ $baseurl: '{{ site.baseurl }}/images';
 					height: 1px;
 				}
 			}
-			
+
 			p {
 				color: _palette(fg);
 				top: 0;
 			}
-			
+
 			&.style1{
 				h2{
 					color:_palette(fg2);
@@ -1016,6 +1016,12 @@ $baseurl: '{{ site.baseurl }}/images';
 			@include vendor('order', '2');
 			max-width: 48em;
 			width: 60%;
+			ul{
+				li{
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+			}
 		}
 
 		&:nth-child(2n) {
@@ -1268,7 +1274,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.alt {
-			padding: 100px;
+			padding: 50px;
 		}
 
 		&.style1 {

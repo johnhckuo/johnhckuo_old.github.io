@@ -626,7 +626,7 @@ $baseurl: '{{ site.baseurl }}/images';
 					@include breakpoint(small) {
 						padding: 0 1em !important;
 					}
-					label{
+					.label{
 						margin-top:15px;
 					}
 				}

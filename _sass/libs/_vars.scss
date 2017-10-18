@@ -48,11 +48,11 @@
 		border2-bg:			rgba(144,144,144,0.5),
 
 		accent1: (
-			bg:				#21b2a6,
-			bg2:			#fff,
+			//bg:				#21b2a6,
+			bg:			#fff,
 			fg-bold:		#ffffff,
-			fg:				mix(#21b2a6, #ffffff, 25%),
-			fg2:			#000,
+			//fg:				mix(#21b2a6, #ffffff, 25%),
+			fg:			#000,
 			fg-light:		mix(#21b2a6, #ffffff, 40%),
 			border:			rgba(0,0,0,0.125),
 			border-bg:		rgba(255,255,255,0.075),
@@ -61,8 +61,8 @@
 		),
 
 		accent2: (
-			bg:				#00ffcc,
-			bg2:			#666,
+			//bg:				#00ffcc,
+			bg:			#666,
 			fg-bold:		#ffffff,
 			fg:				mix(#00ffcc, #ffffff, 25%),
 			fg-light:		mix(#00ffcc, #ffffff, 40%),

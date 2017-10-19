@@ -8,6 +8,7 @@ description: |
 owner: Hung-Chung Kuo
 first_published: 2017
 email: johnhckuo@gmail.com
+google_analytics: UA-108369170-1
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://johnhckuo.github.io/" # the base hostname & protocol for your site
 social:

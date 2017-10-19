@@ -1,6 +1,6 @@
 <head>
 
-  {% if site.google_analytics %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108369170-1"></script>
   <script>

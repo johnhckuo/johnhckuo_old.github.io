@@ -30,6 +30,22 @@
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
+
+				// scroll trigger init
+
+				var trigger = new ScrollTrigger({
+				  toggle: {
+				    visible: 'visible',
+				    hidden: 'invisible'
+				  },
+				  offset: {
+				    x: 0,
+				    y: 20
+				  },
+				  addHeight: true,
+				  once: true
+				}, document.body, window);
+
 			});
 
 		// Mobile?

@@ -1099,7 +1099,7 @@ body {
 
 body, input, select, textarea {
   color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Helvetica, "Open Sans", sans-serif;
   font-size: 15pt;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -2713,3 +2713,11 @@ body.is-mobile.landing .wrapper.style4 {
   background-size: cover; }
 body.is-mobile.landing #footer {
   background-color: #1d242a; }
+
+.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0.0; }
+
+.visible {
+  transition: opacity 0.5s ease;
+  opacity: 1.0; }

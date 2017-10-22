@@ -2688,10 +2688,10 @@ body.is-mobile #main > header {
 
 /* Landing */
 body.landing #page-wrapper {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2704,10 +2704,10 @@ body.is-mobile.landing #page-wrapper {
   background: none; }
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/newBanner_s.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }

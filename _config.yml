@@ -10,7 +10,7 @@ first_published: 2017
 email: johnhckuo@gmail.com
 google_analytics: UA-108369170-1
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "johnhckuo.github.io" # the base hostname & protocol for your site
 social:
   github: https://github.com/johnhckuo
   linkedin-square: https://www.linkedin.com/in/johnhckuo/

@@ -10,7 +10,7 @@ layout: landing
 						    {% for socloc in site.social %}
 						    {% if socloc[1] %}
 						    {% if socloc[0] == 'email' %}
-						    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o"
+						    <li><a target="_blank" href="mailto:{{ site.email }}" class="icon fa-envelope-o"
 						           ></a></li>
 						    {% else %}
 						    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"

@@ -16,13 +16,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <meta property="fb:app_id"          content="128131301238429" /> 
-  <meta property="og:type"            content="profile" /> 
-  <meta property="og:url"             content="https://johnhckuo.github.io/" /> 
-  <meta property="og:title"           content="Hung-Chung Kuo" /> 
-  <meta property="og:description"    content="A passionate programmer" />
+  <meta name="robots" content="noodp"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type"            content="profile" />
+  <meta property="og:url"             content="https://johnhckuo.github.io/" />
+  <meta property="og:title"           content="Hung-Chung Kuo" />
+  <meta property="og:site_name" content="Hung-Chung Kuo" />
+  <meta property="og:description"    content="John Kuo is a programmer who has been devoting to the open source community since 2013. His specializations are Blockchain applications, Web development and WebVR applications development." />
   <meta property="og:image" content="https://avatars3.githubusercontent.com/u/5835630?s=400&v=4" />
+  <script type='application/ld+json'>
+  {
+    "@context":"http:\/\/schema.org",
+    "@type":"WebSite",
+    "url":"https:\/\/johnhckuo.github.io\/",
+    "name":"Hung-Chung Kuo"
+  }
+  </script>
+  <script type='application/ld+json'>
+  {
+    "@context":"http:\/\/schema.org",
+    "@type":"Person",
+    "url":"https:\/\/johnhckuo.github.io\/",
+    "sameAs":[
+      "https:\/\/www.facebook.com\/johnhckuo",
+      "https:\/\/www.linkedin.com\/in\/johnhckuo",
+      "https:\/\/github.com\/johnhckuo",
+      "name":"Hung-Chung Kuo"
+  }
+  </script>
 
   <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

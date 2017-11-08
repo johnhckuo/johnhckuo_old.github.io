@@ -160,6 +160,7 @@ bundle install
 
 # build and run locally
 bundle exec jekyll serve
+
 ```
 
 ## Powered by

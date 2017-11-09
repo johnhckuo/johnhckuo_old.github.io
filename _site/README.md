@@ -155,8 +155,11 @@ UX and blockchain applications.
 git clone https://github.com/johnhckuo/johnhckuo.github.io.git
 cd johnhckuo.github.io
 
+# install required gems and dependencies
+bundle install
+
 # build and run locally
-jekyll serve
+bundle exec jekyll serve
 ```
 
 ## Powered by

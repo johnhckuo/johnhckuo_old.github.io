@@ -6,9 +6,65 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Nov 2017 00:02:33 +0800</pubDate>
-    <lastBuildDate>Thu, 09 Nov 2017 00:02:33 +0800</lastBuildDate>
+    <pubDate>Fri, 10 Nov 2017 00:07:42 +0800</pubDate>
+    <lastBuildDate>Fri, 10 Nov 2017 00:07:42 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Blockchain Introduction - Prologue</title>
+        <description>&lt;header&gt;
+&lt;h4&gt; Hello World &lt;/h4&gt;
+&lt;p&gt;welcome to my blog !&lt;/p&gt;
+&lt;/header&gt;
+&lt;section&gt;
+		&lt;p&gt;
+		&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/17757594_10207024558407435_1920476694165344537_n.jpg?oh=d2a20f48c29a62208d6f208be847caae&amp;amp;oe=5A661AE5&quot; alt=&quot;&quot; style=&quot;width:180px; height:180px;&quot; /&gt;&lt;/span&gt;
+		This is my first post and I've decided to take blockchain as the very first topic in my blog. &lt;br /&gt;I'll continue updating the following posts irregularly, and the topic will not be restricted to blockchain but all kinds of new technology I am interested.
+		&lt;/p&gt;
+		&lt;br /&gt;
+&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;section&gt;
+&lt;header&gt;
+&lt;h4&gt;Prologue&lt;/h4&gt;
+&lt;p&gt;Some thoughts about blockchain&lt;/p&gt;
+&lt;/header&gt;
+&lt;p&gt;Recently, blockchain, Bitcoin, and Ethereum has been dicussed a lot  and many people start to imagine the potential and possibility it might bring to our world.
+
+Well.. blockchain indeed holds the potential to improve the service and process in many industries, but it is not a universal solution to all kinds of scenarios. &lt;/p&gt;
+
+&lt;p&gt;My master thesis is about how to help the entrepreneur to design a sustainable blockchain-based ecosystem. In order to testify the methodolgy I've proposed, I've built a DApp (Decentralized Application) based on the guildeline in my research, hoping the result of the DApp turns out to be positive so that my propositions can be testified. &lt;/p&gt;
+&lt;p&gt;In the process of the research and implementation, I've encounter many issues due to my misunderstanding of the core concept and meaning of the blockchain, which leads to a waste of this amzing technology. To fully utilize the benefit of blockchain, we must understand the purpose and characteristic of it, or we might merely treat this new technology as another kinds of computing infrastructure. &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;hr /&gt;
+
+&lt;section&gt;
+&lt;header&gt;
+&lt;h4&gt;Blockchain series posts&lt;/h4&gt;
+&lt;p&gt;The following list shows the contents of my blockchain series.&lt;/p&gt;
+&lt;/header&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Introduction&lt;/li&gt;
+			&lt;li&gt;Key Concepts&lt;/li&gt;
+			&lt;li&gt;Platforms Nowadays&lt;/li&gt;
+			&lt;li&gt;Applications&lt;/li&gt;
+			&lt;li&gt;Issues&lt;/li&gt;
+		&lt;/ol&gt;
+&lt;p&gt;
+I'll start from some basic introduction and example of blockchain, but I'll go thought it quickly and spend more time on discussing some advance issues of blockchain. &lt;/p&gt;
+
+&lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging and implementing a DApp. If you have any suggestions or comments, feel free to open an issue and I'll answer it ASAP : ) &lt;/p&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 09 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/11/09/blockchain-introduction-prologue.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/09/blockchain-introduction-prologue.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>

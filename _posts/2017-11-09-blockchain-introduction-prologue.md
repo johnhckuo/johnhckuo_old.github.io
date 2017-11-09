@@ -9,7 +9,7 @@ layout: page
 </header>
 <section>
 		<p>
-		<span class="image left"><img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/17757594_10207024558407435_1920476694165344537_n.jpg?oh=d2a20f48c29a62208d6f208be847caae&oe=5A661AE5" alt="" style="width:180px; height:180px;"/></span>
+		<span class="image left"><img src="/images/me.jpg" alt="" style="width:180px; height:180px;"/></span>
 		This is my first post and I've decided to take blockchain as the very first topic in my blog. <br />I'll continue updating the following posts irregularly, and the topic will not be restricted to blockchain but all kinds of new technology I am interested.
 		</p>
 		<br />
@@ -29,7 +29,7 @@ Well.. blockchain indeed holds the potential to improve the service and process 
 <p>In the process of the research and implementation, I've encounter many issues due to my misunderstanding of the core concept and meaning of the blockchain, which leads to a waste of this amzing technology. To fully utilize the benefit of blockchain, we must understand the purpose and characteristic of it, or we might merely treat this new technology as another kinds of computing infrastructure. </p>
 </section>
 
-<hr /> 
+<hr />
 <section>
 <header>
 <h4>Blockchain series posts</h4>

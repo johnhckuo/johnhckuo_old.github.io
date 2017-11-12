@@ -5108,3 +5108,15 @@ body.is-mobile.landing #footer {
   font-weight: 800;
   src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url(https://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+.blogFirstParagraph {
+  display: flex;
+  align-items: center;
+  line-height: 40px; }
+
+.blogUl {
+  list-style-type: none;
+  margin-left: 30px; }
+
+.blogLi {
+  float: left;
+  margin-right: 5px; }

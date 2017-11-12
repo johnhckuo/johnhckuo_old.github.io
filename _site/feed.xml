@@ -6,63 +6,93 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Nov 2017 07:23:19 +0800</pubDate>
-    <lastBuildDate>Fri, 10 Nov 2017 07:23:19 +0800</lastBuildDate>
+    <pubDate>Sun, 12 Nov 2017 23:58:38 +0800</pubDate>
+    <lastBuildDate>Sun, 12 Nov 2017 23:58:38 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>Blockchain Introduction - Prologue</title>
-        <description>&lt;header&gt;
-&lt;h4&gt; Hello World &lt;/h4&gt;
-&lt;p&gt;welcome to my blog !&lt;/p&gt;
+        <title>Blockchain - Introduction</title>
+        <description>&lt;header class=&quot;blogFirstParagraph&quot;&gt;
+&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/blog/blockchain.png&quot; alt=&quot;&quot; style=&quot;width:120px; height:120px;&quot; /&gt;&lt;/span&gt;&lt;p&gt;Blockchain, knows as the distributed ledger, is a decentralized database that can store transactions records in each node participate in the network. 
+&lt;/p&gt;
 &lt;/header&gt;
-&lt;section&gt;
-		&lt;p&gt;
-		&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/me.jpg&quot; alt=&quot;&quot; style=&quot;width:180px; height:180px;&quot; /&gt;&lt;/span&gt;
-		This is my first post and I've decided to take blockchain as the very first topic in my blog. &lt;br /&gt;I'll continue updating the following posts irregularly, and the topic will not be restricted to blockchain but all kinds of new technology I am interested.
-		&lt;/p&gt;
-		&lt;br /&gt;
-&lt;/section&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h5&gt;Why it is called 'blockchain' ?&lt;/h5&gt;Because it is a chain of many blocks. Each block store some transaction records, and all the transaction records form blockchain. &lt;/p&gt;
+&lt;p&gt;
+&lt;p&gt;&lt;h5&gt;How does it works ?&lt;/h5&gt;
+Just imagine it is a ledger. If you want to join this network, you have to download and synchronize this ledger to your local computer to. This results in everyone owns a ledger in their own node. &lt;br /&gt;
+If there is any new transaction record coming in, all the nodes will be notified. If all nodes accept this as an valid transaction, it means that all participants have reach consensus and agree upon the establishment of this transaction. Lastly, this new record will insert into all the ledger everyone holds. &lt;/p&gt;
+
+&lt;p&gt;&lt;h5&gt;The purpose of blockchain in the beginning &lt;/h5&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;h5&gt;What does blockchain actually solves? ?&lt;/h5&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;h5&gt;Which scenario does blockchain fit in the best ?&lt;/h5&gt;
+&lt;/p&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blockchain/technology/2017/11/12/blockchain-introduction.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blockchain/technology/2017/11/12/blockchain-introduction.html</guid>
+        
+        
+        <category>blockchain</category>
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Blockchain - Prologue</title>
+        <description>&lt;header class=&quot;blogFirstParagraph&quot;&gt;
+&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/me.jpg&quot; alt=&quot;&quot; style=&quot;width:120px; height:120px;&quot; /&gt;&lt;/span&gt;
+&lt;p&gt;This is my first post and I've decided to take blockchain as the very first topic in my blog. &lt;br /&gt;I'll continue updating the following posts irregularly, and the topic will not be restricted to blockchain but all kinds of new technology I am interested.
+&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;section&gt;
 &lt;header&gt;
 &lt;h4&gt;Prologue&lt;/h4&gt;
 &lt;p&gt;Some thoughts about blockchain&lt;/p&gt;
 &lt;/header&gt;
-&lt;p&gt;Recently, blockchain, Bitcoin, and Ethereum has been dicussed a lot  and many people start to imagine the potential and possibility it might bring to our world.
+&lt;p&gt;Recently, Bitcoin &amp;amp; Ethereum has been dicussed a lot. As the foundation of these two applications, many people start to imagine the potential and possibility blockchain might bring to our world.
 
 Well.. blockchain indeed holds the potential to improve the service and process in many industries, but it is not a universal solution to all kinds of scenarios. &lt;/p&gt;
 
-&lt;p&gt;My master thesis is about how to help the entrepreneur to design a sustainable blockchain-based ecosystem. In order to testify the methodolgy I've proposed, I've built a DApp (Decentralized Application) based on the guildeline in my research, hoping the result of the DApp turns out to be positive so that my propositions can be testified. &lt;/p&gt;
-&lt;p&gt;In the process of the research and implementation, I've encounter many issues due to my misunderstanding of the core concept and meaning of the blockchain, which leads to a waste of this amzing technology. To fully utilize the benefit of blockchain, we must understand the purpose and characteristic of it, or we might merely treat this new technology as another kinds of computing infrastructure. &lt;/p&gt;
-&lt;/section&gt;
+&lt;p&gt;My master thesis is about how to help the entrepreneur to design a sustainable blockchain-based ecosystem. In order to testify the methodolgy I've proposed, I've built a DApp (Decentralized Application) based on the guildeline from my research, hoping the result of the DApp turns out to be positive so that my propositions can be testified. &lt;/p&gt;
+&lt;p&gt;In the process of the research and implementation, I've encounter many issues due to my misunderstanding of the core concept and meaning of the blockchain, which leads to a waste of this amzing technology. To fully utilize the benefits of blockchain, we must understand the purpose and characteristics of it, or we might merely treat this new technology as another kinds of computing infrastructure. &lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;section&gt;
 &lt;header&gt;
 &lt;h4&gt;Blockchain series posts&lt;/h4&gt;
 &lt;p&gt;The following list shows the contents of my blockchain series.&lt;/p&gt;
 &lt;/header&gt;
-		&lt;ol&gt;
+&lt;ol&gt;
 			&lt;li&gt;Introduction&lt;/li&gt;
 			&lt;li&gt;Key Concepts&lt;/li&gt;
 			&lt;li&gt;Platforms Nowadays&lt;/li&gt;
 			&lt;li&gt;Applications&lt;/li&gt;
 			&lt;li&gt;Issues&lt;/li&gt;
-		&lt;/ol&gt;
+&lt;/ol&gt;
 &lt;p&gt;
-I'll start from some basic introduction and example of blockchain, but I'll go thought it quickly and spend more time on discussing some advance issues of blockchain. &lt;/p&gt;
+I'll start from some basic introduction and example of blockchain, but I'll go though it very quickly and spend more time on discussing some advance issues of blockchain. &lt;/p&gt;
 
-&lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging and implementing a DApp. If you have any suggestions or comments, feel free to open an issue and I'll answer it ASAP : ) &lt;/p&gt;
-&lt;/section&gt;
+&lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging &amp;amp; implementing a DApp. If you have any suggestions or comments, feel free to open an issue and I'll answer it ASAP : ) &lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Nov 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/11/09/blockchain-introduction-prologue.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/09/blockchain-introduction-prologue.html</guid>
+        <link>http://localhost:4000/blockchain/technology/2017/11/09/blockchain-introduction-prologue.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blockchain/technology/2017/11/09/blockchain-introduction-prologue.html</guid>
         
+        
+        <category>blockchain</category>
+        
+        <category>technology</category>
         
       </item>
     

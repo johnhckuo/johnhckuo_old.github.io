@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Blog
+title: Johnhckuo
 ---
 
 {% for post in site.posts %}
@@ -12,9 +12,9 @@ title: My Blog
 
 	  	{{ post.excerpt }}
 
-		<ul class="inline-list" style="margin-top:-1em;">
+		Tags:<ul class="inline-list blogUl" style="margin-top:-1.2em;">
 			{% for category in post.categories %}
-			<li><h6><a href="/#!/{{ category }}"><i class="fa fa-tag"></i> {{ category }}</a></h6></li>
+			<li class="blogLi"><h6 style="margin-top:0em;"><a href="/#!/{{ category }}"><i class="fa fa-tag"></i> {{ category }}</a></h6></li>
 			{% endfor %}
 		</ul>
 

@@ -12,9 +12,10 @@ title: Johnhckuo
 
 	  	{{ post.excerpt }}
 
-		Tags:<ul class="inline-list blogUl" style="margin-top:-1.2em;">
+		Tags:<ul class="inline-list blogUl" style="margin-top:-1.1em;">
 			{% for category in post.categories %}
-			<li class="blogLi"><h6 style="margin-top:0em;"><a href="/#!/{{ category }}"><i class="fa fa-tag"></i> {{ category }}</a></h6></li>
+			<!-- <li class="blogLi"><h6 style="margin-top:0em;"><a href="/#!/{{ category }}"><i class="fa fa-tag"></i> {{ category }}</a></h6></li> -->
+			<li class="blogLi"><h6 style="margin-top:0em;"><a href="/blog/{{ category }}"><i class="fa fa-tag"></i> {{ category }}</a></h6></li>
 			{% endfor %}
 		</ul>
 

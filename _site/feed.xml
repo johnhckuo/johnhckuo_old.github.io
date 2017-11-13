@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Nov 2017 23:58:38 +0800</pubDate>
-    <lastBuildDate>Sun, 12 Nov 2017 23:58:38 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2017 00:44:48 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2017 00:44:48 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -20,16 +20,35 @@
 &lt;p&gt;&lt;h5&gt;Why it is called 'blockchain' ?&lt;/h5&gt;Because it is a chain of many blocks. Each block store some transaction records, and all the transaction records form blockchain. &lt;/p&gt;
 &lt;p&gt;
 &lt;p&gt;&lt;h5&gt;How does it works ?&lt;/h5&gt;
-Just imagine it is a ledger. If you want to join this network, you have to download and synchronize this ledger to your local computer to. This results in everyone owns a ledger in their own node. &lt;br /&gt;
-If there is any new transaction record coming in, all the nodes will be notified. If all nodes accept this as an valid transaction, it means that all participants have reach consensus and agree upon the establishment of this transaction. Lastly, this new record will insert into all the ledger everyone holds. &lt;/p&gt;
+Just imagine it is a ledger. If you want to join this network, you have to download and synchronize this ledger to your local computer. This results in everyone owns a ledger in their own node. &lt;br /&gt;
+If any new transaction record comes in, all the nodes will be notified. If all nodes accept this as an valid transaction, it means that all participants have reach consensus and agree upon the establishment of this transaction. Lastly, this new record will insert into all the ledger everyone holds. &lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;h5&gt;The purpose of blockchain in the beginning &lt;/h5&gt;
+
+The concept of blockchain is proposed by Satoshi Nakamoto in 2009, and he introduced two concepts simultaneously in that year.&lt;br /&gt;The first concept is the Bitcoin, a decentralized peer to peer online currency that maintains value without the existence of banking. However, there is another concept which is equally important as Bitcoin, and it is the concept of proof of work-based blockchain to allow for public agreements on the order of transactions (Buterin, 2004). &lt;br /&gt;Blockchain is able to identify the sequence of each transaction and provide consensus mechanism, making the implementation of Bitcoin complete. 
 &lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;h5&gt;What does blockchain actually solves? ?&lt;/h5&gt;
+There are four main characteristics of blockchain proposed by Fecher (2016), and they are listed as follows:
+&lt;ol&gt;
+&lt;li style=&quot;margin-top:1em;&quot;&gt;&lt;h5&gt;Decentralized&lt;/h5&gt;
+Blockchain decentralizes the way we store data and manage information, potentially leading to a reduced role for one of the most important regulatory actors in our society: the middleman. &lt;/li&gt;
+&lt;li style=&quot;margin-top:1em;&quot;&gt;&lt;h5&gt;Distributed &lt;/h5&gt;
+The distributed characteristic means that there is no single hardware infrastructure storing and running the service. Often, this means that a copy of a database exists on several computers inside the network.&lt;/li&gt;
+&lt;li style=&quot;margin-top:1em;&quot;&gt;&lt;h5&gt;Immutability &lt;/h5&gt;
+It means that strictly speaking data cannot be changed in blockchain. However, in practice, this means that data cannot be changed without leaving a trace, which indicates that each transaction is recorded. And this means that old versions can be recovered and that any changes will be protocolled in a system. It is like comparing an excel sheet in which values can be changed at will to a piece of paper. On paper a trace of every manipulation is left displayed.&lt;/li&gt;
+&lt;li style=&quot;margin-top:1em;&quot;&gt;&lt;h5&gt;Transparent &lt;/h5&gt;
+Transparent means that a computer program is actually running as is publicized. Meanwhile, we must rely upon others to calculate things (e.g. impact factor) or to apply post processing tools to research data as they claim that they are doing it; after blockchain revolution, this will be transparent and provable to peer nodes.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/p&gt;
 
+&lt;hr /&gt;
 &lt;p&gt;&lt;h5&gt;Which scenario does blockchain fit in the best ?&lt;/h5&gt;
+Nowadays, many organizations hold the ambition to provide an ecosystem that can be fully trusted by stakeholders, including customers, supplier, or other corporate partners. However, the issues of transparency, unavailability, and untraceable can be hard to deal with, and the blockchain technology can solve these problems once and for all. &lt;br /&gt;&lt;br /&gt;
+But blockchain does not fit in every industry. Based on the four characteristic mentioned above, we have to consider whether they are crucial to the provided service or not. If 'Trust&quot; is an important advantage to your service (e.g. third party payment), you can consider integrate your service with blockchain. However, you may think that the current architecture used by many services already did a great job, and you might start wondering the necessity of blockchain integration. ...
 &lt;/p&gt;
 &lt;/p&gt;
 </description>
@@ -81,9 +100,9 @@ Well.. blockchain indeed holds the potential to improve the service and process 
 			&lt;li&gt;Issues&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
-I'll start from some basic introduction and example of blockchain, but I'll go though it very quickly and spend more time on discussing some advance issues of blockchain. &lt;/p&gt;
+I'll start from some basic introductions and examples of blockchain, but I'll go though it very quickly and spend more time on discussing some advance issues of blockchain. &lt;/p&gt;
 
-&lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging &amp;amp; implementing a DApp. If you have any suggestions or comments, feel free to open an issue and I'll answer it ASAP : ) &lt;/p&gt;
+&lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging &amp;amp; implementing a DApp. If you have any suggestions or comments, feel free to open a issue and I'll answer it ASAP : ) &lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Nov 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/blockchain/technology/2017/11/09/blockchain-introduction-prologue.html</link>

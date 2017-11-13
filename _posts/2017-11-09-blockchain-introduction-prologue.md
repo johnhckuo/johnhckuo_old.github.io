@@ -38,6 +38,6 @@ Well.. blockchain indeed holds the potential to improve the service and process 
 			<li>Issues</li>
 </ol>
 <p>
-I'll start from some basic introduction and example of blockchain, but I'll go though it very quickly and spend more time on discussing some advance issues of blockchain. </p>
+I'll start from some basic introductions and examples of blockchain, but I'll go though it very quickly and spend more time on discussing some advance issues of blockchain. </p>
 
-<p> I'll share all I know and some traps we might fall into easily when desinging & implementing a DApp. If you have any suggestions or comments, feel free to open an issue and I'll answer it ASAP : ) </p>
+<p> I'll share all I know and some traps we might fall into easily when desinging & implementing a DApp. If you have any suggestions or comments, feel free to open a issue and I'll answer it ASAP : ) </p>

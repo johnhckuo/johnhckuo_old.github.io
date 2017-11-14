@@ -6,14 +6,14 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Nov 2017 00:44:48 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Nov 2017 00:44:48 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2017 23:14:11 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2017 23:14:11 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Blockchain - Introduction</title>
         <description>&lt;header class=&quot;blogFirstParagraph&quot;&gt;
-&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/blog/blockchain.png&quot; alt=&quot;&quot; style=&quot;width:120px; height:120px;&quot; /&gt;&lt;/span&gt;&lt;p&gt;Blockchain, knows as the distributed ledger, is a decentralized database that can store transactions records in each node participate in the network. 
+&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/blog/blockchain.png&quot; alt=&quot;&quot; style=&quot;width:120px; height:120px;&quot; /&gt;&lt;/span&gt;&lt;p&gt;Blockchain, knows as the distributed ledger, is a decentralized database that can store transactions records in each node participate in the network.
 &lt;/p&gt;
 &lt;/header&gt;
 
@@ -26,7 +26,7 @@ If any new transaction record comes in, all the nodes will be notified. If all n
 
 &lt;p&gt;&lt;h5&gt;The purpose of blockchain in the beginning &lt;/h5&gt;
 
-The concept of blockchain is proposed by Satoshi Nakamoto in 2009, and he introduced two concepts simultaneously in that year.&lt;br /&gt;The first concept is the Bitcoin, a decentralized peer to peer online currency that maintains value without the existence of banking. However, there is another concept which is equally important as Bitcoin, and it is the concept of proof of work-based blockchain to allow for public agreements on the order of transactions (Buterin, 2004). &lt;br /&gt;Blockchain is able to identify the sequence of each transaction and provide consensus mechanism, making the implementation of Bitcoin complete. 
+The concept of blockchain is proposed by Satoshi Nakamoto in 2009, and he introduced two concepts simultaneously in that year.&lt;br /&gt;The first concept is the Bitcoin, a decentralized peer to peer online currency that maintains value without the existence of banking. However, there is another concept which is equally important as Bitcoin, and it is the concept of proof of work-based blockchain to allow for public agreements on the order of transactions (Buterin, 2004). &lt;br /&gt;Blockchain is able to identify the sequence of each transaction and provide consensus mechanism, making the implementation of Bitcoin complete.
 &lt;/p&gt;
 
 &lt;hr /&gt;
@@ -53,13 +53,15 @@ But blockchain does not fit in every industry. Based on the four characteristic 
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Nov 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blockchain/technology/2017/11/12/blockchain-introduction.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blockchain/technology/2017/11/12/blockchain-introduction.html</guid>
-        
+        <link>http://localhost:4000/tech/2017/11/12/blockchain-introduction.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tech/2017/11/12/blockchain-introduction.html</guid>
         
         <category>blockchain</category>
         
         <category>technology</category>
+        
+        
+        <category>Tech</category>
         
       </item>
     
@@ -105,13 +107,15 @@ I'll start from some basic introductions and examples of blockchain, but I'll go
 &lt;p&gt; I'll share all I know and some traps we might fall into easily when desinging &amp;amp; implementing a DApp. If you have any suggestions or comments, feel free to open a issue and I'll answer it ASAP : ) &lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Nov 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blockchain/technology/2017/11/09/blockchain-introduction-prologue.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blockchain/technology/2017/11/09/blockchain-introduction-prologue.html</guid>
-        
+        <link>http://localhost:4000/tech/2017/11/09/blockchain-introduction-prologue.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tech/2017/11/09/blockchain-introduction-prologue.html</guid>
         
         <category>blockchain</category>
         
         <category>technology</category>
+        
+        
+        <category>Tech</category>
         
       </item>
     

@@ -1,11 +1,12 @@
 ---
 title: Blockchain - Introduction
 layout: page
-categories: blockchain technology
+category: Tech
+tags: [blockchain, technology]
 ---
 
 <header class="blogFirstParagraph">
-<span class="image left"><img src="/images/blog/blockchain.png" alt="" style="width:120px; height:120px;"/></span><p>Blockchain, knows as the distributed ledger, is a decentralized database that can store transactions records in each node participate in the network. 
+<span class="image left"><img src="/images/blog/blockchain.png" alt="" style="width:120px; height:120px;"/></span><p>Blockchain, knows as the distributed ledger, is a decentralized database that can store transactions records in each node participate in the network.
 </p>
 </header>
 
@@ -18,7 +19,7 @@ If any new transaction record comes in, all the nodes will be notified. If all n
 
 <p><h5>The purpose of blockchain in the beginning </h5>
 
-The concept of blockchain is proposed by Satoshi Nakamoto in 2009, and he introduced two concepts simultaneously in that year.<br />The first concept is the Bitcoin, a decentralized peer to peer online currency that maintains value without the existence of banking. However, there is another concept which is equally important as Bitcoin, and it is the concept of proof of work-based blockchain to allow for public agreements on the order of transactions (Buterin, 2004). <br />Blockchain is able to identify the sequence of each transaction and provide consensus mechanism, making the implementation of Bitcoin complete. 
+The concept of blockchain is proposed by Satoshi Nakamoto in 2009, and he introduced two concepts simultaneously in that year.<br />The first concept is the Bitcoin, a decentralized peer to peer online currency that maintains value without the existence of banking. However, there is another concept which is equally important as Bitcoin, and it is the concept of proof of work-based blockchain to allow for public agreements on the order of transactions (Buterin, 2004). <br />Blockchain is able to identify the sequence of each transaction and provide consensus mechanism, making the implementation of Bitcoin complete.
 </p>
 
 <hr />

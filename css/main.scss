@@ -2432,10 +2432,20 @@ $baseurl: '{{ site.baseurl }}/images';
 
 .blogUl{
 	list-style-type: none;
-	margin-left: 30px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .blogLi{
 	float: left;
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+}
+
+.archive-group{
+	margin-bottom: 40px;
+}
+
+.postsMetaGroup{
+	margin-right: 20px;
 }

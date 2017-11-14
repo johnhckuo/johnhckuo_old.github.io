@@ -1,7 +1,8 @@
 ---
 title: Blockchain - Prologue
 layout: page
-categories: blockchain technology
+category: Tech
+tags: [blockchain, technology]
 ---
 
 <header class="blogFirstParagraph">
@@ -10,7 +11,7 @@ categories: blockchain technology
 </p>
 </header>
 
-		
+
 <br />
 <br />
 <hr />

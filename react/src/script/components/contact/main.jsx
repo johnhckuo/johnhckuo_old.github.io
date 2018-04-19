@@ -1,17 +1,26 @@
 import React from "react"
 import * as Style from "./style"
 import * as Global from "../Global/style"
+import * as FontAwesome from 'react-icons/lib/fa';
 
-export default class Filter extends React.Component{
+export default class Contact extends React.Component{
 	constructor(props){
 		super(props);
+		this.historyBack = this.historyBack.bind(this);
+	}
+
+	historyBack(){
+		this.props.history.goBack();
 	}
 
 	render(){
 		return(
-			<Style.Container>
+			<Global.Container>
 
 		        <Global.CenteredHeader>Get in touch with me!</Global.CenteredHeader>
+						<Global.HomeBtn onClick = {this.historyBack}>
+		          <FontAwesome.FaHome />
+		        </Global.HomeBtn>
 
 		        <Style.FormDiv>
 		          <form action="https://Style.formspree.io/sophiaciocca@gmail.com" method="POST" id="contactStyle.form">
@@ -33,8 +42,8 @@ export default class Filter extends React.Component{
 
 		        <Style.EmailMe>Or, just email me directly at <a href="mailto:johnhckuo@gmail.com" target="_blank"><strong>johnhckuo@gmail.com</strong></a>.</Style.EmailMe>
 
-  
-			</Style.Container>
+
+			</Global.Container>
 		);
 	}
 

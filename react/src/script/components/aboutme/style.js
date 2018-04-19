@@ -1,47 +1,44 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	background: #193549;
-	color: white;
-	font-family: 'helvetica neue', sans-serif;
-	font-weight: 100;
+export const Banner = styled.img`
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	height: 150px;
 	width: 100%;
-	height: 100%;
-	padding-top: 5vh;
-	padding-bottom: 10vh;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	box-sizing: border-box;
-	flex-flow: row wrap;
-	flex-wrap: wrap;
 
 `;
 
-export const Icon = styled.img`
-	width: 200px;
-	height: 200px;
-	border-radius: 100%;
-	margin-bottom: 10%;
-
+export const HR = styled.hr`
+	border: 0;
+	height: 1px;
+	opacity: .15;
+	margin: 1em 0;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 `;
 
 export const Intro = styled.div`
-	width: 50%;
-	margin-left:10%;
-	margin-top: 10%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 180px;
 	h2{
 		font-weight:bold;
 		font-size: 3rem;
 		margin-bottom: 10px;
+		text-align: center;
 	}
 
 	h3{
 		font-weight:bold;
 		font-size: 2rem;
+		text-align: center;
 	}
 
 `;
@@ -55,7 +52,6 @@ export const Characteristic = styled.div`
 	height: 20%;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 5vh;
 	flex-wrap: wrap;
 
 	div{

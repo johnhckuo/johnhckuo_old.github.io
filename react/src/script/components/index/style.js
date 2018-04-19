@@ -1,13 +1,50 @@
 import styled from 'styled-components';
 import React from "react"
 
-export const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding-left: 10vw;
-  padding-right: 10vw;
+export const Background = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
+
+export const Icon = styled.img`
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	height: 150px;
+	width: 150px;
+
+`;
+
+export const Intro = styled.div`
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	h2{
+		font-weight:bold;
+		font-size: 3rem;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	h3{
+		font-weight:bold;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+`;
+
 
 
 export const Header = styled.div`
@@ -46,13 +83,11 @@ export const Title = styled.div`
 
 `;
 
-export const Footer = styled.div`
+export const SocialIcon = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   a{
     color: #333333;
     margin-right: 10px;

@@ -1,7 +1,7 @@
 import React from "react"
 
 import {Aboutme, Contact, Experience, Portfolio} from "../"
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
+import { Link, Router, Route, Switch } from 'react-router-dom'
 import * as Style from "./style"
 import * as FontAwesome from 'react-icons/lib/fa';
 import myself from "../../../images/me.jpg"
@@ -16,16 +16,23 @@ export default class Main extends React.Component{
   render(){
     return (
         <Style.Background>
+          <Switch>
             <Route exact path="/" component={Entry} ></Route>
-            <Route path="/aboutme" component={Aboutme} ></Route>
-            <Route path="/experience" component={Experience} ></Route>
-            <Route path="/portfolio" component={Portfolio} ></Route>
-            <Route path="/contact" component={Contact} ></Route>
+            <Route exact path="/aboutme" component={Aboutme} ></Route>
+            <Route exact path="/experience" component={Experience} ></Route>
+            <Route exact path="/portfolio" component={Portfolio} ></Route>
+            <Route exact path="/contact" component={Contact} ></Route>
+            <Route component={GenericNotFound} />
+          </Switch>
         </Style.Background>
     );
   }
 }
 
+
+const GenericNotFound = ()=>{
+  return (<div>Not Found</div>)
+}
 
 const Entry = ()=>{
   return(
@@ -36,7 +43,7 @@ const Entry = ()=>{
       </Global.Row>
       <Global.HR />
       <Global.Row>
-        <h3>Programmer/</h3>
+        <h3>Programmer/Amateur Gamer</h3>
       </Global.Row>
       <Global.HR />
       <Global.Row>

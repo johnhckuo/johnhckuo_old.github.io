@@ -17,13 +17,14 @@ export default class Aboutme extends React.Component{
 	render(){
 		return(
 			<Global.Container>
-				<Style.Banner src={myself}/>
+				<Global.Banner src={myself}/>
 				<Style.Intro>
 					<Global.HomeBtn onClick = {this.historyBack}>
 						<FontAwesome.FaHome />
 					</Global.HomeBtn>
-					<h2>Hello</h2>
-					<h3>A bit about me</h3>
+					<Global.Title>
+						Hello
+					</Global.Title>
 					<Style.IntroContent>
 						<Style.Characteristic>
 							<div><FontAwesome.FaAmericanSignLanguageInterpreting />I'm a team player</div>
@@ -32,12 +33,12 @@ export default class Aboutme extends React.Component{
 						</Style.Characteristic>
 						<Global.HR />
 						<Style.Aboutme>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Hello! I'm John Kuo. I hold over 7 years of programming experience.
+							I specialize in web development, blockchain applications design, and 3D game development.
+							<Global.HR />
+							I've received my master degree in July, 2017.
+							My research is based on blockchain, and I've proposed a method to facilitate
+							the design of a blockchain-based ecosystem toward success and to make it self-sustaining.
 						</Style.Aboutme>
 
 					</Style.IntroContent>

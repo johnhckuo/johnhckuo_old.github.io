@@ -5,10 +5,25 @@ export const CenteredHeader = styled.h4`
   margin-bottom: 1.25em;
 `
 
+export const Banner = styled.img`
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	height: 150px;
+	width: 100%;
+
+`;
+
 export const Container = styled.div`
   position: relative;
-	width: 36rem;
-	max-width: 550px;
+	width: 42rem;
+	max-width: 750px;
 	padding: 15px;
 	display: block;
 	margin-left: auto;
@@ -19,6 +34,14 @@ export const Container = styled.div`
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
 
+`;
+
+
+export const Title = styled.div`
+	font-weight:bold;
+	font-size: 3rem;
+	margin-bottom: 10px;
+	text-align: center;
 `;
 
 export const Row = styled.div`

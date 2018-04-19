@@ -10,9 +10,8 @@ export default class Experience extends React.Component{
 
   render(){
     return (
-      <Style.Container>
-
-      </Style.Container>
+    	<Style.Container>
+        </Style.Container>
     );
   }
 }

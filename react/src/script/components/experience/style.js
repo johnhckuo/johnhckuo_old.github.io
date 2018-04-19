@@ -1,13 +1,21 @@
-import styled from 'styled-components';
-import React from "react"
+import styled from 'styled-components'
 
 export const Container = styled.div`
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	font-size: 10px;
-	background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: #193549;
+	color: white;
+	font-family: 'helvetica neue', sans-serif;
+	font-weight: 100;
+	width: 100%;
+	height: 100%;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	box-sizing: border-box;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
 `;

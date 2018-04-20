@@ -63,3 +63,11 @@ table {
   opacity: 0.01;
   transition: 700ms;
 }
+body{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	overflow-x: hidden;
+	font-family: Fira Sans,sans-serif;
+}

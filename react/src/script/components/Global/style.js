@@ -1,9 +1,24 @@
 import styled from 'styled-components';
+import background from '../../../images/background.jpg'
 
-export const CenteredHeader = styled.h4`
-	text-align: center;
-	margin-bottom: 1.25em;
-`
+function containerCommon(width){
+	return `
+		position: absolute;
+		width: ${width};
+		max-width: 750px;
+		padding: 15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #fff;
+		color: #282828;
+		z-index: 1;
+		border-radius: 3px;
+		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+		opacity: .8;
+		z-index: 2;
+	`;
+}
 
 export const Banner = styled.img`
 	position: absolute;
@@ -21,28 +36,26 @@ export const Banner = styled.img`
 
 `;
 
-export const Container = styled.div`
-  	position: relative;
-	width: 42rem;
-	max-width: 750px;
-	padding: 15px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #fff;
-	color: #282828;
-	z-index: 1;
-	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-	opacity: .8;
+export const Container = styled.div.attrs({
+	width: props => props.width ? props.width : "42rem"
+})`
+	${props=>containerCommon(props.width)};
 `;
 
+export const ScrollContainer = styled.div.attrs({
+	width: props => props.width ? props.width : "42rem"
+})`
+  	top: 5rem;
+	${props=>containerCommon(props.width)};
+`;
 
 export const Title = styled.div`
 	font-weight:bold;
-	font-size: 3rem;
+	font-size: 2rem;
+	font-style: italic;
 	margin-bottom: 10px;
 	text-align: center;
+	color: gray;
 `;
 
 export const Row = styled.div`
@@ -95,6 +108,7 @@ export const Btn = styled.span`
   cursor: pointer;
   margin-right: auto;
   margin-left: auto;
+  float: ${props=>props.float ? props.float : "inherit"};
   &:hover{
     color: #383838;
     box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
@@ -110,4 +124,17 @@ export const HR = styled.hr`
 	opacity: .15;
 	margin: 1em 0;
 	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+`;
+
+
+export const Background = styled.div`
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(${background});
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	background-attachment: fixed;
 `;

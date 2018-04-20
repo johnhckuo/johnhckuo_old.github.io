@@ -18,20 +18,18 @@ export default class Experience extends React.Component{
 
   render(){
     return (
-		<Global.Container>
+		<Global.ScrollContainer>
 			<Global.HomeBtn onClick = {this.historyBack}>
 				<FontAwesome.FaHome />
 			</Global.HomeBtn>
 			<Global.Title>
 				Hello
 			</Global.Title>
-
 			<Style.Timeline>
 				{
-
-					Experiences.map((experience)=>{
+					Experiences.map((experience, index)=>{
 						return (
-							<Style.Column>
+							<Style.Column key={index}>
 								<Style.Title>
 									<h2> <div>{experience.startDate} ─<br />{experience.endDate}</div> </h2>
 									<h1>{experience.title}</h1>
@@ -40,18 +38,18 @@ export default class Experience extends React.Component{
 								</Style.Title>
 								<Style.Description>
 									{
-										experience.description.map((content)=><p>{content}</p>)
+										experience.description.map((content, index)=><p key={index}>{content}</p>)
 									}
 								</Style.Description>
 							</Style.Column>
 						);
 					})
-
 				}
 			</Style.Timeline>
 
 
-    	</Global.Container>
+    	</Global.ScrollContainer>
+
     );
   }
 }

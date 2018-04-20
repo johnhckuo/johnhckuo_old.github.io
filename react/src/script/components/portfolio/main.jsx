@@ -17,7 +17,7 @@ export default class Portfolio extends React.Component{
 
   render(){
     return (
-      <Global.Container>
+      <Global.ScrollContainer>
         <Global.HomeBtn onClick = {this.historyBack}>
           <FontAwesome.FaHome />
         </Global.HomeBtn>
@@ -26,30 +26,30 @@ export default class Portfolio extends React.Component{
         </Global.Title>
         <Style.Portfolio>
           {
-            Portfolios.map((portfolio)=>{
+            Portfolios.map((portfolio, index)=>{
               return(
 
-                <Style.List>
-                <Style.Title>
-                  {FontAwesome[portfolio.icon]()}
-                  <a href={portfolio.link}>{portfolio.title}</a>
-                </Style.Title>
-                {
-                  portfolio.keywords.map((keyword)=><Style.Tag>{keyword}</Style.Tag>)
-                }
-                <Style.Description>
-                {
-                  portfolio.description.map((intro)=><li>{intro}</li>)
-                }
-                </Style.Description>
-                <Global.HR />
+                <Style.List key={index}>
+                  <Style.Title>
+                    {FontAwesome[portfolio.icon]()}
+                    <a href={portfolio.link}>{portfolio.title}</a>
+                  </Style.Title>
+                  {
+                    portfolio.keywords.map((keyword, index)=><Style.Tag key={index}>{keyword}</Style.Tag>)
+                  }
+                  <Style.Description>
+                  {
+                    portfolio.description.map((intro, index)=><li key={index}>{intro}</li>)
+                  }
+                  </Style.Description>
+                  <Global.HR />
                 </Style.List>
               );
             })
           }
 
         </Style.Portfolio>
-      </Global.Container>
+      </Global.ScrollContainer>
     );
   }
 }

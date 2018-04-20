@@ -15,7 +15,8 @@ export default class Main extends React.Component{
 
   render(){
     return (
-        <Style.Background>
+        <Style.RootContainer>
+          <Global.Background />
           <Switch>
             <Route exact path="/" component={Entry} ></Route>
             <Route exact path="/aboutme" component={Aboutme} ></Route>
@@ -24,7 +25,7 @@ export default class Main extends React.Component{
             <Route exact path="/contact" component={Contact} ></Route>
             <Route component={GenericNotFound} />
           </Switch>
-        </Style.Background>
+        </Style.RootContainer>
     );
   }
 }

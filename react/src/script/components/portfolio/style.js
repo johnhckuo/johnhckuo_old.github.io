@@ -1,25 +1,28 @@
 import styled from 'styled-components';
 export const Portfolio = styled.div`
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 `;
 
 
 export const List = styled.div`
-
-	padding: 10px 18px;
-	margin: 0 10px;
 	text-decoration: none;
 	background: #fff;
 	color: #282828;
 	font-size: .875rem;
-  line-height: 1.8571;
-	padding: 0 2rem;
-	float: left;
+  	line-height: 1.8571;
+	padding: 10px;
+	padding-bottom: 20px;
+	width: 380px;
 	& > div{
 		width: 80%;
 	}
 	svg{
 		width: 1.7rem;
 	}
+
 `;
 
 
@@ -28,18 +31,20 @@ export const Title = styled.div`
 	font-size: 1.7rem;
 	text-decoration: none;
 	font-weight: bolder;
-	transition: color .4s;
 
 	*{
 		margin-right: 20px;
+
 	}
 	a{
 		text-decoration: none;
 		color: #282828;
+		transition: color .4s;
+		&:hover{
+			color: gray;
+		}
 	}
-	&:hover{
-		color: #383838;
-	}
+
 `;
 
 export const Tag = styled.span`
@@ -62,5 +67,7 @@ export const Description = styled.ul`
 	list-style-type:circle;
 	margin-top:10px;
 	padding-left: 20px;
-
+	li{
+		width:100%;
+	}
 `;

@@ -1,7 +1,7 @@
 import React from "react"
 import * as Style from "./style"
-import * as Global from "../Global/style"
-import * as FontAwesome from 'react-icons/lib/fa'
+import * as Global from "../global/style"
+import {FaHome} from 'react-icons/lib/fa'
 import firebase from "firebase"
 
 export default class Contact extends React.Component{
@@ -19,7 +19,8 @@ export default class Contact extends React.Component{
 		this.state = {
 			email: true,
 			name: true,
-			message: true
+			message: true,
+			init: false
 		}
 	}
 
@@ -27,18 +28,31 @@ export default class Contact extends React.Component{
 		this.props.history.goBack();
 	}
 
-
-
 	componentDidMount(){
-		var config = {
-			apiKey: "AIzaSyA9QLI2RDzhBFAYb6LZq5bnsgYg28TNxeo",
-			authDomain: "resume-f25af.firebaseapp.com",
-			databaseURL: "https://resume-f25af.firebaseio.com",
-			projectId: "resume-f25af",
-			storageBucket: "resume-f25af.appspot.com",
-			messagingSenderId: "1046487558013"
-		};
-		firebase.initializeApp(config);
+		if (!firebase){
+			var config = {
+				apiKey: "AIzaSyA9QLI2RDzhBFAYb6LZq5bnsgYg28TNxeo",
+				authDomain: "resume-f25af.firebaseapp.com",
+				databaseURL: "https://resume-f25af.firebaseio.com",
+				projectId: "resume-f25af",
+				storageBucket: "resume-f25af.appspot.com",
+				messagingSenderId: "1046487558013"
+			};
+			firebase.initializeApp(config);
+		}
+
+
+		setTimeout(()=>{
+			this.setState({
+				init:true
+			})
+		}, 10)
+	}
+
+	componentWillUnmount(){
+		this.setState({
+			init:false
+		})
 	}
 
 	validateInput(type, input) {
@@ -77,12 +91,12 @@ export default class Contact extends React.Component{
 
 	render(){
 		return(
-			<Global.Container width="30rem">
+			<Global.Container width="40%" active={this.state.init}>
 
 				<Global.HomeBtn onClick = {this.historyBack}>
-		          <FontAwesome.FaHome />
+		          <FaHome />
 		        </Global.HomeBtn>
-		        <Global.Title>Get in touch with me!</Global.Title>
+		        <Global.Title><h2>Get in touch with me!</h2></Global.Title>
 		        <Global.HR />
 		        <Style.FormContainer>
 			        <Style.Form>

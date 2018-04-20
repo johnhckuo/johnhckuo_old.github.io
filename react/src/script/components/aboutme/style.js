@@ -1,18 +1,9 @@
 import styled from 'styled-components';
 
-export const HR = styled.hr`
-	border: 0;
-	height: 1px;
-	opacity: .15;
-	margin: 1em 0;
-	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-`;
-
 export const Intro = styled.div`
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 180px;
 
 `;
 
@@ -27,17 +18,24 @@ export const Characteristic = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
+	justify-content: center;
 	div{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 33%;
+		width: 170px;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	svg{
+		margin-bottom: 10px;
 	}
 
 `;
 
 export const Aboutme = styled.div`
 	text-align: left;
+	font-size: 1.5rem;
+	line-height: 1.5;
 `;

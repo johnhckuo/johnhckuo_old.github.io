@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import background from '../../../images/background.jpg'
 
-function containerCommon(width){
+
+function containerCommon(width, active){
 	return `
 		position: absolute;
-		width: ${width};
-		max-width: 750px;
-		padding: 15px;
+		width: ${width ? width : "50%"};
+		padding: 5%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -15,47 +15,64 @@ function containerCommon(width){
 		z-index: 1;
 		border-radius: 3px;
 		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-		opacity: .8;
 		z-index: 2;
+		transition: all 0.5s;
+		transition-timing-function: ease-out;
+		opacity:${active ? .9 : 0};
+		transform: translateY(${active ? "0px" : "10px"})
 	`;
 }
 
-export const Banner = styled.img`
-	position: absolute;
+export const Background = styled.div`
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(${background});
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	background-attachment: fixed;
+`;
+
+export const Banner = styled.div`
 	left: 0px;
 	top: 0px;
-	display: block;
-	max-width: 100%;
-	width: auto;
-	height: auto;
-	vertical-align: middle;
-	border: 0;
-	height: 150px;
-	width: 100%;
-
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	height: 200px;
+	img{		
+		width: 100%;
+		margin-top: -20%;
+	}
 
 `;
 
-export const Container = styled.div.attrs({
-	width: props => props.width ? props.width : "42rem"
-})`
-	${props=>containerCommon(props.width)};
+export const Container = styled.div`
+	${props=>containerCommon(props.width, props.active)};
 `;
 
-export const ScrollContainer = styled.div.attrs({
-	width: props => props.width ? props.width : "42rem"
-})`
-  	top: 5rem;
-	${props=>containerCommon(props.width)};
+export const ScrollContainer = styled.div`
+  	top: 15%;
+  	margin-bottom: 15%;
+	${props=>containerCommon(props.width, props.active)};
 `;
 
 export const Title = styled.div`
-	font-weight:bold;
-	font-size: 2rem;
-	font-style: italic;
-	margin-bottom: 10px;
+	margin-bottom: 5%;
 	text-align: center;
-	color: gray;
+
+	h2{
+		font-size: 2rem;
+		color: black;
+		font-weight:bold;
+	}
+	h3{
+		font-size: 1.5rem;
+		font-style: italic;
+		color: gray;
+	}
 `;
 
 export const Row = styled.div`
@@ -127,14 +144,3 @@ export const HR = styled.hr`
 `;
 
 
-export const Background = styled.div`
-	position: absolute;
-	top:0px;
-	left: 0px;
-	width: 100vw;
-	height: 100vh;
-	background-image: url(${background});
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-	background-attachment: fixed;
-`;

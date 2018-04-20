@@ -48,7 +48,7 @@ export const Title = styled.div`
 		div{
 			position: relative;
 			display: inline-block;
-			left: -20vh;
+			left: -160px;
 		}
 	}
 

@@ -9,7 +9,8 @@ export default class Routes extends React.Component{
 
   constructor(props){
     super(props);
-    this.state = {init: false};
+    this.backgroundBlur = this.backgroundBlur.bind(this);
+    this.state = {init: false, blur: false};
   }
 
   componentDidMount(){
@@ -24,16 +25,23 @@ export default class Routes extends React.Component{
     })
   }
 
+  backgroundBlur(blur){
+    this.setState({
+      blur
+    })
+  }
+
   render(){
     return (
         <Style.RootContainer>
+            <Global.Background blur={this.state.blur}/>
             <Switch>
-                <Route exact path="/" component={Index} ></Route>
-                <Route exact path="/aboutme" component={Aboutme} ></Route>
-                <Route exact path="/experience" component={Experience} ></Route>
-                <Route exact path="/portfolio" component={Portfolio} ></Route>
-                <Route exact path="/contact" component={Contact} ></Route>
-                <Route component={GenericNotFound} />
+                <Route exact path="/" render={props=> <Index {...props} blur={this.backgroundBlur} />}></Route>
+                <Route exact path="/aboutme" render={props=> <Aboutme {...props} blur={this.backgroundBlur} />}></Route>
+                <Route exact path="/experience" render={props=> <Experience {...props} blur={this.backgroundBlur} />}></Route>
+                <Route exact path="/portfolio" render={props=> <Portfolio {...props} blur={this.backgroundBlur} />}></Route>
+                <Route exact path="/contact" render={props=> <Contact {...props} blur={this.backgroundBlur} />}></Route>
+                <Route render={props=> <GenericNotFound {...props} blur={this.backgroundBlur} />}/>
             </Switch>
         </Style.RootContainer>
     );

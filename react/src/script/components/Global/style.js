@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 import background from '../../../images/background.jpg'
+import overlay from '../../../images/overlay.png'
 
+
+function blur(isBlur){
+	if (isBlur){
+		return `
+			-moz-transform: scale(1.0825);
+		    -webkit-transform: scale(1.0825);
+		    -ms-transform: scale(1.0825);
+		    transform: scale(1.0825);
+		    -moz-filter: blur(0.2rem);
+		    -webkit-filter: blur(0.2rem);
+		    -ms-filter: blur(0.2rem);
+		    filter: blur(0.2rem);
+		`;
+	}
+
+}
 
 function containerCommon(width, active){
 	return `
@@ -19,7 +36,7 @@ function containerCommon(width, active){
 		transition: all 0.5s;
 		transition-timing-function: ease-out;
 		opacity:${active ? .9 : 0};
-		transform: translateY(${active ? "0px" : "10px"})
+		transform: translateY(${active ? "0px" : "20px"})
 	`;
 }
 
@@ -33,6 +50,8 @@ export const Background = styled.div`
     background-repeat:no-repeat;
     background-size:100% 100%;
 	background-attachment: fixed;
+	${props=>blur(props.blur)};
+	transition: all .5s;
 `;
 
 export const Banner = styled.div`

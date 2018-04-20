@@ -20,7 +20,7 @@ export default class Experience extends React.Component{
 	componentDidMount(){
 		setTimeout(()=>{
 			this.setState({init : true})
-		}, 10)
+		}, 500)
 	}
 
 	componentWillUnmount(){

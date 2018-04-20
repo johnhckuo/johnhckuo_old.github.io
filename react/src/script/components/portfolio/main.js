@@ -19,7 +19,7 @@ export default class Portfolio extends React.Component{
   componentDidMount(){
     setTimeout(()=>{
       this.setState({init : true})
-    }, 10)
+    }, 500)
   }
 
   componentWillUnmount(){

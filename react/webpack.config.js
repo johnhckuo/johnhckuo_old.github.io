@@ -8,7 +8,7 @@ var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 module.exports = {
   context: path.join(__dirname, 'src', 'script'),
   entry: {
-    bundle: './index.jsx',
+    bundle: './index.js',
     vendor: ['react']
   },
   output: {

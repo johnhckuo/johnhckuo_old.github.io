@@ -20,7 +20,7 @@ export default class Aboutme extends React.Component{
 	componentDidMount(){
 		setTimeout(()=>{
 			this.setState({init : true})
-		}, 10)
+		}, 500)
 	}
 
 	componentWillUnmount(){
@@ -37,7 +37,7 @@ export default class Aboutme extends React.Component{
 					<img src={myself} />
 				</Global.Banner>
 				<Style.Intro>
-					<Global.HomeBtn onClick = {this.historyBack}>
+					<Global.HomeBtn onClick = {this.historyBack} >
 						<FaHome />
 					</Global.HomeBtn>
 					<Global.Title>

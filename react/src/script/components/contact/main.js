@@ -41,12 +41,11 @@ export default class Contact extends React.Component{
 			firebase.initializeApp(config);
 		}
 
-
 		setTimeout(()=>{
 			this.setState({
 				init:true
 			})
-		}, 10)
+		}, 500)
 	}
 
 	componentWillUnmount(){

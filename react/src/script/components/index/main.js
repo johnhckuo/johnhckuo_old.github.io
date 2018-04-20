@@ -11,60 +11,51 @@ export default class Index extends React.Component{
 
   constructor(props){
     super(props);
-    this.backgroundBlur = this.backgroundBlur.bind(this);
-    this.state = {init: false, blur: false};
+    this.state = {init: false};
   }
 
   componentDidMount(){
     setTimeout(()=>{
       this.setState({init : true})
-    }, 10)
+    }, 500)
+    this.props.blur(false);
   }
 
   componentWillUnmount(){
     this.setState({
       init:false
     })
+    this.props.blur(true);
   }
-
-  backgroundBlur(e){
-    this.setState({
-      blur: true
-    })
-  }
-
 
   render(){
     return(
-      <React.Fragment>
-        <Global.Background />
-        <Global.Container width="40%" active={this.state.init}>
-          <Style.Icon src={myself}/>
-          <Global.Row>
-            <h2>Hung-Chung Kuo</h2>
-          </Global.Row>
-          <Global.HR />
-          <Global.Row>
-            <h3>Programmer/Amateur Gamer</h3>
-          </Global.Row>
-          <Global.HR />
-          <Global.Row onClick={this.backgroundBlur}>
-            <Link to="/aboutme"><Global.Btn>About Me</Global.Btn></Link>
-            <Link to="/experience"><Global.Btn>Experience</Global.Btn></Link>
-            <Link to="/portfolio"><Global.Btn>Portfolio</Global.Btn></Link>
-            <Link to="/contact"><Global.Btn>Contact</Global.Btn></Link>
-          </Global.Row>
-          <Global.HR />
-          <Style.SocialIcon>
-            <a href="https://github.com/johnhckuo" target="_blank"><FontAwesome.FaGithubSquare /></a>
-            <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FontAwesome.FaLinkedinSquare /></a>
-            <a href="https://www.facebook.com/johnhckuo" target="_blank"><FontAwesome.FaFacebookSquare /></a>
-            <a href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FontAwesome.FaGooglePlusSquare /></a>
-            <a href="mailto:johnhckuo@gmail.com" target="_blank"><FontAwesome.FaEnvelopeSquare /></a>
-            <a href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FontAwesome.FaSteamSquare /></a>
-          </Style.SocialIcon>
-        </Global.Container>
-      </React.Fragment>
+      <Global.Container width="40%" active={this.state.init}>
+        <Style.Icon src={myself}/>
+        <Global.Row>
+          <h2>Hung-Chung Kuo</h2>
+        </Global.Row>
+        <Global.HR />
+        <Global.Row>
+          <h3>Programmer/Amateur Gamer</h3>
+        </Global.Row>
+        <Global.HR />
+        <Global.Row>
+          <Link to="/aboutme"><Global.Btn>About Me</Global.Btn></Link>
+          <Link to="/experience"><Global.Btn>Experience</Global.Btn></Link>
+          <Link to="/portfolio"><Global.Btn>Portfolio</Global.Btn></Link>
+          <Link to="/contact"><Global.Btn>Contact</Global.Btn></Link>
+        </Global.Row>
+        <Global.HR />
+        <Style.SocialIcon>
+          <a href="https://github.com/johnhckuo" target="_blank"><FontAwesome.FaGithubSquare /></a>
+          <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FontAwesome.FaLinkedinSquare /></a>
+          <a href="https://www.facebook.com/johnhckuo" target="_blank"><FontAwesome.FaFacebookSquare /></a>
+          <a href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FontAwesome.FaGooglePlusSquare /></a>
+          <a href="mailto:johnhckuo@gmail.com" target="_blank"><FontAwesome.FaEnvelopeSquare /></a>
+          <a href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FontAwesome.FaSteamSquare /></a>
+        </Style.SocialIcon>
+      </Global.Container>
 
     );
   }

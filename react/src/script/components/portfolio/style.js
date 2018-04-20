@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 export const Portfolio = styled.div`
-	flex-flow:row wrap;
 `;
 
 
@@ -14,7 +13,7 @@ export const List = styled.div`
 	font-size: .875rem;
   line-height: 1.8571;
 	padding: 0 2rem;
-
+	float: left;
 	& > div{
 		width: 80%;
 	}
@@ -46,14 +45,14 @@ export const Title = styled.div`
 export const Tag = styled.span`
 	display:inline-block;
 	padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  line-height: .8rem;
-  font-size: 85%;
-  background-color: rgba(255,255,255,0.075);
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	padding-right: 0.2rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	line-height: .8rem;
+	font-size: 85%;
+	background-color: rgba(255,255,255,0.075);
+	border-radius: 3px;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	letter-spacing: 0;
 	background: rgba(144,144,144,0.25);
 	margin-right:6px;

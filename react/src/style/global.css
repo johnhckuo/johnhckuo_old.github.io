@@ -1,6 +1,12 @@
 body{
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-font-smoothing: antialiased !important;
-  text-rendering: optimizelegibility !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	background-image: url("../images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	font-family: Fira Sans,sans-serif;
 }

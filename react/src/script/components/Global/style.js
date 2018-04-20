@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const CenteredHeader = styled.h4`
-  text-align: center;
-  margin-bottom: 1.25em;
+	text-align: center;
+	margin-bottom: 1.25em;
 `
 
 export const Banner = styled.img`
@@ -18,10 +18,11 @@ export const Banner = styled.img`
 	height: 150px;
 	width: 100%;
 
+
 `;
 
 export const Container = styled.div`
-  position: relative;
+  	position: relative;
 	width: 42rem;
 	max-width: 750px;
 	padding: 15px;
@@ -33,7 +34,7 @@ export const Container = styled.div`
 	z-index: 1;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-
+	opacity: .8;
 `;
 
 

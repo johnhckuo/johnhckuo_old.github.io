@@ -1,7 +1,7 @@
 import React from "react"
 import * as Style from "./style"
 import * as FontAwesome from 'react-icons/lib/fa';
-import myself from "../../../images/me.jpg"
+import myself from "../../../images/aboutme_cover.jpg"
 import * as Global from "../Global/style"
 
 export default class Aboutme extends React.Component{

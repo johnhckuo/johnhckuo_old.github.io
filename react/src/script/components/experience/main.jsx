@@ -2,7 +2,8 @@ import React from "react"
 
 import * as Style from "./style.js"
 import * as Global from "../Global/style"
-import * as FontAwesome from 'react-icons/lib/fa';
+import * as FontAwesome from 'react-icons/lib/fa'
+import Experiences from "./data"
 
 export default class Experience extends React.Component{
   constructor(props){
@@ -17,15 +18,40 @@ export default class Experience extends React.Component{
 
   render(){
     return (
-      <Global.Container>
-        <Global.HomeBtn onClick = {this.historyBack}>
-          <FontAwesome.FaHome />
-        </Global.HomeBtn>
-        <Global.Title>
-          Hello
-        </Global.Title>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Global.Container>
+		<Global.Container>
+			<Global.HomeBtn onClick = {this.historyBack}>
+				<FontAwesome.FaHome />
+			</Global.HomeBtn>
+			<Global.Title>
+				Hello
+			</Global.Title>
+
+			<Style.Timeline>
+				{
+
+					Experiences.map((experience)=>{
+						return (
+							<Style.Column>
+								<Style.Title>
+									<h2> <div>{experience.startDate} ─<br />{experience.endDate}</div> </h2>
+									<h1>{experience.title}</h1>
+									<h3>{experience.company}</h3>
+
+								</Style.Title>
+								<Style.Description>
+									{
+										experience.description.map((content)=><p>{content}</p>)
+									}
+								</Style.Description>
+							</Style.Column>
+						);
+					})
+
+				}
+			</Style.Timeline>
+
+
+    	</Global.Container>
     );
   }
 }

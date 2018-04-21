@@ -69,7 +69,6 @@ export default class Contact extends React.Component{
 		this.setState({
 			[e.target.name] : this.validateInput(e.target.name, e.target.value)
 		});
-		console.log(e.target.value, this.validateInput(e.target.name, e.target.value))
 	}
 
 	formSubmit(){

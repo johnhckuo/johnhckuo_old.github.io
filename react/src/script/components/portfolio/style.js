@@ -71,3 +71,41 @@ export const Description = styled.ul`
 		width:100%;
 	}
 `;
+
+export const Filter = styled.div`
+	position: relative;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const FilterInput = styled.input.attrs({
+	placeholder: 'Enter a hashtag'
+})`
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	width:400px;
+	z-index: 2;
+`;
+
+export const AutocompleteInput = styled.input.attrs({
+	disabled: "disabled"
+})`
+	position: absolute;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	width:400px;
+	background: transparent;
+	z-index: 1;
+	color: #AAAAAA;
+`;

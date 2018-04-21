@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9befed126825361a081b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "75d9d509d2d076ce6602"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -55102,17 +55102,16 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.HR = exports.Btn = exports.HomeBtn = exports.Row = exports.Title = exports.ScrollContainer = exports.Container = exports.Banner = exports.Background = undefined;
+	exports.HR = exports.Btn = exports.HomeBtn = exports.Title = exports.ScrollContainer = exports.Container = exports.Banner = exports.Background = undefined;
 
 	var _templateObject = _taggedTemplateLiteral(['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n'], ['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n'], ['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\t', ';\n'], ['\n\t', ';\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n'], ['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n']),
 	    _templateObject5 = _taggedTemplateLiteral(['\n\tmargin-bottom: 5%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n'], ['\n\tmargin-bottom: 5%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n']),
-	    _templateObject6 = _taggedTemplateLiteral(['\n  display: inline-block;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n'], ['\n  display: inline-block;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n']),
-	    _templateObject7 = _taggedTemplateLiteral(['\n\n  position: absolute;\n  left: 10px;\n  top: 10px;\n  color: #282828;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n  border-radius: 3px;\n  text-decoration: none;\n  background: #fff;\n  transition: color .4s;\n  cursor: pointer;\n  &:hover{\n    color: #383838;\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n  }\n'], ['\n\n  position: absolute;\n  left: 10px;\n  top: 10px;\n  color: #282828;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n  border-radius: 3px;\n  text-decoration: none;\n  background: #fff;\n  transition: color .4s;\n  cursor: pointer;\n  &:hover{\n    color: #383838;\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n  }\n']),
-	    _templateObject8 = _taggedTemplateLiteral(['\n  color: #282828;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n  border-radius: 3px;\n  text-decoration: none;\n  background: #fff;\n  transition: color .4s;\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  float: ', ';\n  &:hover{\n    color: #383838;\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\n  }\n'], ['\n  color: #282828;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n  border-radius: 3px;\n  text-decoration: none;\n  background: #fff;\n  transition: color .4s;\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  float: ', ';\n  &:hover{\n    color: #383838;\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\n  }\n']),
-	    _templateObject9 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n']);
+	    _templateObject6 = _taggedTemplateLiteral(['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n'], ['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n']),
+	    _templateObject7 = _taggedTemplateLiteral(['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n'], ['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n']),
+	    _templateObject8 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n']);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -55156,15 +55155,13 @@
 
 	var Title = exports.Title = _styledComponents2.default.div(_templateObject5);
 
-	var Row = exports.Row = _styledComponents2.default.div(_templateObject6);
+	var HomeBtn = exports.HomeBtn = _styledComponents2.default.span(_templateObject6);
 
-	var HomeBtn = exports.HomeBtn = _styledComponents2.default.span(_templateObject7);
-
-	var Btn = exports.Btn = _styledComponents2.default.span(_templateObject8, function (props) {
+	var Btn = exports.Btn = _styledComponents2.default.span(_templateObject7, function (props) {
 		return props.float ? props.float : "inherit";
 	});
 
-	var HR = exports.HR = _styledComponents2.default.hr(_templateObject9);
+	var HR = exports.HR = _styledComponents2.default.hr(_templateObject8);
 
 /***/ }),
 /* 711 */
@@ -55229,7 +55226,8 @@
 	    var _this = _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).call(this, props));
 
 	    _this.historyBack = _this.historyBack.bind(_this);
-	    _this.state = { init: false };
+	    _this.filter = _this.filter.bind(_this);
+	    _this.state = { init: false, hashtagSearch: "" };
 	    return _this;
 	  }
 
@@ -55255,8 +55253,17 @@
 	      });
 	    }
 	  }, {
+	    key: "filter",
+	    value: function filter(e) {
+	      this.setState({
+	        hashtagSearch: e.target.value + ""
+	      });
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
+	      var _this3 = this;
+
 	      return _react2.default.createElement(
 	        Global.ScrollContainer,
 	        { width: "65%", active: this.state.init },
@@ -55282,9 +55289,20 @@
 	          )
 	        ),
 	        _react2.default.createElement(
+	          Style.Filter,
+	          null,
+	          _react2.default.createElement(Style.FilterInput, { onChange: this.filter.bind(this), list: "hashtags" }),
+	          _react2.default.createElement(Style.AutocompleteInput, { value: this.state.hashtagSearch }),
+	          _react2.default.createElement(HashTagList, null)
+	        ),
+	        _react2.default.createElement(Global.HR, null),
+	        _react2.default.createElement(
 	          Style.Portfolio,
 	          null,
 	          _data2.default.map(function (portfolio, index) {
+	            if (_this3.state.hashtagSearch !== "" && portfolio.keywords.indexOf(_this3.state.hashtagSearch) === -1) {
+	              return null;
+	            }
 	            return _react2.default.createElement(
 	              Style.List,
 	              { key: index },
@@ -55328,6 +55346,23 @@
 
 	exports.default = Portfolio;
 
+
+	var HashTagList = function HashTagList(props) {
+	  var currentHashtags = {};
+	  return _react2.default.createElement(
+	    "datalist",
+	    { id: "hashtags" },
+	    _data2.default.map(function (portfolio) {
+	      return portfolio.keywords.map(function (keyword, index) {
+	        if (currentHashtags[keyword] == undefined) {
+	          currentHashtags[keyword] = true;
+	          return _react2.default.createElement("option", { key: index, label: keyword, value: keyword });
+	        }
+	      });
+	    })
+	  );
+	};
+
 /***/ }),
 /* 714 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -55337,13 +55372,16 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Description = exports.Tag = exports.Title = exports.List = exports.Portfolio = undefined;
+	exports.AutocompleteInput = exports.FilterInput = exports.Filter = exports.Description = exports.Tag = exports.Title = exports.List = exports.Portfolio = undefined;
 
 	var _templateObject = _taggedTemplateLiteral(['\n\tdisplay:flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\tflex-wrap: wrap;\n'], ['\n\tdisplay:flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\tflex-wrap: wrap;\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcolor: #282828;\n\tfont-size: .875rem;\n  \tline-height: 1.8571;\n\tpadding: 10px;\n\tpadding-bottom: 20px;\n\twidth: 380px;\n\t& > div{\n\t\twidth: 80%;\n\t}\n\tsvg{\n\t\twidth: 1.7rem;\n\t}\n\n'], ['\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcolor: #282828;\n\tfont-size: .875rem;\n  \tline-height: 1.8571;\n\tpadding: 10px;\n\tpadding-bottom: 20px;\n\twidth: 380px;\n\t& > div{\n\t\twidth: 80%;\n\t}\n\tsvg{\n\t\twidth: 1.7rem;\n\t}\n\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\tfont-size: 20px;\n\tfont-size: 1.7rem;\n\ttext-decoration: none;\n\tfont-weight: bolder;\n\n\t*{\n\t\tmargin-right: 20px;\n\n\t}\n\ta{\n\t\ttext-decoration: none;\n\t\tcolor: #282828;\n\t\ttransition: color .4s;\n\t\t&:hover{\n\t\t\tcolor: gray;\n\t\t}\n\t}\n\n'], ['\n\tfont-size: 20px;\n\tfont-size: 1.7rem;\n\ttext-decoration: none;\n\tfont-weight: bolder;\n\n\t*{\n\t\tmargin-right: 20px;\n\n\t}\n\ta{\n\t\ttext-decoration: none;\n\t\tcolor: #282828;\n\t\ttransition: color .4s;\n\t\t&:hover{\n\t\t\tcolor: gray;\n\t\t}\n\t}\n\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n\tdisplay:inline-block;\n\tpadding-left: 0.2rem;\n\tpadding-right: 0.2rem;\n\tpadding-top: 0.3rem;\n\tpadding-bottom: 0.3rem;\n\tline-height: .8rem;\n\tfont-size: 85%;\n\tbackground-color: rgba(255,255,255,0.075);\n\tborder-radius: 3px;\n\tfont-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;\n\tletter-spacing: 0;\n\tbackground: rgba(144,144,144,0.25);\n\tmargin-right:6px;\n'], ['\n\tdisplay:inline-block;\n\tpadding-left: 0.2rem;\n\tpadding-right: 0.2rem;\n\tpadding-top: 0.3rem;\n\tpadding-bottom: 0.3rem;\n\tline-height: .8rem;\n\tfont-size: 85%;\n\tbackground-color: rgba(255,255,255,0.075);\n\tborder-radius: 3px;\n\tfont-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;\n\tletter-spacing: 0;\n\tbackground: rgba(144,144,144,0.25);\n\tmargin-right:6px;\n']),
-	    _templateObject5 = _taggedTemplateLiteral(['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n'], ['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n']);
+	    _templateObject5 = _taggedTemplateLiteral(['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n'], ['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n']),
+	    _templateObject6 = _taggedTemplateLiteral(['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n'], ['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n']),
+	    _templateObject7 = _taggedTemplateLiteral(['\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\tbox-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\n\twidth:400px;\n\tz-index: 2;\n'], ['\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\tbox-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\n\twidth:400px;\n\tz-index: 2;\n']),
+	    _templateObject8 = _taggedTemplateLiteral(['\n\tposition: absolute;\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\twidth:400px;\n\tbackground: transparent;\n\tz-index: 1;\n\tcolor: #AAAAAA;\n'], ['\n\tposition: absolute;\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\twidth:400px;\n\tbackground: transparent;\n\tz-index: 1;\n\tcolor: #AAAAAA;\n']);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -55362,6 +55400,16 @@
 	var Tag = exports.Tag = _styledComponents2.default.span(_templateObject4);
 
 	var Description = exports.Description = _styledComponents2.default.ul(_templateObject5);
+
+	var Filter = exports.Filter = _styledComponents2.default.div(_templateObject6);
+
+	var FilterInput = exports.FilterInput = _styledComponents2.default.input.attrs({
+		placeholder: 'Enter a hashtag'
+	})(_templateObject7);
+
+	var AutocompleteInput = exports.AutocompleteInput = _styledComponents2.default.input.attrs({
+		disabled: "disabled"
+	})(_templateObject8);
 
 /***/ }),
 /* 715 */
@@ -55566,7 +55614,6 @@
 			value: function updateFormData(e) {
 				this.feedback[e.target.name] = e.target.value;
 				this.setState(_defineProperty({}, e.target.name, this.validateInput(e.target.name, e.target.value)));
-				console.log(e.target.value, this.validateInput(e.target.name, e.target.value));
 			}
 		}, {
 			key: "formSubmit",
@@ -81510,30 +81557,25 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        Global.Container,
-	        { width: "40%", active: this.state.init },
+	        { width: "35%", active: this.state.init },
 	        _react2.default.createElement(Style.Icon, { src: _me2.default }),
 	        _react2.default.createElement(
-	          Global.Row,
-	          null,
+	          Style.Row,
+	          { active: this.state.init },
+	          _react2.default.createElement(
+	            "h1",
+	            null,
+	            "Hung-Chung Kuo"
+	          ),
+	          _react2.default.createElement(Global.HR, null),
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "Hung-Chung Kuo"
+	            "Passionate Programmer / Amateur Gamer"
 	          )
 	        ),
-	        _react2.default.createElement(Global.HR, null),
 	        _react2.default.createElement(
-	          Global.Row,
-	          null,
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "Programmer/Amateur Gamer"
-	          )
-	        ),
-	        _react2.default.createElement(Global.HR, null),
-	        _react2.default.createElement(
-	          Global.Row,
+	          Style.Links,
 	          null,
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
@@ -81572,7 +81614,6 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(Global.HR, null),
 	        _react2.default.createElement(
 	          Style.SocialIcon,
 	          null,
@@ -81620,15 +81661,17 @@
 /* 740 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.SocialIcon = exports.Icon = undefined;
+	exports.Links = exports.Row = exports.SocialIcon = exports.Icon = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(['\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n\n'], ['\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n\n']),
-	    _templateObject2 = _taggedTemplateLiteral(['\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 10px;\n    margin-left: 10px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 50px;\n      height: 50px;\n    }\n  }\n'], ['\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 10px;\n    margin-left: 10px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 50px;\n      height: 50px;\n    }\n  }\n']);
+	var _templateObject = _taggedTemplateLiteral(["\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n  margin-bottom: 5%;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n"], ["\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n  margin-bottom: 5%;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n"]),
+	    _templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 30px;\n      height: 30px;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 30px;\n      height: 30px;\n    }\n  }\n"]),
+	    _templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #000;\n  border-bottom: 1px solid #000;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n\n  h1{\n    font-size: 2rem;\n    color: black;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    font-style: italic;\n    color: gray;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #000;\n  border-bottom: 1px solid #000;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n\n  h1{\n    font-size: 2rem;\n    color: black;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    font-style: italic;\n    color: gray;\n  }\n"]),
+	    _templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-top: 5%;\n  margin-bottom: 5%;\n  width: 80%;\n  text-align: center;\n\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-top: 5%;\n  margin-bottom: 5%;\n  width: 80%;\n  text-align: center;\n\n"]);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -81641,6 +81684,14 @@
 	var Icon = exports.Icon = _styledComponents2.default.img(_templateObject);
 
 	var SocialIcon = exports.SocialIcon = _styledComponents2.default.div(_templateObject2);
+
+	var Row = exports.Row = _styledComponents2.default.div(_templateObject3, function (props) {
+	  return props.active ? "3rem 2rem" : "0rem 0rem";
+	}, function (props) {
+	  return props.active ? "" : "0px";
+	});
+
+	var Links = exports.Links = _styledComponents2.default.div(_templateObject4);
 
 /***/ }),
 /* 741 */

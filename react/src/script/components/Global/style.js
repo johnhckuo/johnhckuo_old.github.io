@@ -94,63 +94,50 @@ export const Title = styled.div`
 	}
 `;
 
-export const Row = styled.div`
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-`;
-
 export const HomeBtn = styled.span`
 
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  color: #282828;
-  padding: 15px 18px;
-  font-size: 14px;
-  font-size: .875rem;
-  display: inline-block;
-  border: 1px solid;
-  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
-  border-radius: 3px;
-  text-decoration: none;
-  background: #fff;
-  transition: color .4s;
-  cursor: pointer;
-  &:hover{
-    color: #383838;
-    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	color: #282828;
+	padding: 15px 18px;
+	font-size: 14px;
+	font-size: .875rem;
+	display: inline-block;
+	border: 1px solid;
+	border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
+	border-radius: 3px;
+	text-decoration: none;
+	background: #fff;
+	transition: color .4s;
+	cursor: pointer;
+	&:hover{
+		color: #383838;
+		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
 
-  }
+	}
 `;
 
 export const Btn = styled.span`
-  color: #282828;
-  padding: 15px 18px;
-  font-size: 14px;
-  font-size: .875rem;
-  display: inline-block;
-  border: 1px solid;
-  border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
-  border-radius: 3px;
-  text-decoration: none;
-  background: #fff;
-  transition: color .4s;
-  cursor: pointer;
-  margin-right: auto;
-  margin-left: auto;
-  float: ${props=>props.float ? props.float : "inherit"};
-  &:hover{
-    color: #383838;
-    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-
-
-  }
+	color: #282828;
+	padding: 15px 18px;
+	font-size: 14px;
+	font-size: .875rem;
+	display: inline-block;
+	border: 1px solid;
+	border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
+	border-radius: 3px;
+	text-decoration: none;
+	background: #fff;
+	transition: color .4s;
+	cursor: pointer;
+	margin-right: auto;
+	margin-left: auto;
+	float: ${props=>props.float ? props.float : "inherit"};
+	&:hover{
+		color: #383838;
+		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+	}
 `;
 
 

@@ -9,7 +9,8 @@ export default class Portfolio extends React.Component{
   constructor(props){
     super(props);
     this.historyBack = this.historyBack.bind(this);
-    this.state = {init: false};
+    this.filter = this.filter.bind(this);
+    this.state = {init: false, hashtagSearch: ""};
   }
 
   historyBack(){
@@ -28,6 +29,11 @@ export default class Portfolio extends React.Component{
     })
   }
 
+  filter(e){
+    this.setState({
+      hashtagSearch: e.target.value + ""
+    });
+  }
 
   render(){
     return (
@@ -40,9 +46,19 @@ export default class Portfolio extends React.Component{
           <Global.HR />
           <h3>These are my after-school projects And I'm proud of them <FontAwesome.FaHeart /></h3>
         </Global.Title>
+        <Style.Filter>
+          <Style.FilterInput onChange={this.filter.bind(this)} list="hashtags"/>
+          <Style.AutocompleteInput value={this.state.hashtagSearch} />
+          <HashTagList />
+        </Style.Filter>
+        <Global.HR />
+
         <Style.Portfolio>
           {
             Portfolios.map((portfolio, index)=>{
+              if (this.state.hashtagSearch !== "" && portfolio.keywords.indexOf(this.state.hashtagSearch) === -1){
+                return null;
+              }
               return(
 
                 <Style.List key={index}>
@@ -67,4 +83,23 @@ export default class Portfolio extends React.Component{
       </Global.ScrollContainer>
     );
   }
+}
+
+
+const HashTagList = function(props){
+  var currentHashtags = {};
+  return(
+    <datalist id="hashtags">
+      {
+        Portfolios.map((portfolio)=>{
+          return portfolio.keywords.map((keyword, index)=>{
+            if (currentHashtags[keyword] == undefined){
+              currentHashtags[keyword] = true;
+              return <option key={index} label={keyword} value={keyword}></option>
+            }
+          })
+        })
+      }
+    </datalist>
+  );
 }

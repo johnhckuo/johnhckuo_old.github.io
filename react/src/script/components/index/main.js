@@ -45,7 +45,7 @@ export default class Index extends React.Component{
           <Link to="/portfolio"><Style.Link>Portfolio</Style.Link></Link>
           <Link to="/contact"><Style.Link lastLink={true}>Contact</Style.Link></Link>
         </Style.Links>
-        <Style.SocialIcon width={this.props.width > this.props.mobileWidth ? "40px" : "30%"}>
+        <Style.SocialIcon>
           <a href="https://github.com/johnhckuo" target="_blank"><FontAwesome.FaGithubSquare /></a>
           <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FontAwesome.FaLinkedinSquare /></a>
           <a href="https://www.facebook.com/johnhckuo" target="_blank"><FontAwesome.FaFacebookSquare /></a>

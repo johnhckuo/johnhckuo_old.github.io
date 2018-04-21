@@ -53,8 +53,8 @@ export const Background = styled.div`
 	position: fixed;
 	top:0px;
 	left: 0px;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url(${background});
     background-repeat:no-repeat;
     background-size:100% 100%;

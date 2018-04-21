@@ -41,7 +41,7 @@ export const SocialIcon = styled.div`
     margin-right: 5px;
     margin-left: 5px;
     transition: color .5s;
-    width: ${ props=> props.width};
+    width: 35px;
     &:hover{
       color: #ffffff;
     }
@@ -57,6 +57,7 @@ export const Intro = styled.div`
   margin-right: auto;
   margin-left: auto;
   width: 80%;
+  height: 200px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-align: center;
@@ -66,12 +67,21 @@ export const Intro = styled.div`
   box-sizing: border-box;
   max-height: 40rem;
   overflow: hidden;
+  *{
+    width: 100%;
+    left: 0px;
+    text-align: center;
+  }
   h1{
+    position: absolute;
     font-size: 2rem;
     color: #ffffff;
     font-weight:bold;
+    top: 30%;
   }
   h2{
+    position: absolute;
+    top: 60%;
     font-size: 1rem;
     color: #ffffff;
   }
@@ -130,7 +140,7 @@ export const Link = styled.span`
 
 export const IndexContainer = styled.div`
   position: absolute;
-  width: ${props=> props.width ? props.width : "50%"};
+  width: ${props=> props.width};
   padding: 5%;
   display: block;
   margin-left: auto;
@@ -148,10 +158,11 @@ export const IndexContainer = styled.div`
 
 
 export const HR = styled.hr`
+  position: relative;
+  top: 50px;
   border: 0;
   height: 1px;
   opacity: .35;
-  margin: 1em 0;
   width: 50%;
   margin-left: auto;
   margin-right: auto;

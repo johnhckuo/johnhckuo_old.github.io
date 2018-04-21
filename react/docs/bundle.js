@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f4f910248737ed0d1c41"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "631d2c39250e20cb2e74"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24151,7 +24151,7 @@
 	        _this2.setState({ init: true });
 	      }, 10);
 	      window.addEventListener('resize', this.updateWindowDimensions);
-	      this.updateWindowDimensions();
+	      window.addEventListener('load', this.updateWindowDimensions);
 	    }
 	  }, {
 	    key: "componentWillUnmount",
@@ -24160,6 +24160,7 @@
 	        init: false
 	      });
 	      window.removeEventListener('resize', this.updateWindowDimensions);
+	      window.removeEventListener('load', this.updateWindowDimensions);
 	    }
 	  }, {
 	    key: "backgroundBlur",
@@ -24171,10 +24172,10 @@
 	  }, {
 	    key: "updateWindowDimensions",
 	    value: function updateWindowDimensions() {
-	      var width = window.visualViewport.width;
-	      var height = window.visualViewport.height;
+	      var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	      var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	      this.setState({ width: width, height: height }, function () {
-	        alert(width + "width");
+	        alert(width);
 	      });
 	    }
 	  }, {

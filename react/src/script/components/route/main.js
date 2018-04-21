@@ -37,7 +37,9 @@ export default class Routes extends React.Component{
   }
 
   updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight }, ()=>{
+    var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var height= Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    this.setState({ width, height }, ()=>{
         alert(this.state.width)
 
   })

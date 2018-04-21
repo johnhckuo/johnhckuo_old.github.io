@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "731594cb106203446fca"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "64405f8a433407234377"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24173,7 +24173,9 @@
 	    value: function updateWindowDimensions() {
 	      var _this3 = this;
 
-	      this.setState({ width: window.innerWidth, height: window.innerHeight }, function () {
+	      var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	      var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	      this.setState({ width: width, height: height }, function () {
 	        alert(_this3.state.width);
 	      });
 	    }

@@ -20,7 +20,8 @@ export default class Routes extends React.Component{
       this.setState({init : true})
     }, 10)
     window.addEventListener('resize', this.updateWindowDimensions);
-    this.updateWindowDimensions();
+    window.addEventListener('load', this.updateWindowDimensions);
+
   }
 
   componentWillUnmount(){
@@ -28,6 +29,8 @@ export default class Routes extends React.Component{
       init:false
     })
     window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener('load', this.updateWindowDimensions);
+
   }
 
   backgroundBlur(blur){
@@ -37,11 +40,11 @@ export default class Routes extends React.Component{
   }
 
   updateWindowDimensions() {
-    var width = window.visualViewport.width;
+    var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var height= Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
     var height= window.visualViewport.height;
     this.setState({ width, height }, ()=>{
-        alert(width+"width")
-
+      alert(width)
   })
   }
 

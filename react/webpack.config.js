@@ -35,7 +35,17 @@ module.exports = {
       query: {
         name: 'static/media/[name].[hash:8].[ext]'
       }
-    }]
+    }],
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader'
+        ]
+      }
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.scss', '.less', '.css'],

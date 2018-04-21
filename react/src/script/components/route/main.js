@@ -20,7 +20,7 @@ export default class Routes extends React.Component{
       this.setState({init : true})
     }, 10)
     window.addEventListener('resize', this.updateWindowDimensions);
-
+    this.updateWindowDimensions();
   }
 
   componentWillUnmount(){

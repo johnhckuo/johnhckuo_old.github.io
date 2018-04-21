@@ -30,7 +30,7 @@ export default class Index extends React.Component{
 
   render(){
     return(
-      <Style.IndexContainer width={this.props.width > this.props.mobileWidth ? "50%" : "80%"} active={this.state.init} >
+      <Style.IndexContainer width={this.props.width} active={this.state.init} >
         <Style.Icon>
           <img src={myself} />
         </Style.Icon>
@@ -39,13 +39,13 @@ export default class Index extends React.Component{
           <Style.HR />
           <h2>Passionate Programmer / Amateur Gamer</h2>
         </Style.Intro>
-        <Style.Links width={this.props.width > this.props.mobileWidth ? "100%" : "60%"}>
+        <Style.Links width={this.props.width}>
           <Link to="/aboutme"><Style.Link firstLink={true}>About Me</Style.Link></Link>
           <Link to="/experience"><Style.Link>Experience</Style.Link></Link>
           <Link to="/portfolio"><Style.Link>Portfolio</Style.Link></Link>
           <Link to="/contact"><Style.Link lastLink={true}>Contact</Style.Link></Link>
         </Style.Links>
-        <Style.SocialIcon>
+        <Style.SocialIcon width={this.props.width}>
           <a href="https://github.com/johnhckuo" target="_blank"><FontAwesome.FaGithubSquare /></a>
           <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FontAwesome.FaLinkedinSquare /></a>
           <a href="https://www.facebook.com/johnhckuo" target="_blank"><FontAwesome.FaFacebookSquare /></a>

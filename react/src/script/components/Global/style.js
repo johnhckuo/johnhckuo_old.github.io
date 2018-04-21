@@ -161,3 +161,6 @@ export const HR = styled.hr`
 `;
 
 
+export const mobileWidth = 700;
+export const tabletWidth = 1024;
+export const laptopWidth = 1300;

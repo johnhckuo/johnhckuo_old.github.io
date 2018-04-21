@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {mobileWidth} from "../global/style"
 
 export const Icon = styled.div`
 
@@ -26,31 +27,6 @@ export const Icon = styled.div`
   }
 `;
 
-
-export const SocialIcon = styled.div`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  padding-left: 30%;
-  padding-right: 30%;
-  box-sizing: border-box;
-  a{
-    color: #AAAAAA;
-    margin-right: 5px;
-    margin-left: 5px;
-    transition: color .5s;
-    width: 35px;
-    &:hover{
-      color: #ffffff;
-    }
-    svg{
-      width: 100%;
-      height: 100%;
-    }
-  }
-`;
 
 export const Intro = styled.div`
   position: relative;
@@ -92,7 +68,7 @@ export const Links = styled.div`
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 5%;
-  width: ${props=>props.width};
+  width: ${props=>props.width > mobileWidth ? "100%" : "60%"};
   text-align: center;
   &:before{
     content: '';
@@ -140,14 +116,12 @@ export const Link = styled.span`
 
 export const IndexContainer = styled.div`
   position: absolute;
-  width: ${props=> props.width};
+  width: ${props=> props.width > mobileWidth ? "50%" : "100%"};
   padding: 5%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background: rgba(1, 1, 1, 0);
-  z-index: 1;
-  z-index: 2;
   transition: all 0.5s;
   transition-timing-function: ease-out;
   color: #ffffff;
@@ -167,4 +141,31 @@ export const HR = styled.hr`
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);
+`;
+
+
+
+export const SocialIcon = styled.div`
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  a{
+    color: #AAAAAA;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: color .5s;
+    width: ${ props=> props.width  > mobileWidth ? "35px" : "25%"};
+    &:hover{
+      color: #ffffff;
+    }
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;

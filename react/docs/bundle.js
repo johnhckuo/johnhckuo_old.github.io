@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "90c81b7dee1197adaf22"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3ea9d35710d4c4843a6d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24151,6 +24151,7 @@
 	        _this2.setState({ init: true });
 	      }, 10);
 	      window.addEventListener('resize', this.updateWindowDimensions);
+	      this.updateWindowDimensions();
 	    }
 	  }, {
 	    key: "componentWillUnmount",
@@ -55113,9 +55114,9 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.HR = exports.Btn = exports.HomeBtn = exports.Title = exports.ScrollContainer = exports.Container = exports.Banner = exports.Background = undefined;
+	exports.laptopWidth = exports.tabletWidth = exports.mobileWidth = exports.HR = exports.Btn = exports.HomeBtn = exports.Title = exports.ScrollContainer = exports.Container = exports.Banner = exports.Background = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n'], ['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n'], ['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n'], ['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\t', ';\n'], ['\n\t', ';\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n'], ['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n']),
@@ -55171,6 +55172,10 @@
 	});
 
 	var HR = exports.HR = _styledComponents2.default.hr(_templateObject8);
+
+	var mobileWidth = exports.mobileWidth = 700;
+	var tabletWidth = exports.tabletWidth = 1024;
+	var laptopWidth = exports.laptopWidth = 1300;
 
 /***/ }),
 /* 711 */
@@ -81559,7 +81564,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        Style.IndexContainer,
-	        { width: this.props.width > this.props.mobileWidth ? "50%" : "80%", active: this.state.init },
+	        { width: this.props.width, active: this.state.init },
 	        _react2.default.createElement(
 	          Style.Icon,
 	          null,
@@ -81582,7 +81587,7 @@
 	        ),
 	        _react2.default.createElement(
 	          Style.Links,
-	          { width: this.props.width > this.props.mobileWidth ? "100%" : "60%" },
+	          { width: this.props.width },
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
 	            { to: "/aboutme" },
@@ -81622,7 +81627,7 @@
 	        ),
 	        _react2.default.createElement(
 	          Style.SocialIcon,
-	          { width: this.props.width > this.props.mobileWidth ? "40px" : "30%" },
+	          { width: this.props.width },
 	          _react2.default.createElement(
 	            "a",
 	            { href: "https://github.com/johnhckuo", target: "_blank" },
@@ -81672,19 +81677,21 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.HR = exports.IndexContainer = exports.Link = exports.Links = exports.Intro = exports.SocialIcon = exports.Icon = undefined;
+	exports.SocialIcon = exports.HR = exports.IndexContainer = exports.Link = exports.Links = exports.Intro = exports.Icon = undefined;
 
 	var _templateObject = _taggedTemplateLiteral(["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"], ["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"]),
-	    _templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"]),
-	    _templateObject3 = _taggedTemplateLiteral(["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  h1{\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"], ["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  h1{\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"]),
-	    _templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"]),
-	    _templateObject5 = _taggedTemplateLiteral(["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"], ["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"]),
-	    _templateObject6 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  z-index: 1;\n  z-index: 2;\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"], ["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  z-index: 1;\n  z-index: 2;\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"]),
-	    _templateObject7 = _taggedTemplateLiteral(["\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  margin: 1em 0;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"], ["\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  margin: 1em 0;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"]);
+	    _templateObject2 = _taggedTemplateLiteral(["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 200px;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 30%;\n  }\n  h2{\n    position: absolute;\n    top: 60%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"], ["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 200px;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 30%;\n  }\n  h2{\n    position: absolute;\n    top: 60%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"]),
+	    _templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"]),
+	    _templateObject4 = _taggedTemplateLiteral(["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"], ["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"]),
+	    _templateObject5 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"], ["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"]),
+	    _templateObject6 = _taggedTemplateLiteral(["\n  position: relative;\n  top: 50px;\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"], ["\n  position: relative;\n  top: 50px;\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"]),
+	    _templateObject7 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  padding-left: 20%;\n  padding-right: 20%;\n  flex-wrap: wrap;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  padding-left: 20%;\n  padding-right: 20%;\n  flex-wrap: wrap;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"]);
 
 	var _styledComponents = __webpack_require__(70);
 
 	var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+	var _style = __webpack_require__(710);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -81692,21 +81699,17 @@
 
 	var Icon = exports.Icon = _styledComponents2.default.div(_templateObject);
 
-	var SocialIcon = exports.SocialIcon = _styledComponents2.default.div(_templateObject2, function (props) {
-	  return props.width;
-	});
-
-	var Intro = exports.Intro = _styledComponents2.default.div(_templateObject3, function (props) {
+	var Intro = exports.Intro = _styledComponents2.default.div(_templateObject2, function (props) {
 	  return props.active ? "3rem 2rem" : "0rem 0rem";
 	}, function (props) {
 	  return props.active ? "" : "0px";
 	});
 
-	var Links = exports.Links = _styledComponents2.default.div(_templateObject4, function (props) {
-	  return props.width;
+	var Links = exports.Links = _styledComponents2.default.div(_templateObject3, function (props) {
+	  return props.width > _style.mobileWidth ? "100%" : "60%";
 	});
 
-	var Link = exports.Link = _styledComponents2.default.span(_templateObject5, function (props) {
+	var Link = exports.Link = _styledComponents2.default.span(_templateObject4, function (props) {
 	  return props.float ? props.float : "inherit";
 	}, function (props) {
 	  return props.firstLink ? "3px" : "0px";
@@ -81718,11 +81721,15 @@
 	  return props.lastLink ? "3px" : "0px";
 	});
 
-	var IndexContainer = exports.IndexContainer = _styledComponents2.default.div(_templateObject6, function (props) {
-	  return props.width ? props.width : "50%";
+	var IndexContainer = exports.IndexContainer = _styledComponents2.default.div(_templateObject5, function (props) {
+	  return props.width > _style.mobileWidth ? "50%" : "100%";
 	});
 
-	var HR = exports.HR = _styledComponents2.default.hr(_templateObject7);
+	var HR = exports.HR = _styledComponents2.default.hr(_templateObject6);
+
+	var SocialIcon = exports.SocialIcon = _styledComponents2.default.div(_templateObject7, function (props) {
+	  return props.width > _style.mobileWidth ? "35px" : "25%";
+	});
 
 /***/ }),
 /* 740 */

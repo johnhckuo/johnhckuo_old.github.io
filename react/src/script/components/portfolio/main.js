@@ -51,7 +51,6 @@ export default class Portfolio extends React.Component{
           <Style.AutocompleteInput value={this.state.hashtagSearch} />
           <HashTagList />
         </Style.Filter>
-        <Global.HR />
 
         <Style.Portfolio>
           {

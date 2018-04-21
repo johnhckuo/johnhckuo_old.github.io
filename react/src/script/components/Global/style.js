@@ -1,19 +1,28 @@
 import styled from 'styled-components';
 import background from '../../../images/background.jpg'
-import overlay from '../../../images/overlay.png'
-
 
 function blur(isBlur){
 	if (isBlur){
 		return `
-			-moz-transform: scale(1.0825);
-		    -webkit-transform: scale(1.0825);
-		    -ms-transform: scale(1.0825);
-		    transform: scale(1.0825);
-		    -moz-filter: blur(0.2rem);
-		    -webkit-filter: blur(0.2rem);
-		    -ms-filter: blur(0.2rem);
-		    filter: blur(0.2rem);
+			-moz-transform: scale(1.1825);
+		    -webkit-transform: scale(1.1825);
+		    -ms-transform: scale(1.1825);
+		    transform: scale(1.1825);
+		    -moz-filter: blur(0.8rem) brightness(40%);
+		    -webkit-filter: blur(0.8rem) brightness(40%);
+		    -ms-filter: blur(0.8rem) brightness(40%);
+		    filter: blur(0.8rem) brightness(40%);
+		`;
+	}else{
+		return `
+			-moz-transform: scale(1.1);
+		    -webkit-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		    transform: scale(1.1);
+		    -moz-filter: brightness(40%);
+		    -webkit-filter: brightness(40%);
+		    -ms-filter: brightness(40%);
+		    filter: brightness(40%);
 		`;
 	}
 
@@ -36,7 +45,7 @@ function containerCommon(width, active){
 		transition: all 0.5s;
 		transition-timing-function: ease-out;
 		opacity:${active ? .9 : 0};
-		transform: translateY(${active ? "0px" : "20px"})
+		transform: translateY(${active ? "0px" : "10px"})
 	`;
 }
 
@@ -79,7 +88,7 @@ export const ScrollContainer = styled.div`
 `;
 
 export const Title = styled.div`
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 	text-align: center;
 
 	h2{
@@ -109,8 +118,8 @@ export const HomeBtn = styled.span`
 	border-radius: 3px;
 	text-decoration: none;
 	background: #fff;
-	transition: color .4s;
 	cursor: pointer;
+	transition: all .5s;
 	&:hover{
 		color: #383838;
 		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
@@ -129,10 +138,12 @@ export const Btn = styled.span`
 	border-radius: 3px;
 	text-decoration: none;
 	background: #fff;
-	transition: color .4s;
 	cursor: pointer;
 	margin-right: auto;
 	margin-left: auto;
+	width: 80px;
+	text-align: center;
+	transition: all .5s;
 	float: ${props=>props.float ? props.float : "inherit"};
 	&:hover{
 		color: #383838;
@@ -146,7 +157,7 @@ export const HR = styled.hr`
 	height: 1px;
 	opacity: .15;
 	margin: 1em 0;
-	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);
 `;
 
 

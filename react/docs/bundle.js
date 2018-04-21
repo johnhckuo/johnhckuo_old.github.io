@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "75d9d509d2d076ce6602"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "90c81b7dee1197adaf22"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -599,9 +599,9 @@
 
 	var _main2 = _interopRequireDefault(_main);
 
-	__webpack_require__(743);
+	__webpack_require__(742);
 
-	__webpack_require__(747);
+	__webpack_require__(746);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24109,7 +24109,7 @@
 
 	var _reactRouterDom = __webpack_require__(25);
 
-	var _style = __webpack_require__(742);
+	var _style = __webpack_require__(741);
 
 	var Style = _interopRequireWildcard(_style);
 
@@ -24136,7 +24136,9 @@
 	    var _this = _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).call(this, props));
 
 	    _this.backgroundBlur = _this.backgroundBlur.bind(_this);
-	    _this.state = { init: false, blur: false };
+	    _this.state = { init: false, blur: false, width: 0, height: 0 };
+	    _this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
+	    _this.mobileWidth = 700;
 	    return _this;
 	  }
 
@@ -24148,6 +24150,7 @@
 	      setTimeout(function () {
 	        _this2.setState({ init: true });
 	      }, 10);
+	      window.addEventListener('resize', this.updateWindowDimensions);
 	    }
 	  }, {
 	    key: "componentWillUnmount",
@@ -24155,6 +24158,7 @@
 	      this.setState({
 	        init: false
 	      });
+	      window.removeEventListener('resize', this.updateWindowDimensions);
 	    }
 	  }, {
 	    key: "backgroundBlur",
@@ -24162,6 +24166,11 @@
 	      this.setState({
 	        blur: blur
 	      });
+	    }
+	  }, {
+	    key: "updateWindowDimensions",
+	    value: function updateWindowDimensions() {
+	      this.setState({ width: window.innerWidth, height: window.innerHeight });
 	    }
 	  }, {
 	    key: "render",
@@ -24176,22 +24185,22 @@
 	          _reactRouterDom.Switch,
 	          null,
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", render: function render(props) {
-	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/aboutme", render: function render(props) {
-	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/experience", render: function render(props) {
-	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/portfolio", render: function render(props) {
-	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/contact", render: function render(props) {
-	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { render: function render(props) {
-	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this3.backgroundBlur }));
+	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
 	            } })
 	        )
 	      );
@@ -24227,19 +24236,19 @@
 
 	var _main2 = _interopRequireDefault(_main);
 
-	var _main3 = __webpack_require__(713);
+	var _main3 = __webpack_require__(712);
 
 	var _main4 = _interopRequireDefault(_main3);
 
-	var _main5 = __webpack_require__(716);
+	var _main5 = __webpack_require__(715);
 
 	var _main6 = _interopRequireDefault(_main5);
 
-	var _main7 = __webpack_require__(736);
+	var _main7 = __webpack_require__(735);
 
 	var _main8 = _interopRequireDefault(_main7);
 
-	var _main9 = __webpack_require__(739);
+	var _main9 = __webpack_require__(738);
 
 	var _main10 = _interopRequireDefault(_main9);
 
@@ -24332,7 +24341,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					Global.ScrollContainer,
-					{ active: this.state.init },
+					{ active: this.state.init, width: this.props.width > this.props.mobileWidth ? null : "70%" },
 					_react2.default.createElement(
 						Global.Banner,
 						null,
@@ -24374,7 +24383,7 @@
 								_react2.default.createElement(Global.HR, null),
 								_react2.default.createElement(
 									Style.Characteristic,
-									null,
+									{ width: this.props.width > this.props.mobileWidth ? "100%" : "50%" },
 									_react2.default.createElement(
 										"div",
 										null,
@@ -24417,9 +24426,9 @@
 	});
 	exports.Aboutme = exports.Characteristic = exports.IntroContent = exports.Intro = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(['\n\twidth: 80%;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\n'], ['\n\twidth: 80%;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n\twidth: 90%;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\n'], ['\n\twidth: 90%;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tmargin-top: 5vh;\n'], ['\n\tmargin-top: 5vh;\n']),
-	    _templateObject3 = _taggedTemplateLiteral(['\n\twidth: 100%;\n\theight: 20%;\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: center;\n\tdiv{\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t\twidth: 170px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: bold;\n\t}\n\tsvg{\n\t\tmargin-bottom: 10px;\n\t}\n\n'], ['\n\twidth: 100%;\n\theight: 20%;\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: center;\n\tdiv{\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t\twidth: 170px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: bold;\n\t}\n\tsvg{\n\t\tmargin-bottom: 10px;\n\t}\n\n']),
+	    _templateObject3 = _taggedTemplateLiteral(['\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: ', ';\n\theight: 20%;\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: center;\n\tdiv{\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t\twidth: 170px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: bold;\n\t}\n\tsvg{\n\t\tmargin-bottom: 10px;\n\t}\n\n'], ['\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: ', ';\n\theight: 20%;\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: center;\n\tdiv{\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t\twidth: 170px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: bold;\n\t}\n\tsvg{\n\t\tmargin-bottom: 10px;\n\t}\n\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n\ttext-align: left;\n\tfont-size: 1.5rem;\n\tline-height: 1.5;\n'], ['\n\ttext-align: left;\n\tfont-size: 1.5rem;\n\tline-height: 1.5;\n']);
 
 	var _styledComponents = __webpack_require__(70);
@@ -24434,7 +24443,9 @@
 
 	var IntroContent = exports.IntroContent = _styledComponents2.default.div(_templateObject2);
 
-	var Characteristic = exports.Characteristic = _styledComponents2.default.div(_templateObject3);
+	var Characteristic = exports.Characteristic = _styledComponents2.default.div(_templateObject3, function (props) {
+		return props.width;
+	});
 
 	var Aboutme = exports.Aboutme = _styledComponents2.default.div(_templateObject4);
 
@@ -55108,10 +55119,10 @@
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n'], ['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\t', ';\n'], ['\n\t', ';\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n'], ['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n']),
-	    _templateObject5 = _taggedTemplateLiteral(['\n\tmargin-bottom: 5%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n'], ['\n\tmargin-bottom: 5%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n']),
-	    _templateObject6 = _taggedTemplateLiteral(['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n'], ['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n']),
-	    _templateObject7 = _taggedTemplateLiteral(['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n'], ['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\ttransition: color .4s;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n']),
-	    _templateObject8 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);\n']);
+	    _templateObject5 = _taggedTemplateLiteral(['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n'], ['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n']),
+	    _templateObject6 = _taggedTemplateLiteral(['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n'], ['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n']),
+	    _templateObject7 = _taggedTemplateLiteral(['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n'], ['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n']),
+	    _templateObject8 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n']);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -55121,22 +55132,20 @@
 
 	var _background2 = _interopRequireDefault(_background);
 
-	var _overlay = __webpack_require__(712);
-
-	var _overlay2 = _interopRequireDefault(_overlay);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 	function blur(isBlur) {
 		if (isBlur) {
-			return '\n\t\t\t-moz-transform: scale(1.0825);\n\t\t    -webkit-transform: scale(1.0825);\n\t\t    -ms-transform: scale(1.0825);\n\t\t    transform: scale(1.0825);\n\t\t    -moz-filter: blur(0.2rem);\n\t\t    -webkit-filter: blur(0.2rem);\n\t\t    -ms-filter: blur(0.2rem);\n\t\t    filter: blur(0.2rem);\n\t\t';
+			return '\n\t\t\t-moz-transform: scale(1.1825);\n\t\t    -webkit-transform: scale(1.1825);\n\t\t    -ms-transform: scale(1.1825);\n\t\t    transform: scale(1.1825);\n\t\t    -moz-filter: blur(0.8rem) brightness(40%);\n\t\t    -webkit-filter: blur(0.8rem) brightness(40%);\n\t\t    -ms-filter: blur(0.8rem) brightness(40%);\n\t\t    filter: blur(0.8rem) brightness(40%);\n\t\t';
+		} else {
+			return '\n\t\t\t-moz-transform: scale(1.1);\n\t\t    -webkit-transform: scale(1.1);\n\t\t    -ms-transform: scale(1.1);\n\t\t    transform: scale(1.1);\n\t\t    -moz-filter: brightness(40%);\n\t\t    -webkit-filter: brightness(40%);\n\t\t    -ms-filter: brightness(40%);\n\t\t    filter: brightness(40%);\n\t\t';
 		}
 	}
 
 	function containerCommon(width, active) {
-		return '\n\t\tposition: absolute;\n\t\twidth: ' + (width ? width : "50%") + ';\n\t\tpadding: 5%;\n\t\tdisplay: block;\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\tbackground-color: #fff;\n\t\tcolor: #282828;\n\t\tz-index: 1;\n\t\tborder-radius: 3px;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t\tz-index: 2;\n\t\ttransition: all 0.5s;\n\t\ttransition-timing-function: ease-out;\n\t\topacity:' + (active ? .9 : 0) + ';\n\t\ttransform: translateY(' + (active ? "0px" : "20px") + ')\n\t';
+		return '\n\t\tposition: absolute;\n\t\twidth: ' + (width ? width : "50%") + ';\n\t\tpadding: 5%;\n\t\tdisplay: block;\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\tbackground-color: #fff;\n\t\tcolor: #282828;\n\t\tz-index: 1;\n\t\tborder-radius: 3px;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t\tz-index: 2;\n\t\ttransition: all 0.5s;\n\t\ttransition-timing-function: ease-out;\n\t\topacity:' + (active ? .9 : 0) + ';\n\t\ttransform: translateY(' + (active ? "0px" : "10px") + ')\n\t';
 	}
 
 	var Background = exports.Background = _styledComponents2.default.div(_templateObject, _background2.default, function (props) {
@@ -55171,12 +55180,6 @@
 
 /***/ }),
 /* 712 */
-/***/ (function(module, exports) {
-
-	module.exports = "data:image/png;base64,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yLICl59onN/WfzfM899nypd8ghOMds/3Yuq9vPedxdh2v/EA8iNcP4Bc7/3+v+3Tfn+71/v/tift97d7vf9ve9J+f7vX+/+2R+//y97v/9s+7fe3e9J+f7sn7fe3e73/L/sJ+v+2T/v97X6C/r/s9f6/7dN+f7sn7fe3e/T+v+3n6P97foL+v+z1/r/t9f6/7fX+v+wn6P+7Xu//256039/uSfv97Z6039/uSfv97d7v/9ve7/+rfoL+v+3Tfn+7J+33t3u9/2970n5/u0fv/8ve7//bPu33t3v8/r/r/f6/7PX+v+31/r/t0fv/ttf7/7LX+/+2J+33t3v0/r/t035/uyft97d70n5/uyft97d70n5/uyft97d7Juj/u17v/9s+7fe3e7//b/u039/uSfv97Z6039/uSfv97d7v/9s+7fe3+wn6/7LX+/+2T/v97Z6039/u9f6/7dH7/7ZP+/3tXu//256039/uSfv97Z6039/u9f6/7fX+v+1J+/3tnrTf3+71/r/sJ+j/2z7t97d7vf9ve9J+f7vX+/+2J+33t3u9/+/6Cfr/tift97d7vf9ve/T+v+3Tfn+71/v/tift97d7vf9ve73/b3vSfn+71/v/tkfv/8te7//bfoL+v+z1/r/s9f6/7fX+v+1J+/3tXu//217v/9sevf//Sd0dEwAAwDAIq3/VE8HBEBANsT39++t+9O+v+9G/v+5H//66n/7/257+/XU///93vf//257+/XU///+XPf37637076/70b+/7kf//rof/fvrfvTvr/vRv7/u9f9f9g/+f9vTv7/u9f/f9qN/f93r/7/tR//+utf/f9tP//9l7///tqd/f92P/v11P/r3173+/8v+wf9ve/r31/2D/1/2+v9ve/r31/3o31/30/9/2//4/z3/4P+Xvf7/217//22v//+yf/D/u17//20/+vfX/ejfX/ejf3/dj/79de///7b3/3/VP/j/bU///rof/fvrXv//bT/699f99P9f9v7/b3v699f9/P/f9f7/L3v9/7e9/v/bfvr/b3v9/5e9/v/bfvTvr/vp/7/t6d9f96N/f92P/v11P/r31/3o31/3o39/3e/B/+96/f+3Pf37697//21P//66H/37637076/70b+/7v3/3/b076/7B/+/7PX/3/b076/70b+/7vX/3/bT/3/b07+/7vX/3/ajf3/dj/79dT/699e9/v/bXv//bT/699f96N9f9/r/L/sH/7/t6d9f9/r/b/vRv7/u9f/f9qN/f93r/7/rH/z/th/9++te//9tP/3/tz39++te//9tP/r3173+/9te//9tP/r3173+/9t++v8ve/3/t/2D/1/2+v8ve/3/t73+/9t+9O+ve/3/t73+/9t++v9ve/r31/3o31/3o39/3Y/+/XU//f+3Pf37637+/+96//+3Pf37637+/y97+vfX/ejfX/ejf3/dj/79dT/699f96N9f96N/f93r/7/sH/z/tqd/f93r/7/tR//+utf/f9uP/v11r///tp/+/8ve//9tT//+uh/9++t+9O+ve/3/l/2D/9/29O+v+wf/v+z1/9/29O+v+9G/v+6n//+2//H/e/7B/y97/f+3vf7/217//2X/4P93vf7/237076/70b+/7kf//rof/fvr3v//be///6p/8P/bnv79dT/699e9/v/bfvTvr/vp/7/s/f/f9vTvr/v5/7/r/f9f9vr/b3v9/7f99P/f9vr/L3v9/7f96N9f99P/f9vTv7/uR//+uh/9++t+9O+v+9G/v+5H//6634P/3/X6/297+vfXvf//257+/XU/+vfX/ejfX/ejf3/d+/+/7enfX/cP/n/Z6/+/7enfX/ejf3/d6/+/7af//7anf3/d6/+/7Uf//rof/fvrfvTvr3v9/7e9/v/bfvTvr/vRv7/u9f9f9g/+f9vTv7/u9f/f9qN/f93r/7/tR//+utf/f9c/+P9tP/r31/1Vd8cEAAAwCIDsn3ohPJgByAD//7UP//+1b//+dc//f+3T/v3rnv//2vP/X/u0f/+65/+/9uH/P/b8/9f+wf+PPf//sef/v/b8/9c+7d+/7vn/rz3//7UP//+1b//+dZ/271/3af/+dZ/271/34f+/9u3fv+7j/3/r/f+vffv3r/v4/x/79u9f92n//nWf9u9f92n//nWf9u9f92n//nWf9u9f9/z/1/4AuzlkoYASx08AAAAASUVORK5CYII="
-
-/***/ }),
-/* 713 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55191,7 +55194,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(714);
+	var _style = __webpack_require__(713);
 
 	var Style = _interopRequireWildcard(_style);
 
@@ -55203,7 +55206,7 @@
 
 	var FontAwesome = _interopRequireWildcard(_fa);
 
-	var _data = __webpack_require__(715);
+	var _data = __webpack_require__(714);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -55295,7 +55298,6 @@
 	          _react2.default.createElement(Style.AutocompleteInput, { value: this.state.hashtagSearch }),
 	          _react2.default.createElement(HashTagList, null)
 	        ),
-	        _react2.default.createElement(Global.HR, null),
 	        _react2.default.createElement(
 	          Style.Portfolio,
 	          null,
@@ -55364,7 +55366,7 @@
 	};
 
 /***/ }),
-/* 714 */
+/* 713 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55379,7 +55381,7 @@
 	    _templateObject3 = _taggedTemplateLiteral(['\n\tfont-size: 20px;\n\tfont-size: 1.7rem;\n\ttext-decoration: none;\n\tfont-weight: bolder;\n\n\t*{\n\t\tmargin-right: 20px;\n\n\t}\n\ta{\n\t\ttext-decoration: none;\n\t\tcolor: #282828;\n\t\ttransition: color .4s;\n\t\t&:hover{\n\t\t\tcolor: gray;\n\t\t}\n\t}\n\n'], ['\n\tfont-size: 20px;\n\tfont-size: 1.7rem;\n\ttext-decoration: none;\n\tfont-weight: bolder;\n\n\t*{\n\t\tmargin-right: 20px;\n\n\t}\n\ta{\n\t\ttext-decoration: none;\n\t\tcolor: #282828;\n\t\ttransition: color .4s;\n\t\t&:hover{\n\t\t\tcolor: gray;\n\t\t}\n\t}\n\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n\tdisplay:inline-block;\n\tpadding-left: 0.2rem;\n\tpadding-right: 0.2rem;\n\tpadding-top: 0.3rem;\n\tpadding-bottom: 0.3rem;\n\tline-height: .8rem;\n\tfont-size: 85%;\n\tbackground-color: rgba(255,255,255,0.075);\n\tborder-radius: 3px;\n\tfont-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;\n\tletter-spacing: 0;\n\tbackground: rgba(144,144,144,0.25);\n\tmargin-right:6px;\n'], ['\n\tdisplay:inline-block;\n\tpadding-left: 0.2rem;\n\tpadding-right: 0.2rem;\n\tpadding-top: 0.3rem;\n\tpadding-bottom: 0.3rem;\n\tline-height: .8rem;\n\tfont-size: 85%;\n\tbackground-color: rgba(255,255,255,0.075);\n\tborder-radius: 3px;\n\tfont-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;\n\tletter-spacing: 0;\n\tbackground: rgba(144,144,144,0.25);\n\tmargin-right:6px;\n']),
 	    _templateObject5 = _taggedTemplateLiteral(['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n'], ['\n\tlist-style-type:circle;\n\tmargin-top:10px;\n\tpadding-left: 20px;\n\tli{\n\t\twidth:100%;\n\t}\n']),
-	    _templateObject6 = _taggedTemplateLiteral(['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n'], ['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n']),
+	    _templateObject6 = _taggedTemplateLiteral(['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n\tmargin-bottom: 20px;\n'], ['\n\tposition: relative;\n\twidth: 100%;\n\tdisplay:flex;\n\tjustify-content: center;\n\talign-items: center;\n\tmargin-bottom: 20px;\n']),
 	    _templateObject7 = _taggedTemplateLiteral(['\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\tbox-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\n\twidth:400px;\n\tz-index: 2;\n'], ['\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\tbox-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\n\twidth:400px;\n\tz-index: 2;\n']),
 	    _templateObject8 = _taggedTemplateLiteral(['\n\tposition: absolute;\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\twidth:400px;\n\tbackground: transparent;\n\tz-index: 1;\n\tcolor: #AAAAAA;\n'], ['\n\tposition: absolute;\n\tborder: 1px solid transparent;\n\tborder-radius: 2px 0 0 2px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\theight: 32px;\n\toutline: none;\n\twidth:400px;\n\tbackground: transparent;\n\tz-index: 1;\n\tcolor: #AAAAAA;\n']);
 
@@ -55412,7 +55414,7 @@
 	})(_templateObject8);
 
 /***/ }),
-/* 715 */
+/* 714 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -55497,7 +55499,7 @@
 	exports.default = Portfolios;
 
 /***/ }),
-/* 716 */
+/* 715 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55512,7 +55514,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(717);
+	var _style = __webpack_require__(716);
 
 	var Style = _interopRequireWildcard(_style);
 
@@ -55522,7 +55524,7 @@
 
 	var _fa = __webpack_require__(79);
 
-	var _firebase = __webpack_require__(718);
+	var _firebase = __webpack_require__(717);
 
 	var _firebase2 = _interopRequireDefault(_firebase);
 
@@ -55752,7 +55754,7 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 717 */
+/* 716 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55794,6 +55796,35 @@
 	var Warn = exports.Warn = _styledComponents2.default.i(_templateObject6);
 
 /***/ }),
+/* 717 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2017 Google Inc.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 *   http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 */
+
+	var firebase = __webpack_require__(718);
+	__webpack_require__(726);
+	__webpack_require__(728);
+	__webpack_require__(731);
+	__webpack_require__(733);
+
+	module.exports = firebase;
+
+
+/***/ }),
 /* 718 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -55813,46 +55844,17 @@
 	 * limitations under the License.
 	 */
 
-	var firebase = __webpack_require__(719);
-	__webpack_require__(727);
-	__webpack_require__(729);
-	__webpack_require__(732);
-	__webpack_require__(734);
-
-	module.exports = firebase;
+	__webpack_require__(719);
+	module.exports = __webpack_require__(723).default;
 
 
 /***/ }),
 /* 719 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/**
-	 * Copyright 2017 Google Inc.
-	 *
-	 * Licensed under the Apache License, Version 2.0 (the "License");
-	 * you may not use this file except in compliance with the License.
-	 * You may obtain a copy of the License at
-	 *
-	 *   http://www.apache.org/licenses/LICENSE-2.0
-	 *
-	 * Unless required by applicable law or agreed to in writing, software
-	 * distributed under the License is distributed on an "AS IS" BASIS,
-	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	 * See the License for the specific language governing permissions and
-	 * limitations under the License.
-	 */
-
-	__webpack_require__(720);
-	module.exports = __webpack_require__(724).default;
-
-
-/***/ }),
-/* 720 */
-/***/ (function(module, exports, __webpack_require__) {
-
 	/* WEBPACK VAR INJECTION */(function(setImmediate, global) {'use strict';
 
-	__webpack_require__(723);
+	__webpack_require__(722);
 
 	// Store setTimeout reference so promise-polyfill will be unaffected by
 	// other code modifying setTimeout (like sinon.useFakeTimers())
@@ -56554,10 +56556,10 @@
 	 * limitations under the License.
 	 */
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(721).setImmediate, (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(720).setImmediate, (function() { return this; }())))
 
 /***/ }),
-/* 721 */
+/* 720 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -56613,7 +56615,7 @@
 	};
 
 	// setimmediate attaches itself to the global object
-	__webpack_require__(722);
+	__webpack_require__(721);
 	// On some exotic environments, it's not clear which object `setimmediate` was
 	// able to install onto.  Search each possibility in the same order as the
 	// `setimmediate` library.
@@ -56627,7 +56629,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 722 */
+/* 721 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -56820,7 +56822,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(2)))
 
 /***/ }),
-/* 723 */
+/* 722 */
 /***/ (function(module, exports) {
 
 	(function(self) {
@@ -57292,14 +57294,14 @@
 
 
 /***/ }),
-/* 724 */
+/* 723 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-	var util = __webpack_require__(725);
+	var util = __webpack_require__(724);
 
 	/**
 	 * Copyright 2017 Google Inc.
@@ -57696,14 +57698,14 @@
 
 
 /***/ }),
-/* 725 */
+/* 724 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-	var tslib_1 = __webpack_require__(726);
+	var tslib_1 = __webpack_require__(725);
 
 	/**
 	 * Copyright 2017 Google Inc.
@@ -59476,7 +59478,7 @@
 
 
 /***/ }),
-/* 726 */
+/* 725 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*! *****************************************************************************
@@ -59724,7 +59726,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 727 */
+/* 726 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -59743,15 +59745,15 @@
 	 * limitations under the License.
 	 */
 
-	__webpack_require__(728);
+	__webpack_require__(727);
 
 
 /***/ }),
-/* 728 */
+/* 727 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {(function() {
-	  var firebase = __webpack_require__(724).default;
+	  var firebase = __webpack_require__(723).default;
 	  var g,aa=aa||{},k=this;function l(a){return"string"==typeof a}function ba(a){return"boolean"==typeof a}function ca(){}
 	function da(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";
 	else if("function"==b&&"undefined"==typeof a.call)return"object";return b}function ea(a){return null===a}function fa(a){return"array"==da(a)}function ha(a){var b=da(a);return"array"==b||"object"==b&&"number"==typeof a.length}function n(a){return"function"==da(a)}function q(a){var b=typeof a;return"object"==b&&null!=a||"function"==b}var ia="closure_uid_"+(1E9*Math.random()>>>0),ja=0;function ka(a,b,c){return a.call.apply(a.bind,arguments)}
@@ -60056,7 +60058,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 729 */
+/* 728 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -60075,11 +60077,11 @@
 	 * limitations under the License.
 	 */
 
-	module.exports = __webpack_require__(730);
+	module.exports = __webpack_require__(729);
 
 
 /***/ }),
-/* 730 */
+/* 729 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -60088,10 +60090,10 @@
 
 	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-	var util = __webpack_require__(725);
-	var logger = __webpack_require__(731);
-	var tslib_1 = __webpack_require__(726);
-	var firebase = _interopDefault(__webpack_require__(724));
+	var util = __webpack_require__(724);
+	var logger = __webpack_require__(730);
+	var tslib_1 = __webpack_require__(725);
+	var firebase = _interopDefault(__webpack_require__(723));
 
 	/**
 	 * Copyright 2017 Google Inc.
@@ -75438,7 +75440,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 731 */
+/* 730 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -75630,7 +75632,7 @@
 
 
 /***/ }),
-/* 732 */
+/* 731 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -75649,11 +75651,11 @@
 	 * limitations under the License.
 	 */
 
-	__webpack_require__(733);
+	__webpack_require__(732);
 
 
 /***/ }),
-/* 733 */
+/* 732 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -75662,9 +75664,9 @@
 
 	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-	var util = __webpack_require__(725);
-	var tslib_1 = __webpack_require__(726);
-	var firebase = _interopDefault(__webpack_require__(724));
+	var util = __webpack_require__(724);
+	var tslib_1 = __webpack_require__(725);
+	var firebase = _interopDefault(__webpack_require__(723));
 
 	/**
 	 * Copyright 2018 Google Inc.
@@ -77744,7 +77746,7 @@
 
 
 /***/ }),
-/* 734 */
+/* 733 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -77763,11 +77765,11 @@
 	 * limitations under the License.
 	 */
 
-	__webpack_require__(735);
+	__webpack_require__(734);
 
 
 /***/ }),
-/* 735 */
+/* 734 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -77776,7 +77778,7 @@
 
 	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-	var firebase = _interopDefault(__webpack_require__(724));
+	var firebase = _interopDefault(__webpack_require__(723));
 
 	/**
 	 * Copyright 2017 Google Inc.
@@ -81227,7 +81229,7 @@
 
 
 /***/ }),
-/* 736 */
+/* 735 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81242,7 +81244,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _style = __webpack_require__(737);
+	var _style = __webpack_require__(736);
 
 	var Style = _interopRequireWildcard(_style);
 
@@ -81254,7 +81256,7 @@
 
 	var FontAwesome = _interopRequireWildcard(_fa);
 
-	var _data = __webpack_require__(738);
+	var _data = __webpack_require__(737);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -81390,7 +81392,7 @@
 	exports.default = Experience;
 
 /***/ }),
-/* 737 */
+/* 736 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -81422,7 +81424,7 @@
 	var Description = exports.Description = _styledComponents2.default.div(_templateObject4);
 
 /***/ }),
-/* 738 */
+/* 737 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -81477,7 +81479,7 @@
 	exports.default = Experiences;
 
 /***/ }),
-/* 739 */
+/* 738 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81496,7 +81498,7 @@
 
 	var _reactRouterDom = __webpack_require__(25);
 
-	var _style = __webpack_require__(740);
+	var _style = __webpack_require__(739);
 
 	var Style = _interopRequireWildcard(_style);
 
@@ -81504,7 +81506,7 @@
 
 	var FontAwesome = _interopRequireWildcard(_fa);
 
-	var _me = __webpack_require__(741);
+	var _me = __webpack_require__(740);
 
 	var _me2 = _interopRequireDefault(_me);
 
@@ -81556,18 +81558,22 @@
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        Global.Container,
-	        { width: "35%", active: this.state.init },
-	        _react2.default.createElement(Style.Icon, { src: _me2.default }),
+	        Style.IndexContainer,
+	        { width: this.props.width > this.props.mobileWidth ? "50%" : "80%", active: this.state.init },
 	        _react2.default.createElement(
-	          Style.Row,
+	          Style.Icon,
+	          null,
+	          _react2.default.createElement("img", { src: _me2.default })
+	        ),
+	        _react2.default.createElement(
+	          Style.Intro,
 	          { active: this.state.init },
 	          _react2.default.createElement(
 	            "h1",
 	            null,
 	            "Hung-Chung Kuo"
 	          ),
-	          _react2.default.createElement(Global.HR, null),
+	          _react2.default.createElement(Style.HR, null),
 	          _react2.default.createElement(
 	            "h2",
 	            null,
@@ -81576,13 +81582,13 @@
 	        ),
 	        _react2.default.createElement(
 	          Style.Links,
-	          null,
+	          { width: this.props.width > this.props.mobileWidth ? "100%" : "60%" },
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
 	            { to: "/aboutme" },
 	            _react2.default.createElement(
-	              Global.Btn,
-	              null,
+	              Style.Link,
+	              { firstLink: true },
 	              "About Me"
 	            )
 	          ),
@@ -81590,7 +81596,7 @@
 	            _reactRouterDom.Link,
 	            { to: "/experience" },
 	            _react2.default.createElement(
-	              Global.Btn,
+	              Style.Link,
 	              null,
 	              "Experience"
 	            )
@@ -81599,7 +81605,7 @@
 	            _reactRouterDom.Link,
 	            { to: "/portfolio" },
 	            _react2.default.createElement(
-	              Global.Btn,
+	              Style.Link,
 	              null,
 	              "Portfolio"
 	            )
@@ -81608,15 +81614,15 @@
 	            _reactRouterDom.Link,
 	            { to: "/contact" },
 	            _react2.default.createElement(
-	              Global.Btn,
-	              null,
+	              Style.Link,
+	              { lastLink: true },
 	              "Contact"
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          Style.SocialIcon,
-	          null,
+	          { width: this.props.width > this.props.mobileWidth ? "40px" : "30%" },
 	          _react2.default.createElement(
 	            "a",
 	            { href: "https://github.com/johnhckuo", target: "_blank" },
@@ -81658,7 +81664,7 @@
 	exports.default = Index;
 
 /***/ }),
-/* 740 */
+/* 739 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81666,12 +81672,15 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Links = exports.Row = exports.SocialIcon = exports.Icon = undefined;
+	exports.HR = exports.IndexContainer = exports.Link = exports.Links = exports.Intro = exports.SocialIcon = exports.Icon = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(["\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n  margin-bottom: 5%;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n"], ["\n\tdisplay: block;\n\tmax-width: 100%;\n\twidth: auto;\n\theight: auto;\n\tvertical-align: middle;\n\tmargin-left: auto;\n\tmargin-right: auto;\n  margin-bottom: 5%;\n\tborder: 0;\n\tborder-radius: 50%;\n\tborder: 3px solid #fff;\n\theight: 150px;\n\twidth: 150px;\n  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n"]),
-	    _templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 30px;\n      height: 30px;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  a{\n    color: #333333;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    &:hover{\n      color: gray;\n    }\n    svg{\n      width: 30px;\n      height: 30px;\n    }\n  }\n"]),
-	    _templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #000;\n  border-bottom: 1px solid #000;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n\n  h1{\n    font-size: 2rem;\n    color: black;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    font-style: italic;\n    color: gray;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #000;\n  border-bottom: 1px solid #000;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n\n  h1{\n    font-size: 2rem;\n    color: black;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    font-style: italic;\n    color: gray;\n  }\n"]),
-	    _templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-top: 5%;\n  margin-bottom: 5%;\n  width: 80%;\n  text-align: center;\n\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-top: 5%;\n  margin-bottom: 5%;\n  width: 80%;\n  text-align: center;\n\n"]);
+	var _templateObject = _taggedTemplateLiteral(["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"], ["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"]),
+	    _templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  flex-wrap: wrap;\n  padding-left: 30%;\n  padding-right: 30%;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"]),
+	    _templateObject3 = _taggedTemplateLiteral(["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  h1{\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"], ["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  h1{\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n  }\n  h2{\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"]),
+	    _templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"]),
+	    _templateObject5 = _taggedTemplateLiteral(["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"], ["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"]),
+	    _templateObject6 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  z-index: 1;\n  z-index: 2;\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"], ["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  z-index: 1;\n  z-index: 2;\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"]),
+	    _templateObject7 = _taggedTemplateLiteral(["\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  margin: 1em 0;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"], ["\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  margin: 1em 0;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"]);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -81681,26 +81690,48 @@
 
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-	var Icon = exports.Icon = _styledComponents2.default.img(_templateObject);
+	var Icon = exports.Icon = _styledComponents2.default.div(_templateObject);
 
-	var SocialIcon = exports.SocialIcon = _styledComponents2.default.div(_templateObject2);
+	var SocialIcon = exports.SocialIcon = _styledComponents2.default.div(_templateObject2, function (props) {
+	  return props.width;
+	});
 
-	var Row = exports.Row = _styledComponents2.default.div(_templateObject3, function (props) {
+	var Intro = exports.Intro = _styledComponents2.default.div(_templateObject3, function (props) {
 	  return props.active ? "3rem 2rem" : "0rem 0rem";
 	}, function (props) {
 	  return props.active ? "" : "0px";
 	});
 
-	var Links = exports.Links = _styledComponents2.default.div(_templateObject4);
+	var Links = exports.Links = _styledComponents2.default.div(_templateObject4, function (props) {
+	  return props.width;
+	});
+
+	var Link = exports.Link = _styledComponents2.default.span(_templateObject5, function (props) {
+	  return props.float ? props.float : "inherit";
+	}, function (props) {
+	  return props.firstLink ? "3px" : "0px";
+	}, function (props) {
+	  return props.firstLink ? "3px" : "0px";
+	}, function (props) {
+	  return props.lastLink ? "3px" : "0px";
+	}, function (props) {
+	  return props.lastLink ? "3px" : "0px";
+	});
+
+	var IndexContainer = exports.IndexContainer = _styledComponents2.default.div(_templateObject6, function (props) {
+	  return props.width ? props.width : "50%";
+	});
+
+	var HR = exports.HR = _styledComponents2.default.hr(_templateObject7);
 
 /***/ }),
-/* 741 */
+/* 740 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "849d049c81fc255beb3664a91e79aae1.jpg";
 
 /***/ }),
-/* 742 */
+/* 741 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -81723,16 +81754,16 @@
 	var RootContainer = exports.RootContainer = _styledComponents2.default.div(_templateObject);
 
 /***/ }),
-/* 743 */
+/* 742 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 743 */,
 /* 744 */,
 /* 745 */,
-/* 746 */,
-/* 747 */
+/* 746 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

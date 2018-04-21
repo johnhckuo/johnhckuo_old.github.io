@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 
-export const Icon = styled.img`
-	display: block;
-	max-width: 100%;
-	width: auto;
-	height: auto;
-	vertical-align: middle;
-	margin-left: auto;
-	margin-right: auto;
-  margin-bottom: 5%;
-	border: 0;
-	border-radius: 50%;
-	border: 3px solid #fff;
-	height: 150px;
-	width: 150px;
-  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+export const Icon = styled.div`
+
+  img{
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    height: 150px;
+    width: 150px;
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: calc(50% - 1px);
+    width: 1px;
+    height: calc(3.5rem + 1px);
+    background: #ffffff;
+  }
 `;
 
 
@@ -23,27 +32,33 @@ export const SocialIcon = styled.div`
   text-align: center;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
+  padding-left: 30%;
+  padding-right: 30%;
+  box-sizing: border-box;
   a{
-    color: #333333;
+    color: #AAAAAA;
     margin-right: 5px;
     margin-left: 5px;
     transition: color .5s;
+    width: ${ props=> props.width};
     &:hover{
-      color: gray;
+      color: #ffffff;
     }
     svg{
-      width: 30px;
-      height: 30px;
+      width: 100%;
+      height: 100%;
     }
   }
 `;
 
-export const Row = styled.div`
+export const Intro = styled.div`
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   text-align: center;
   transition: all 1s;
   padding: ${props=> props.active ? "3rem 2rem" : "0rem 0rem"};
@@ -51,25 +66,94 @@ export const Row = styled.div`
   box-sizing: border-box;
   max-height: 40rem;
   overflow: hidden;
-
   h1{
     font-size: 2rem;
-    color: black;
+    color: #ffffff;
     font-weight:bold;
   }
   h2{
     font-size: 1rem;
-    font-style: italic;
-    color: gray;
+    color: #ffffff;
   }
+
 `;
 
 export const Links = styled.div`
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5%;
   margin-bottom: 5%;
-  width: 80%;
+  width: ${props=>props.width};
   text-align: center;
+  &:before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 0px;
+    left: calc(50% - 1px);
+    width: 1px;
+    height: calc(3.5rem + 1px);
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+`;
 
+export const Link = styled.span`
+  color: #ffffff;
+  padding: 15px 18px;
+  font-size: 14px;
+  font-size: .875rem;
+  display: inline-block;
+  border: 1px solid;
+  border-color: #ffffff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  width: 110px;
+  text-align: center;
+  transition: all .5s;
+  float: ${props=>props.float ? props.float : "inherit"};
+
+  border-top-left-radius: ${props=>props.firstLink ? "3px" : "0px"};
+  border-bottom-left-radius: ${props=>props.firstLink ? "3px" : "0px"};
+  border-bottom-right-radius: ${props=>props.lastLink ? "3px" : "0px"};
+  border-top-right-radius: ${props=>props.lastLink ? "3px" : "0px"};
+
+  &:hover{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+  }
+
+`;
+
+
+export const IndexContainer = styled.div`
+  position: absolute;
+  width: ${props=> props.width ? props.width : "50%"};
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(1, 1, 1, 0);
+  z-index: 1;
+  z-index: 2;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  color: #ffffff;
+  letter-spacing: 3px;
+
+`;
+
+
+
+export const HR = styled.hr`
+  border: 0;
+  height: 1px;
+  opacity: .35;
+  margin: 1em 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);
 `;

@@ -78,6 +78,7 @@ export const Filter = styled.div`
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 20px;
 `;
 
 export const FilterInput = styled.input.attrs({

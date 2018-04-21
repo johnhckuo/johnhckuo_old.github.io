@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Intro = styled.div`
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -13,7 +13,9 @@ export const IntroContent = styled.div`
 `;
 
 export const Characteristic = styled.div`
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: ${props=> props.width};
 	height: 20%;
 	display: flex;
 	flex-direction: row;

@@ -32,7 +32,7 @@ export default class Aboutme extends React.Component{
 
 	render(){
 		return(
-			<Global.ScrollContainer active={this.state.init}>
+			<Global.ScrollContainer active={this.state.init} width={this.props.width > this.props.mobileWidth ? null : "70%"}>
 				<Global.Banner>
 					<img src={myself} />
 				</Global.Banner>
@@ -51,7 +51,7 @@ export default class Aboutme extends React.Component{
 							I hold over 7 years of programming experience. <br />
 							Love to work on some side projects related to web development, blockchain applications, and 3D game development.
 							<Global.HR />
-							<Style.Characteristic>
+							<Style.Characteristic width={this.props.width > this.props.mobileWidth ? "100%" : "50%"}>
 								<div><FaAmericanSignLanguageInterpreting />I'm a team player</div>
 								<div><FaCode />I got mad skills</div>
 								<div><FaHeartO />I am passionate</div>

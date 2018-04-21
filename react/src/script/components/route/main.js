@@ -37,7 +37,10 @@ export default class Routes extends React.Component{
   }
 
   updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({ width: window.innerWidth, height: window.innerHeight }, ()=>{
+        alert(this.state.width)
+
+  })
   }
 
   render(){

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3ea9d35710d4c4843a6d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "731594cb106203446fca"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24171,12 +24171,16 @@
 	  }, {
 	    key: "updateWindowDimensions",
 	    value: function updateWindowDimensions() {
-	      this.setState({ width: window.innerWidth, height: window.innerHeight });
+	      var _this3 = this;
+
+	      this.setState({ width: window.innerWidth, height: window.innerHeight }, function () {
+	        alert(_this3.state.width);
+	      });
 	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var _this3 = this;
+	      var _this4 = this;
 
 	      return _react2.default.createElement(
 	        Style.RootContainer,
@@ -24186,22 +24190,22 @@
 	          _reactRouterDom.Switch,
 	          null,
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", render: function render(props) {
-	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/aboutme", render: function render(props) {
-	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/experience", render: function render(props) {
-	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/portfolio", render: function render(props) {
-	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/contact", render: function render(props) {
-	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } }),
 	          _react2.default.createElement(_reactRouterDom.Route, { render: function render(props) {
-	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height, mobileWidth: _this3.mobileWidth }));
+	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
 	            } })
 	        )
 	      );

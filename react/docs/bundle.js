@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "631d2c39250e20cb2e74"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6050768d5daef821174a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24135,10 +24135,11 @@
 
 	    var _this = _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).call(this, props));
 
-	    _this.backgroundBlur = _this.backgroundBlur.bind(_this);
-	    _this.state = { init: false, blur: false, width: 0, height: 0 };
 	    _this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
-	    _this.mobileWidth = 700;
+	    _this.getScreen = _this.getScreen.bind(_this);
+	    _this.backgroundBlur = _this.backgroundBlur.bind(_this);
+	    _this.getScreen();
+	    _this.state = { init: false, blur: false, width: _this.width, height: _this.height };
 	    return _this;
 	  }
 
@@ -24151,7 +24152,7 @@
 	        _this2.setState({ init: true });
 	      }, 10);
 	      window.addEventListener('resize', this.updateWindowDimensions);
-	      window.addEventListener('load', this.updateWindowDimensions);
+	      this.updateWindowDimensions();
 	    }
 	  }, {
 	    key: "componentWillUnmount",
@@ -24160,7 +24161,6 @@
 	        init: false
 	      });
 	      window.removeEventListener('resize', this.updateWindowDimensions);
-	      window.removeEventListener('load', this.updateWindowDimensions);
 	    }
 	  }, {
 	    key: "backgroundBlur",
@@ -24170,13 +24170,21 @@
 	      });
 	    }
 	  }, {
+	    key: "getScreen",
+	    value: function getScreen() {
+	      this.width = window.screen.width;
+	      this.height = window.screen.height;
+
+	      if (window.devicePixelRatio < 1) {
+	        width = window.screen.width / window.devicePixelRatio;
+	        height = window.screen.height / window.devicePixelRatio;
+	      }
+	    }
+	  }, {
 	    key: "updateWindowDimensions",
 	    value: function updateWindowDimensions() {
-	      var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	      var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	      this.setState({ width: width, height: height }, function () {
-	        alert(width);
-	      });
+	      this.getScreen();
+	      this.setState({ width: this.width, height: this.height });
 	    }
 	  }, {
 	    key: "render",

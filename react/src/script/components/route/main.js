@@ -9,10 +9,11 @@ export default class Routes extends React.Component{
 
   constructor(props){
     super(props);
-    this.backgroundBlur = this.backgroundBlur.bind(this);
-    this.state = {init: false, blur: false, width: 0, height: 0};
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    this.mobileWidth = 700;
+    this.getScreen = this.getScreen.bind(this);
+    this.backgroundBlur = this.backgroundBlur.bind(this);
+    this.getScreen();
+    this.state = {init: false, blur: false, width: this.width, height: this.height};
   }
 
   componentDidMount(){
@@ -20,8 +21,7 @@ export default class Routes extends React.Component{
       this.setState({init : true})
     }, 10)
     window.addEventListener('resize', this.updateWindowDimensions);
-    window.addEventListener('load', this.updateWindowDimensions);
-
+    this.updateWindowDimensions();
   }
 
   componentWillUnmount(){
@@ -29,8 +29,6 @@ export default class Routes extends React.Component{
       init:false
     })
     window.removeEventListener('resize', this.updateWindowDimensions);
-    window.removeEventListener('load', this.updateWindowDimensions);
-
   }
 
   backgroundBlur(blur){
@@ -39,12 +37,19 @@ export default class Routes extends React.Component{
     })
   }
 
+  getScreen(){
+    this.width = window.screen.width;
+    this.height = window.screen.height;
+
+    if(window.devicePixelRatio < 1){
+      width = window.screen.width/window.devicePixelRatio;
+      height = window.screen.height/window.devicePixelRatio;
+    }
+  }
+
   updateWindowDimensions() {
-    var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var height= Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    this.setState({ width, height }, ()=>{
-      alert(width)
-  })
+    this.getScreen();
+    this.setState({ width: this.width, height: this.height })
   }
 
   render(){

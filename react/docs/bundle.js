@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9d9ae2649ee3d533af98"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1d3e5f6a9c3b7eb30358"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24183,17 +24183,13 @@
 	  }, {
 	    key: "updateWindowDimensions",
 	    value: function updateWindowDimensions() {
-	      var _this3 = this;
-
 	      this.getScreen();
-	      this.setState({ width: this.width, height: this.height }, function () {
-	        alert(_this3.width);
-	      });
+	      this.setState({ width: this.width, height: this.height });
 	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var _this4 = this;
+	      var _this3 = this;
 
 	      return _react2.default.createElement(
 	        Style.RootContainer,
@@ -24203,23 +24199,29 @@
 	          _reactRouterDom.Switch,
 	          null,
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", render: function render(props) {
-	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } }),
+	              return _react2.default.createElement(_.Index, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/aboutme", render: function render(props) {
-	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } }),
+	              return _react2.default.createElement(_.Aboutme, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/experience", render: function render(props) {
-	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } }),
+	              return _react2.default.createElement(_.Experience, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/portfolio", render: function render(props) {
-	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } }),
+	              return _react2.default.createElement(_.Portfolio, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          }),
 	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/contact", render: function render(props) {
-	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } }),
+	              return _react2.default.createElement(_.Contact, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          }),
 	          _react2.default.createElement(_reactRouterDom.Route, { render: function render(props) {
-	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this4.backgroundBlur, width: _this4.state.width, height: _this4.state.height, mobileWidth: _this4.mobileWidth }));
-	            } })
+	              return _react2.default.createElement(GenericNotFound, _extends({}, props, { blur: _this3.backgroundBlur, width: _this3.state.width, height: _this3.state.height }));
+	            }
+	          })
 	        )
 	      );
 	    }
@@ -24336,30 +24338,30 @@
 		_createClass(Aboutme, [{
 			key: "historyBack",
 			value: function historyBack() {
-				this.props.history.goBack();
+				var _this2 = this;
+
+				this.setState({
+					init: false
+				});
+				setTimeout(function () {
+					_this2.props.history.goBack();
+				}, 500);
 			}
 		}, {
 			key: "componentDidMount",
 			value: function componentDidMount() {
-				var _this2 = this;
+				var _this3 = this;
 
 				setTimeout(function () {
-					_this2.setState({ init: true });
+					_this3.setState({ init: true });
 				}, 500);
-			}
-		}, {
-			key: "componentWillUnmount",
-			value: function componentWillUnmount() {
-				this.setState({
-					init: false
-				});
 			}
 		}, {
 			key: "render",
 			value: function render() {
 				return _react2.default.createElement(
-					Global.ScrollContainer,
-					{ active: this.state.init, width: this.props.width > this.props.mobileWidth ? null : "70%" },
+					Global.Container,
+					{ active: this.state.init, type: this.props.width > Global.mobileWidth ? "small" : "large" },
 					_react2.default.createElement(
 						Global.Banner,
 						null,
@@ -24401,7 +24403,7 @@
 								_react2.default.createElement(Global.HR, null),
 								_react2.default.createElement(
 									Style.Characteristic,
-									{ width: this.props.width > this.props.mobileWidth ? "100%" : "50%" },
+									{ width: this.props.width > Global.mobileWidth ? "100%" : "50%" },
 									_react2.default.createElement(
 										"div",
 										null,
@@ -55131,16 +55133,15 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.laptopWidth = exports.tabletWidth = exports.mobileWidth = exports.HR = exports.Btn = exports.HomeBtn = exports.Title = exports.ScrollContainer = exports.Container = exports.Banner = exports.Background = undefined;
+	exports.laptopWidth = exports.tabletWidth = exports.mobileWidth = exports.HR = exports.Btn = exports.HomeBtn = exports.Title = exports.Container = exports.Banner = exports.Background = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n'], ['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n\t&:before{\n\t\tposition: absolute; \n\t    z-index: 2;\n\t    display: block; \n\t    content: "";\n\t    top: 0; right: 0; bottom: 0; left: 0;  \n\t    background: hsla(0,0%,0%,0.4);          /*adjust brightness here */\n\t}\n'], ['\n\tposition: fixed;\n\ttop:0px;\n\tleft: 0px;\n\twidth: 100vw;\n\theight: 100vh;\n\tbackground-image: url(', ');\n    background-repeat:no-repeat;\n    background-size:100% 100%;\n\tbackground-attachment: fixed;\n\t', ';\n\ttransition: all .5s;\n\t&:before{\n\t\tposition: absolute; \n\t    z-index: 2;\n\t    display: block; \n\t    content: "";\n\t    top: 0; right: 0; bottom: 0; left: 0;  \n\t    background: hsla(0,0%,0%,0.4);          /*adjust brightness here */\n\t}\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n'], ['\n\tleft: 0px;\n\ttop: 0px;\n\toverflow: hidden;\n\tborder-radius: 10px;\n\tmargin-bottom: 20px;\n\theight: 200px;\n\timg{\t\t\n\t\twidth: 100%;\n\t\tmargin-top: -20%;\n\t}\n\n']),
-	    _templateObject3 = _taggedTemplateLiteral(['\n\t', ';\n'], ['\n\t', ';\n']),
-	    _templateObject4 = _taggedTemplateLiteral(['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n'], ['\n  \ttop: 15%;\n  \tmargin-bottom: 15%;\n\t', ';\n']),
-	    _templateObject5 = _taggedTemplateLiteral(['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n'], ['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n']),
-	    _templateObject6 = _taggedTemplateLiteral(['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n'], ['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n']),
-	    _templateObject7 = _taggedTemplateLiteral(['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n'], ['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n']),
-	    _templateObject8 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n']);
+	    _templateObject3 = _taggedTemplateLiteral(['\n  \ttop: 15%;\n  \tleft: ', ';\n  \tmargin-bottom: 15%;\n\tposition: absolute\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: ', ';\n\tpadding: 5%;\n\tdisplay: block;\n\tbackground-color: #fff;\n\tcolor: #282828;\n\tz-index: 1;\n\tborder-radius: 3px;\n\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\tz-index: 2;\n\ttransition: all 0.5s;\n\ttransition-timing-function: ease-out;\n\topacity:', ';\n\ttransform: translateY(', ')\n'], ['\n  \ttop: 15%;\n  \tleft: ', ';\n  \tmargin-bottom: 15%;\n\tposition: absolute\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: ', ';\n\tpadding: 5%;\n\tdisplay: block;\n\tbackground-color: #fff;\n\tcolor: #282828;\n\tz-index: 1;\n\tborder-radius: 3px;\n\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\tz-index: 2;\n\ttransition: all 0.5s;\n\ttransition-timing-function: ease-out;\n\topacity:', ';\n\ttransform: translateY(', ')\n']),
+	    _templateObject4 = _taggedTemplateLiteral(['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n'], ['\n\tmargin-bottom: 3%;\n\ttext-align: center;\n\n\th2{\n\t\tfont-size: 2rem;\n\t\tcolor: black;\n\t\tfont-weight:bold;\n\t}\n\th3{\n\t\tfont-size: 1.5rem;\n\t\tfont-style: italic;\n\t\tcolor: gray;\n\t}\n']),
+	    _templateObject5 = _taggedTemplateLiteral(['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n'], ['\n\n\tposition: absolute;\n\tleft: 10px;\n\ttop: 10px;\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\ttransition: all .5s;\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\n\t}\n']),
+	    _templateObject6 = _taggedTemplateLiteral(['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n'], ['\n\tcolor: #282828;\n\tpadding: 15px 18px;\n\tfont-size: 14px;\n\tfont-size: .875rem;\n\tdisplay: inline-block;\n\tborder: 1px solid;\n\tborder-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;\n\tborder-radius: 3px;\n\ttext-decoration: none;\n\tbackground: #fff;\n\tcursor: pointer;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\twidth: 80px;\n\ttext-align: center;\n\ttransition: all .5s;\n\tfloat: ', ';\n\t&:hover{\n\t\tcolor: #383838;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t}\n']),
+	    _templateObject7 = _taggedTemplateLiteral(['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n'], ['\n\tborder: 0;\n\theight: 1px;\n\topacity: .15;\n\tmargin: 1em 0;\n\tbackground-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);\n']);
 
 	var _styledComponents = __webpack_require__(70);
 
@@ -55156,14 +55157,10 @@
 
 	function blur(isBlur) {
 		if (isBlur) {
-			return '\n\t\t\t-moz-transform: scale(1.1825);\n\t\t    -webkit-transform: scale(1.1825);\n\t\t    -ms-transform: scale(1.1825);\n\t\t    transform: scale(1.1825);\n\t\t    -moz-filter: blur(0.8rem) brightness(40%);\n\t\t    -webkit-filter: blur(0.8rem) brightness(40%);\n\t\t    -ms-filter: blur(0.8rem) brightness(40%);\n\t\t    filter: blur(0.8rem) brightness(40%);\n\t\t';
+			return '\n\t\t\t-moz-transform: scale(1.1825);\n\t\t    -webkit-transform: scale(1.1825);\n\t\t    -ms-transform: scale(1.1825);\n\t\t    transform: scale(1.1825);\n\t\t    -moz-filter: blur(0.8rem);\n\t\t    -webkit-filter: blur(0.8rem);\n\t\t    -ms-filter: blur(0.8rem);\n\t\t    filter: blur(0.8rem);\n\t\t';
 		} else {
-			return '\n\t\t\t-moz-transform: scale(1.1);\n\t\t    -webkit-transform: scale(1.1);\n\t\t    -ms-transform: scale(1.1);\n\t\t    transform: scale(1.1);\n\t\t    -moz-filter: brightness(40%);\n\t\t    -webkit-filter: brightness(40%);\n\t\t    -ms-filter: brightness(40%);\n\t\t    filter: brightness(40%);\n\t\t';
+			return '\n\t\t\t-moz-transform: scale(1.1);\n\t\t    -webkit-transform: scale(1.1);\n\t\t    -ms-transform: scale(1.1);\n\t\t    transform: scale(1.1);\n\t\t';
 		}
-	}
-
-	function containerCommon(width, active) {
-		return '\n\t\tposition: absolute;\n\t\twidth: ' + (width ? width : "50%") + ';\n\t\tpadding: 5%;\n\t\tdisplay: block;\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\tbackground-color: #fff;\n\t\tcolor: #282828;\n\t\tz-index: 1;\n\t\tborder-radius: 3px;\n\t\tbox-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n\t\tz-index: 2;\n\t\ttransition: all 0.5s;\n\t\ttransition-timing-function: ease-out;\n\t\topacity:' + (active ? .9 : 0) + ';\n\t\ttransform: translateY(' + (active ? "0px" : "10px") + ')\n\t';
 	}
 
 	var Background = exports.Background = _styledComponents2.default.div(_templateObject, _background2.default, function (props) {
@@ -55173,22 +55170,24 @@
 	var Banner = exports.Banner = _styledComponents2.default.div(_templateObject2);
 
 	var Container = exports.Container = _styledComponents2.default.div(_templateObject3, function (props) {
-		return containerCommon(props.width, props.active);
+		return props.type === "small" ? "25%" : "10%";
+	}, function (props) {
+		return props.type === "small" ? "40%" : "70%";
+	}, function (props) {
+		return props.active ? .9 : 0;
+	}, function (props) {
+		return props.active ? "0px" : "10px";
 	});
 
-	var ScrollContainer = exports.ScrollContainer = _styledComponents2.default.div(_templateObject4, function (props) {
-		return containerCommon(props.width, props.active);
-	});
+	var Title = exports.Title = _styledComponents2.default.div(_templateObject4);
 
-	var Title = exports.Title = _styledComponents2.default.div(_templateObject5);
+	var HomeBtn = exports.HomeBtn = _styledComponents2.default.span(_templateObject5);
 
-	var HomeBtn = exports.HomeBtn = _styledComponents2.default.span(_templateObject6);
-
-	var Btn = exports.Btn = _styledComponents2.default.span(_templateObject7, function (props) {
+	var Btn = exports.Btn = _styledComponents2.default.span(_templateObject6, function (props) {
 		return props.float ? props.float : "inherit";
 	});
 
-	var HR = exports.HR = _styledComponents2.default.hr(_templateObject8);
+	var HR = exports.HR = _styledComponents2.default.hr(_templateObject7);
 
 	var mobileWidth = exports.mobileWidth = 700;
 	var tabletWidth = exports.tabletWidth = 1024;
@@ -55259,23 +55258,23 @@
 	  _createClass(Portfolio, [{
 	    key: "historyBack",
 	    value: function historyBack() {
-	      this.props.history.goBack();
+	      var _this2 = this;
+
+	      this.setState({
+	        init: false
+	      });
+	      setTimeout(function () {
+	        _this2.props.history.goBack();
+	      }, 500);
 	    }
 	  }, {
 	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      var _this2 = this;
+	      var _this3 = this;
 
 	      setTimeout(function () {
-	        _this2.setState({ init: true });
+	        _this3.setState({ init: true });
 	      }, 500);
-	    }
-	  }, {
-	    key: "componentWillUnmount",
-	    value: function componentWillUnmount() {
-	      this.setState({
-	        init: false
-	      });
 	    }
 	  }, {
 	    key: "filter",
@@ -55287,11 +55286,11 @@
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var _this3 = this;
+	      var _this4 = this;
 
 	      return _react2.default.createElement(
-	        Global.ScrollContainer,
-	        { width: "65%", active: this.state.init },
+	        Global.Container,
+	        { type: "large", active: this.state.init },
 	        _react2.default.createElement(
 	          Global.HomeBtn,
 	          { onClick: this.historyBack },
@@ -55324,7 +55323,7 @@
 	          Style.Portfolio,
 	          null,
 	          _data2.default.map(function (portfolio, index) {
-	            if (_this3.state.hashtagSearch !== "" && portfolio.keywords.indexOf(_this3.state.hashtagSearch) === -1) {
+	            if (_this4.state.hashtagSearch !== "" && portfolio.keywords.indexOf(_this4.state.hashtagSearch) === -1) {
 	              return null;
 	            }
 	            return _react2.default.createElement(
@@ -55591,12 +55590,19 @@
 		_createClass(Contact, [{
 			key: "historyBack",
 			value: function historyBack() {
-				this.props.history.goBack();
+				var _this2 = this;
+
+				this.setState({
+					init: false
+				});
+				setTimeout(function () {
+					_this2.props.history.goBack();
+				}, 500);
 			}
 		}, {
 			key: "componentDidMount",
 			value: function componentDidMount() {
-				var _this2 = this;
+				var _this3 = this;
 
 				if (!_firebase2.default) {
 					var config = {
@@ -55611,17 +55617,10 @@
 				}
 
 				setTimeout(function () {
-					_this2.setState({
+					_this3.setState({
 						init: true
 					});
 				}, 500);
-			}
-		}, {
-			key: "componentWillUnmount",
-			value: function componentWillUnmount() {
-				this.setState({
-					init: false
-				});
 			}
 		}, {
 			key: "validateInput",
@@ -55661,7 +55660,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					Global.Container,
-					{ width: "40%", active: this.state.init },
+					{ type: this.props.width > Global.mobileWidth ? "small" : "large", active: this.state.init },
 					_react2.default.createElement(
 						Global.HomeBtn,
 						{ onClick: this.historyBack },
@@ -81309,30 +81308,30 @@
 		_createClass(Experience, [{
 			key: "historyBack",
 			value: function historyBack() {
-				this.props.history.goBack();
+				var _this2 = this;
+
+				this.setState({
+					init: false
+				});
+				setTimeout(function () {
+					_this2.props.history.goBack();
+				}, 500);
 			}
 		}, {
 			key: "componentDidMount",
 			value: function componentDidMount() {
-				var _this2 = this;
+				var _this3 = this;
 
 				setTimeout(function () {
-					_this2.setState({ init: true });
+					_this3.setState({ init: true });
 				}, 500);
-			}
-		}, {
-			key: "componentWillUnmount",
-			value: function componentWillUnmount() {
-				this.setState({
-					init: false
-				});
 			}
 		}, {
 			key: "render",
 			value: function render() {
 				return _react2.default.createElement(
-					Global.ScrollContainer,
-					{ width: "70%", active: this.state.init },
+					Global.Container,
+					{ type: "large", active: this.state.init },
 					_react2.default.createElement(
 						Global.HomeBtn,
 						{ onClick: this.historyBack },
@@ -81593,7 +81592,7 @@
 	          _react2.default.createElement(
 	            "h1",
 	            null,
-	            "Hung-Chung Kuo"
+	            "John Kuo"
 	          ),
 	          _react2.default.createElement(Style.HR, null),
 	          _react2.default.createElement(
@@ -81697,11 +81696,11 @@
 	exports.SocialIcon = exports.HR = exports.IndexContainer = exports.Link = exports.Links = exports.Intro = exports.Icon = undefined;
 
 	var _templateObject = _taggedTemplateLiteral(["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"], ["\n\n  img{\n    display: block;\n    width: auto;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    border: 0;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    height: 150px;\n    width: 150px;\n  }\n  &:after{\n    content: '';\n    display: block;\n    position: relative;\n    bottom: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n  }\n"]),
-	    _templateObject2 = _taggedTemplateLiteral(["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 200px;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 30%;\n  }\n  h2{\n    position: absolute;\n    top: 60%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"], ["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 200px;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  padding: ", ";\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 30%;\n  }\n  h2{\n    position: absolute;\n    top: 60%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"]),
+	    _templateObject2 = _taggedTemplateLiteral(["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 35%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 25%;\n  }\n  h2{\n    position: absolute;\n    top: 65%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"], ["\n  position: relative;\n  margin-right: auto;\n  margin-left: auto;\n  width: 80%;\n  height: 35%;\n  border-top: 1px solid #fff;\n  border-bottom: 1px solid #fff;\n  text-align: center;\n  transition: all 1s;\n  height: ", ";\n  box-sizing: border-box;\n  max-height: 40rem;\n  overflow: hidden;\n  *{\n    width: 100%;\n    left: 0px;\n    text-align: center;\n  }\n  h1{\n    position: absolute;\n    font-size: 2rem;\n    color: #ffffff;\n    font-weight:bold;\n    top: 25%;\n  }\n  h2{\n    position: absolute;\n    top: 65%;\n    font-size: 1rem;\n    color: #ffffff;\n  }\n\n"]),
 	    _templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"], ["\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 5%;\n  width: ", ";\n  text-align: center;\n  &:before{\n    content: '';\n    display: block;\n    position: relative;\n    top: 0px;\n    left: calc(50% - 1px);\n    width: 1px;\n    height: calc(3.5rem + 1px);\n    background: #ffffff;\n    box-sizing: border-box;\n  }\n"]),
 	    _templateObject4 = _taggedTemplateLiteral(["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"], ["\n  color: #ffffff;\n  padding: 15px 18px;\n  font-size: 14px;\n  font-size: .875rem;\n  display: inline-block;\n  border: 1px solid;\n  border-color: #ffffff;\n  text-decoration: none;\n  background: rgba(0, 0, 0, 0);\n  cursor: pointer;\n  margin-right: auto;\n  margin-left: auto;\n  width: 110px;\n  text-align: center;\n  transition: all .5s;\n  float: ", ";\n\n  border-top-left-radius: ", ";\n  border-bottom-left-radius: ", ";\n  border-bottom-right-radius: ", ";\n  border-top-right-radius: ", ";\n\n  &:hover{\n    background: rgba(255, 255, 255, 0.1);\n    box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);\n  }\n\n"]),
-	    _templateObject5 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"], ["\n  position: absolute;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  color: #ffffff;\n  letter-spacing: 3px;\n\n"]),
-	    _templateObject6 = _taggedTemplateLiteral(["\n  position: relative;\n  top: 50px;\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"], ["\n  position: relative;\n  top: 50px;\n  border: 0;\n  height: 1px;\n  opacity: .35;\n  width: 50%;\n  margin-left: auto;\n  margin-right: auto;\n  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);\n"]),
+	    _templateObject5 = _taggedTemplateLiteral(["\n  position: relative;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  height: 60%;\n  color: #ffffff;\n  letter-spacing: 3px;\n  margin-top: 2%;\n"], ["\n  position: relative;\n  width: ", ";\n  padding: 5%;\n  display: block;\n  background: rgba(1, 1, 1, 0);\n  transition: all 0.5s;\n  transition-timing-function: ease-out;\n  height: 60%;\n  color: #ffffff;\n  letter-spacing: 3px;\n  margin-top: 2%;\n"]),
+	    _templateObject6 = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 50%;\n  border: 0;\n  height: 1px;\n  width: 100%;\n\n  margin-left: auto;\n  margin-right: auto;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));\n"], ["\n  position: absolute;\n  top: 50%;\n  border: 0;\n  height: 1px;\n  width: 100%;\n\n  margin-left: auto;\n  margin-right: auto;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));\n"]),
 	    _templateObject7 = _taggedTemplateLiteral(["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  padding-left: 20%;\n  padding-right: 20%;\n  flex-wrap: wrap;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"], ["\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  width: 100%;\n  padding-left: 20%;\n  padding-right: 20%;\n  flex-wrap: wrap;\n  box-sizing: border-box;\n  a{\n    color: #AAAAAA;\n    margin-right: 5px;\n    margin-left: 5px;\n    transition: color .5s;\n    width: ", ";\n    &:hover{\n      color: #ffffff;\n    }\n    svg{\n      width: 100%;\n      height: 100%;\n    }\n  }\n"]);
 
 	var _styledComponents = __webpack_require__(70);
@@ -81717,8 +81716,6 @@
 	var Icon = exports.Icon = _styledComponents2.default.div(_templateObject);
 
 	var Intro = exports.Intro = _styledComponents2.default.div(_templateObject2, function (props) {
-	  return props.active ? "3rem 2rem" : "0rem 0rem";
-	}, function (props) {
 	  return props.active ? "" : "0px";
 	});
 
@@ -81765,7 +81762,7 @@
 	});
 	exports.RootContainer = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(['\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n'], ['\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n']);
+	var _templateObject = _taggedTemplateLiteral(['\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n'], ['\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n']);
 
 	var _styledComponents = __webpack_require__(70);
 

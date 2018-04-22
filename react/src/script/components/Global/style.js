@@ -8,10 +8,10 @@ function blur(isBlur){
 		    -webkit-transform: scale(1.1825);
 		    -ms-transform: scale(1.1825);
 		    transform: scale(1.1825);
-		    -moz-filter: blur(0.8rem) brightness(40%);
-		    -webkit-filter: blur(0.8rem) brightness(40%);
-		    -ms-filter: blur(0.8rem) brightness(40%);
-		    filter: blur(0.8rem) brightness(40%);
+		    -moz-filter: blur(0.8rem);
+		    -webkit-filter: blur(0.8rem);
+		    -ms-filter: blur(0.8rem);
+		    filter: blur(0.8rem);
 		`;
 	}else{
 		return `
@@ -19,35 +19,11 @@ function blur(isBlur){
 		    -webkit-transform: scale(1.1);
 		    -ms-transform: scale(1.1);
 		    transform: scale(1.1);
-		    -moz-filter: brightness(40%);
-		    -webkit-filter: brightness(40%);
-		    -ms-filter: brightness(40%);
-		    filter: brightness(40%);
 		`;
 	}
 
 }
 
-function containerCommon(width, active){
-	return `
-		position: absolute;
-		width: ${width ? width : "50%"};
-		padding: 5%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #fff;
-		color: #282828;
-		z-index: 1;
-		border-radius: 3px;
-		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-		z-index: 2;
-		transition: all 0.5s;
-		transition-timing-function: ease-out;
-		opacity:${active ? .9 : 0};
-		transform: translateY(${active ? "0px" : "10px"})
-	`;
-}
 
 export const Background = styled.div`
 	position: fixed;
@@ -61,6 +37,14 @@ export const Background = styled.div`
 	background-attachment: fixed;
 	${props=>blur(props.blur)};
 	transition: all .5s;
+	&:before{
+		position: absolute; 
+	    z-index: 2;
+	    display: block; 
+	    content: "";
+	    top: 0; right: 0; bottom: 0; left: 0;  
+	    background: hsla(0,0%,0%,0.4);          /*adjust brightness here */
+	}
 `;
 
 export const Banner = styled.div`
@@ -78,13 +62,25 @@ export const Banner = styled.div`
 `;
 
 export const Container = styled.div`
-	${props=>containerCommon(props.width, props.active)};
-`;
-
-export const ScrollContainer = styled.div`
   	top: 15%;
+  	left: ${props=> props.type === "small" ? "25%" : "10%"};
   	margin-bottom: 15%;
-	${props=>containerCommon(props.width, props.active)};
+	position: absolute
+	margin-left: auto;
+	margin-right: auto;
+	width: ${props=> props.type === "small" ? "40%" : "70%"};
+	padding: 5%;
+	display: block;
+	background-color: #fff;
+	color: #282828;
+	z-index: 1;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+	z-index: 2;
+	transition: all 0.5s;
+	transition-timing-function: ease-out;
+	opacity:${props=> props.active ? .9 : 0};
+	transform: translateY(${props=> props.active ? "0px" : "10px"})
 `;
 
 export const Title = styled.div`

@@ -14,7 +14,12 @@ export default class Experience extends React.Component{
 	}
 
  	historyBack(){
-		this.props.history.goBack();
+ 		this.setState({
+			init:false
+		})
+		setTimeout(()=>{
+			this.props.history.goBack();
+		}, 500)
 	}
 
 	componentDidMount(){
@@ -23,15 +28,9 @@ export default class Experience extends React.Component{
 		}, 500)
 	}
 
-	componentWillUnmount(){
-		this.setState({
-			init:false
-		})
-	}
-
 	render(){
 		return (
-			<Global.ScrollContainer width="70%" active={this.state.init}>
+			<Global.Container type="large" active={this.state.init}>
 				<Global.HomeBtn onClick = {this.historyBack}>
 					<FontAwesome.FaHome />
 				</Global.HomeBtn>
@@ -62,7 +61,7 @@ export default class Experience extends React.Component{
 						})
 					}
 				</Style.Timeline>
-			</Global.ScrollContainer>
+			</Global.Container>
 
 		);
 	}

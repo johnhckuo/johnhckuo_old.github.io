@@ -14,7 +14,12 @@ export default class Aboutme extends React.Component{
 	}
 
 	historyBack(){
-		this.props.history.goBack();
+ 		this.setState({
+			init:false
+		})
+		setTimeout(()=>{
+			this.props.history.goBack();
+		}, 500)
 	}
 
 	componentDidMount(){
@@ -23,16 +28,10 @@ export default class Aboutme extends React.Component{
 		}, 500)
 	}
 
-	componentWillUnmount(){
-		this.setState({
-			init:false
-		})
-	}
-
 
 	render(){
 		return(
-			<Global.ScrollContainer active={this.state.init} width={this.props.width > this.props.mobileWidth ? null : "70%"}>
+			<Global.Container active={this.state.init} type={this.props.width > Global.mobileWidth ? "small" : "large"}>
 				<Global.Banner>
 					<img src={myself} />
 				</Global.Banner>
@@ -51,7 +50,7 @@ export default class Aboutme extends React.Component{
 							I hold over 7 years of programming experience. <br />
 							Love to work on some side projects related to web development, blockchain applications, and 3D game development.
 							<Global.HR />
-							<Style.Characteristic width={this.props.width > this.props.mobileWidth ? "100%" : "50%"}>
+							<Style.Characteristic width={this.props.width > Global.mobileWidth ? "100%" : "50%"}>
 								<div><FaAmericanSignLanguageInterpreting />I'm a team player</div>
 								<div><FaCode />I got mad skills</div>
 								<div><FaHeartO />I am passionate</div>
@@ -60,7 +59,7 @@ export default class Aboutme extends React.Component{
 
 					</Style.IntroContent>
 				</Style.Intro>
-			</Global.ScrollContainer>
+			</Global.Container>
 		);
 	}
 

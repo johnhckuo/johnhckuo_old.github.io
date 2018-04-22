@@ -33,12 +33,11 @@ export const Intro = styled.div`
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-  height: 200px;
+  height: 35%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-align: center;
   transition: all 1s;
-  padding: ${props=> props.active ? "3rem 2rem" : "0rem 0rem"};
   height: ${props=> props.active ? "" : "0px"};
   box-sizing: border-box;
   max-height: 40rem;
@@ -53,11 +52,11 @@ export const Intro = styled.div`
     font-size: 2rem;
     color: #ffffff;
     font-weight:bold;
-    top: 30%;
+    top: 25%;
   }
   h2{
     position: absolute;
-    top: 60%;
+    top: 65%;
     font-size: 1rem;
     color: #ffffff;
   }
@@ -115,32 +114,31 @@ export const Link = styled.span`
 
 
 export const IndexContainer = styled.div`
-  position: absolute;
+  position: relative;
   width: ${props=> props.width > mobileWidth ? "50%" : "100%"};
   padding: 5%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   background: rgba(1, 1, 1, 0);
   transition: all 0.5s;
   transition-timing-function: ease-out;
+  height: 60%;
   color: #ffffff;
   letter-spacing: 3px;
-
+  margin-top: 2%;
 `;
 
 
 
 export const HR = styled.hr`
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: 50%;
   border: 0;
   height: 1px;
-  opacity: .35;
-  width: 50%;
+  width: 100%;
+
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-linear-gradient(left, #000000, #ffffff, #000000);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
 `;
 
 

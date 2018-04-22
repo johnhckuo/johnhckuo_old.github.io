@@ -35,7 +35,7 @@ export default class Index extends React.Component{
           <img src={myself} />
         </Style.Icon>
         <Style.Intro active={this.state.init}>
-          <h1>Hung-Chung Kuo</h1>
+          <h1>John Kuo</h1>
           <Style.HR />
           <h2>Passionate Programmer / Amateur Gamer</h2>
         </Style.Intro>

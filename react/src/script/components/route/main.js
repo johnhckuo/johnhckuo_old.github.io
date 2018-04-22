@@ -49,9 +49,7 @@ export default class Routes extends React.Component{
 
   updateWindowDimensions() {
     this.getScreen();
-    this.setState({ width: this.width, height: this.height }, ()=>{
-    alert(this.width)
-    })
+    this.setState({ width: this.width, height: this.height })
   }
 
   render(){
@@ -59,12 +57,36 @@ export default class Routes extends React.Component{
         <Style.RootContainer>
             <Global.Background blur={this.state.blur}/>
             <Switch>
-                <Route exact path="/" render={props=> <Index {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}></Route>
-                <Route exact path="/aboutme" render={props=> <Aboutme {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}></Route>
-                <Route exact path="/experience" render={props=> <Experience {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}></Route>
-                <Route exact path="/portfolio" render={props=> <Portfolio {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}></Route>
-                <Route exact path="/contact" render={props=> <Contact {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}></Route>
-                <Route render={props=> <GenericNotFound {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } mobileWidth={this.mobileWidth}/>}/>
+                <Route exact path="/" render={
+                  props=> 
+                    <Index {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } />
+                  }
+                />
+                <Route exact path="/aboutme" render={
+                  props=> 
+                    <Aboutme {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } />
+                  } 
+                />
+                <Route exact path="/experience" render={
+                  props=> 
+                    <Experience {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } /> 
+                  } 
+                />
+                <Route exact path="/portfolio" render={
+                  props=> 
+                    <Portfolio {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
+                  } 
+                />
+                <Route exact path="/contact" render={
+                  props=> 
+                    <Contact {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
+                  } 
+                />
+                <Route render={
+                  props=> 
+                    <GenericNotFound {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
+                  } 
+                />
             </Switch>
         </Style.RootContainer>
     );

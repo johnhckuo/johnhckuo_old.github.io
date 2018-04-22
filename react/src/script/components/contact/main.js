@@ -25,7 +25,12 @@ export default class Contact extends React.Component{
 	}
 
 	historyBack(){
-		this.props.history.goBack();
+ 		this.setState({
+			init:false
+		})
+		setTimeout(()=>{
+			this.props.history.goBack();
+		}, 500)
 	}
 
 	componentDidMount(){
@@ -46,12 +51,6 @@ export default class Contact extends React.Component{
 				init:true
 			})
 		}, 500)
-	}
-
-	componentWillUnmount(){
-		this.setState({
-			init:false
-		})
 	}
 
 	validateInput(type, input) {
@@ -89,7 +88,7 @@ export default class Contact extends React.Component{
 
 	render(){
 		return(
-			<Global.Container width="40%" active={this.state.init}>
+			<Global.Container type={this.props.width > Global.mobileWidth ? "small" : "large"} active={this.state.init}>
 
 				<Global.HomeBtn onClick = {this.historyBack}>
 		          <FaHome />

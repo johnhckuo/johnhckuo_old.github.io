@@ -14,19 +14,18 @@ export default class Portfolio extends React.Component{
   }
 
   historyBack(){
-		this.props.history.goBack();
+    this.setState({
+      init:false
+    })
+    setTimeout(()=>{
+      this.props.history.goBack();
+    }, 500)
 	}
 
   componentDidMount(){
     setTimeout(()=>{
       this.setState({init : true})
     }, 500)
-  }
-
-  componentWillUnmount(){
-    this.setState({
-      init:false
-    })
   }
 
   filter(e){
@@ -37,7 +36,7 @@ export default class Portfolio extends React.Component{
 
   render(){
     return (
-      <Global.ScrollContainer width="65%" active={this.state.init}>
+      <Global.Container type="large" active={this.state.init}>
         <Global.HomeBtn onClick = {this.historyBack}>
           <FontAwesome.FaHome />
         </Global.HomeBtn>
@@ -79,7 +78,7 @@ export default class Portfolio extends React.Component{
           }
 
         </Style.Portfolio>
-      </Global.ScrollContainer>
+      </Global.Container>
     );
   }
 }

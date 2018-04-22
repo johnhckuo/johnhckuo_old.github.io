@@ -8,13 +8,13 @@
     "component",
     "reactjs"
   ],
-  "main": "./docs",
+  "main": "./build",
   "scripts": {
     "lint": "./node_modules/.bin/eslint eslint 'src/**/*.@(js|jsx)'",
     "start": "webpack-dev-server --display-error-details --inline --progress --colors --port 8080",
     "clean": "rimraf ./docs ./build",
     "build": "rimraf ./docs && webpack",
-    "deploy": "rimraf ./docs && webpack -p --config webpack.prd.config.js"
+    "deploy": "rimraf ./build && webpack -p --config webpack.prd.config.js"
   },
   "repository": {
     "type": "git",

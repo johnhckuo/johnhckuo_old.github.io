@@ -42,14 +42,16 @@ export default class Routes extends React.Component{
     this.height = window.screen.height;
 
     if(window.devicePixelRatio < 1){
-      width = window.screen.width/window.devicePixelRatio;
-      height = window.screen.height/window.devicePixelRatio;
+      this.width = window.screen.width/window.devicePixelRatio;
+      this.height = window.screen.height/window.devicePixelRatio;
     }
   }
 
   updateWindowDimensions() {
     this.getScreen();
-    this.setState({ width: this.width, height: this.height })
+    this.setState({ width: this.width, height: this.height }, ()=>{
+    alert(this.width)
+    })
   }
 
   render(){

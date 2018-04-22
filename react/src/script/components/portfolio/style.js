@@ -19,9 +19,7 @@ export const List = styled.div`
 	& > div{
 		width: 80%;
 	}
-	svg{
-		width: 1.7rem;
-	}
+
 
 `;
 
@@ -31,18 +29,27 @@ export const Title = styled.div`
 	font-size: 1.7rem;
 	text-decoration: none;
 	font-weight: bolder;
-
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 5px;
 	*{
+		display:block;
 		margin-right: 20px;
 
 	}
 	a{
+		font-size: 1.6rem;
 		text-decoration: none;
 		color: #282828;
 		transition: color .4s;
 		&:hover{
 			color: gray;
 		}
+	}
+	svg{
+		width: 1.7rem;
 	}
 
 `;

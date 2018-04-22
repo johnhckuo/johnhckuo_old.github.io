@@ -10,10 +10,8 @@ export default class Routes extends React.Component{
   constructor(props){
     super(props);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    this.getScreen = this.getScreen.bind(this);
     this.backgroundBlur = this.backgroundBlur.bind(this);
-    this.getScreen();
-    this.state = {init: false, blur: false, width: this.width, height: this.height};
+    this.state = {init: false, blur: false, width: window.innerWidth, height: window.innerHeight};
   }
 
   componentDidMount(){
@@ -37,19 +35,8 @@ export default class Routes extends React.Component{
     })
   }
 
-  getScreen(){
-    this.width = window.screen.width;
-    this.height = window.screen.height;
-
-    if(window.devicePixelRatio < 1){
-      this.width = window.screen.width/window.devicePixelRatio;
-      this.height = window.screen.height/window.devicePixelRatio;
-    }
-  }
-
   updateWindowDimensions() {
-    this.getScreen();
-    this.setState({ width: this.width, height: this.height })
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
   render(){

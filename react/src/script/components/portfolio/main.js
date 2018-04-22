@@ -10,6 +10,7 @@ export default class Portfolio extends React.Component{
     super(props);
     this.historyBack = this.historyBack.bind(this);
     this.filter = this.filter.bind(this);
+    this.isContain = this.isContain.bind(this);
     this.state = {init: false, hashtagSearch: ""};
   }
 
@@ -34,6 +35,15 @@ export default class Portfolio extends React.Component{
     });
   }
 
+  isContain(arr){
+    for (let i = 0 ; i < arr.length ; i++){
+      if (arr[i].toUpperCase().indexOf(this.state.hashtagSearch.toUpperCase()) >= 0 ){
+        return true;
+      }
+    }
+    return false;
+  }
+
   render(){
     return (
       <Global.Container type="large" active={this.state.init}>
@@ -54,7 +64,8 @@ export default class Portfolio extends React.Component{
         <Style.Portfolio>
           {
             Portfolios.map((portfolio, index)=>{
-              if (this.state.hashtagSearch !== "" && portfolio.keywords.indexOf(this.state.hashtagSearch) === -1){
+
+              if (this.state.hashtagSearch !== "" && !this.isContain(portfolio.keywords)){
                 return null;
               }
               return(

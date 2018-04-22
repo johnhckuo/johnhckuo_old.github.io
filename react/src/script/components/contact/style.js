@@ -15,7 +15,6 @@ function inputCommon() {
 	-moz-border-radius: 3px;
 	padding: 7px;
 	outline: none;
-	margin-bottom:1.5rem;
   `;
 }
 
@@ -25,14 +24,13 @@ export const Form = styled.div`
 	div{
 		display: flex;
 		margin-top: 5px;
-		margin-bottom: 5px;
 	}
 	label{
 		position:relative;
 	    display: block;
 	    margin: 0px 0px 15px 0px;
     	&>span{
-		    width: 100px;
+		    width: 80px;
 		    font-weight: bold;
 		    float: left;
 		    padding-top: 8px;
@@ -86,4 +84,10 @@ export const Warn = styled.i`
 	position: absolute;
 	top: -1rem;
 	font-weight: normal;
+`;
+
+export const Row = styled.div`
+	display: flex;
+	align-items: center;
+
 `;

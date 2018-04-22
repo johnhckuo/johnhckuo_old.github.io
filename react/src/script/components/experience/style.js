@@ -26,14 +26,15 @@ export const Column = styled.div`
 
 export const Title = styled.div`
 	position: relative;
+	letter-spacing: 1.5px;
 	h1{
-		font-size: 20px;
+		font-size: 1.5rem;
 		font-weight: bolder;
 	}
 	
 	h2{
 		position: absolute;
-		font-size: 15px;
+		font-size: 1.3rem;
 		color: rgba(0,0,0,0.5);
 		float :left;
 		&:before{
@@ -46,9 +47,10 @@ export const Title = styled.div`
 			border: 3px solid #c0392b;
 		}
 		div{
+			font-size: 1rem;
 			position: relative;
 			display: inline-block;
-			left: -160px;
+			left: -200%;
 		}
 	}
 
@@ -64,7 +66,7 @@ export const Description = styled.div`
 	position: relative;
 	border-left: 1px solid #000;
 	p{
-		font-size: 13px;
+		font-size: 1rem;
 		line-height: 20px;
 		margin-left: 20px;
 		margin-top: 10px;

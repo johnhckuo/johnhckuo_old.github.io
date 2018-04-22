@@ -12,6 +12,18 @@ const Experiences = [
 		logo: "vive.jpg"	
 	},
 	{
+		title:"Blockchain Research Assistant",
+		company: "National Chengchi University",
+		startDate: "2016.09",
+		endDate: "2017.01",
+		description:[
+			"Building an insurance contract by utilizing Ethereum smart contract and oracle service.",
+			"Successfully create the connection between blockchain and real-time data provided by API from the Internet.",
+			"Using Solidity and Web3.js to build the prototype of insurance service."
+		],
+		logo: "nccu.jpg"
+	},
+	{
 		title:"IT Consultant Intern",
 		company: "KPMG",
 		startDate: "2016.01",
@@ -36,16 +48,15 @@ const Experiences = [
 		logo: "xyz.jpg"
 	},
 	{
-		title:"Blockchain Research Assistant",
-		company: "National Chengchi University",
-		startDate: "2016.09",
-		endDate: "2017.01",
+		title:"Web Development Lecturer",
+		company: "NUKIM Web Developing Camp",
+		startDate: "2014.06",
+		endDate: "2014.07",
 		description:[
-			"Building an insurance contract by utilizing Ethereum smart contract and oracle service.",
-			"Successfully create the connection between blockchain and real-time data provided by API from the Internet.",
-			"Using Solidity and Web3.js to build the prototype of insurance service."
+			"Lecturing web development tutorials to senior high school students without any programming experience.",
+			"Every student is enthusiastic about programming and is able to create their own website after the class."
 		],
-		logo: "nccu.jpg"
+		logo: "nukim.jpg"
 	},
 	{
 		title:"Founder & Organizer",
@@ -58,21 +69,6 @@ const Experiences = [
 		],
 		logo: "impioneer.jpg"
 	},
-	{
-		title:"Web Development Lecturer",
-		company: "NUKIM Web Developing Camp",
-		startDate: "2014.06",
-		endDate: "2014.07",
-		description:[
-			"Lecturing web development tutorials to senior high school students without any programming experience.",
-			"Every student is enthusiastic about programming and is able to create their own website after the class."
-		],
-		logo: "nukim.jpg"
-	},
-
-
-
-
 ]
 
 export default Experiences;

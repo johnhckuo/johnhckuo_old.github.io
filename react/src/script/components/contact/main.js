@@ -97,21 +97,21 @@ export default class Contact extends React.Component{
 		        <Global.HR />
 		        <Style.FormContainer>
 			        <Style.Form>
-			            <div>
+			            <Style.Row>
 			              <label><span>Name</span>{this.state.name ? null : <Style.Warn>*Name missing</Style.Warn>}</label>
 			              <Style.Input type="text" name="name" onChange={this.updateFormData}/>
-			            </div>
-			            <div>
+			            </Style.Row>
+			            <Style.Row>
 			              <label><span>Email</span>{this.state.email ? null : <Style.Warn>*Invalid email</Style.Warn>}</label>
 			              <Style.Input type="text" name="email" onChange={this.updateFormData}/>
-			            </div>
-			            <div>
+			            </Style.Row>
+			            <Style.Row>
 			              <label><span>Message</span>{this.state.message ? null : <Style.Warn>No message for me? :(</Style.Warn>}</label>
 			              <Style.Comment name="message" onChange={this.updateFormData}/>
-			            </div>
-			            <div>
+			            </Style.Row>
+			            <Style.Row>
 			            	<Global.Btn onClick={this.formSubmit}>Send</Global.Btn>
-			            </div>
+			            </Style.Row>
 			        </Style.Form>
 		        </Style.FormContainer>
 		        <Style.EmailMe>Or, just email me directly at <a href="mailto:johnhckuo@gmail.com" target="_blank"><strong>johnhckuo@gmail.com</strong></a>.</Style.EmailMe>

@@ -33,7 +33,7 @@ const Portfolios = [
       "Simulate terrain generation and day/night transition in Minecraft.",
       "Randomly generated Minecraft-style terrain."
     ],
-    keywords:["Threejs", "WebGL", "Javascript"],
+    keywords:["Three.js", "WebGL", "Javascript"],
     link:"http://johnhckuo.github.io/Minecraft/",
     icon:"FaCubes"
   },{
@@ -46,23 +46,23 @@ const Portfolios = [
     link:"https://johnhckuo.github.io/Gomoku/",
     icon:"FaCircleO"
   },{
-    title: "Web-based 3D Modeling App",
+    title: "3D Modeling App",
     description:[
       "A web-based 3D modeling application which enable users to create their 3D content without installing sophiticated software.",
       "This application can parse certain 3D file (STL, OBJ) and render it on the website using Three.js."
     ],
-    keywords:["Threejs", "Nodejs", "Javascript"],
+    keywords:["Three.js", "Node.js", "Javascript"],
     link:"http://johnhckuo.github.io/3D_Modeling_System/",
     icon:"FaCube"
   },
   {
     title: "Fireflies Simulator",
     description: [" Simulate fireflies flying route and handle the transform of light."],
-    keywords: ["Threejs", "WebGL", "Javascript"],
+    keywords: ["Three.js", "WebGL", "Javascript"],
     link:"http://johnhckuo.github.io/Fireflies/",
     icon:"FaBug"
   },{
-    title:"Blockchain Oracle Tutorial",
+    title:"Oraclize Tutorial",
     description:[
       "Record some basic tutorials and reminders of using Oracalize.",
       "Using Oraclize to build the connection between blockchain and third-party API."
@@ -71,7 +71,7 @@ const Portfolios = [
     link:"https://github.com/johnhckuo/Oraclize-Tutorial",
     icon:"FaBook"
   },{
-    title: "Ethereum Smart Contract Tutorial",
+    title: "Smart Contract 101",
     description:[
       "Share some basic Ethereum smart contract 101 and Solidity programming tutorial. ",
       "This demo used Truffle & Testrpc as our testing framework."
@@ -80,7 +80,7 @@ const Portfolios = [
     link:"https://github.com/johnhckuo/Ethereum-101",
     icon:"FaBook"
   },{
-    title: "Decentralized Insurance Smart Contract",
+    title: "Insurance Smart Contract",
     description:[
       "Building a decentrailze insurance application using Ethereum platform.",
       "This project uses Truffle as our testing framework."
@@ -89,13 +89,13 @@ const Portfolios = [
     link:"https://github.com/johnhckuo/Insurance-Smart-Contract",
     icon:"FaBitcoin"
   },{
-    title: "Taiwan Real-time Disaster Visualizer",
+    title: "Real-time Disaster Visualizer",
     description: [
       "Fetch the open data released by government and visualize these data for greater convenience(D3.js、C3.js、Canvas.js). ",
       "Using Ajax to dynamically updating disaster data. ",
       "Using Wireframe、Gliffy, and Cacoo as interface designing tools."
     ],
-    keywords: ["D3js", "Ajax", "Canvasjs"],
+    keywords: ["D3.js", "Ajax", "Canvas.js"],
     link:"http://johnhckuo.github.io/Taiwan_RealTime_Disaster/",
     icon:"FaBarChart"
   },
@@ -105,7 +105,7 @@ const Portfolios = [
       "Building a web-based AR App by using Twisted Web Socket, Python, OpenCV, and Three.js.",
       "App will identify some certain patterns and render corresponding 3D object on certain points."
     ],
-    keywords:["Python", "Nodejs", "Opencv"],
+    keywords:["Python", "Node.js", "Opencv"],
     link:"https://github.com/johnhckuo/WebAR",
     icon:"FaEye"
   },

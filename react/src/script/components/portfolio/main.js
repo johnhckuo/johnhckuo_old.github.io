@@ -57,7 +57,6 @@ export default class Portfolio extends React.Component{
         </Global.Title>
         <Style.Filter>
           <Style.FilterInput onChange={this.filter.bind(this)} list="hashtags"/>
-          <Style.AutocompleteInput value={this.state.hashtagSearch} />
           <HashTagList />
         </Style.Filter>
 

@@ -3,27 +3,31 @@ import styled from 'styled-components';
 
 function inputCommon() {
   return `
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border: 1px solid #C2C2C2;
-	box-shadow: 1px 1px 4px #EBEBEB;
-	-moz-box-shadow: 1px 1px 4px #EBEBEB;
-	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	padding: 7px;
-	outline: none;
+  	box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	border: 1px solid #C2C2C2;
+  	box-shadow: 1px 1px 4px #EBEBEB;
+  	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+  	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  	border-radius: 3px;
+  	-webkit-border-radius: 3px;
+  	-moz-border-radius: 3px;
+  	padding: 7px;
+  	outline: none;
+    width: 100%;
   `;
 }
 
-export const Form = styled.div`	
+export const Form = styled.div`
 
 	display: inline;
-	div{
+	&>div{
 		display: flex;
 		margin-top: 5px;
+    flex-direction: ${props=> props.window === "mobile" ? "column" : "row"};
+    margin-top:25px;
+    margin-bottom:25px;
 	}
 	label{
 		position:relative;
@@ -48,7 +52,7 @@ export const FormContainer = styled.div`
 
 
 export const Input = styled.input`
-	${inputCommon()}
+    ${inputCommon()}
     &:focus{
     	border: 1px solid #0C0;
     }
@@ -84,10 +88,4 @@ export const Warn = styled.i`
 	position: absolute;
 	top: -1rem;
 	font-weight: normal;
-`;
-
-export const Row = styled.div`
-	display: flex;
-	align-items: center;
-
 `;

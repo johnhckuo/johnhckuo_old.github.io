@@ -101,19 +101,3 @@ export const FilterInput = styled.input.attrs({
 	width:400px;
 	z-index: 2;
 `;
-
-export const AutocompleteInput = styled.input.attrs({
-	disabled: "disabled"
-})`
-	position: absolute;
-	border: 1px solid transparent;
-	border-radius: 2px 0 0 2px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	height: 32px;
-	outline: none;
-	width:400px;
-	background: transparent;
-	z-index: 1;
-	color: #AAAAAA;
-`;

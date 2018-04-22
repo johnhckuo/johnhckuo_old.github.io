@@ -38,33 +38,19 @@ export const Background = styled.div`
 	${props=>blur(props.blur)};
 	transition: all .5s;
 	&:before{
-		position: absolute; 
+		position: absolute;
 	    z-index: 2;
-	    display: block; 
+	    display: block;
 	    content: "";
-	    top: 0; right: 0; bottom: 0; left: 0;  
+	    top: 0; right: 0; bottom: 0; left: 0;
 	    background: hsla(0,0%,0%,0.4);          /*adjust brightness here */
 	}
 `;
 
-export const Banner = styled.div`
-	left: 0px;
-	top: 0px;
-	overflow: hidden;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	height: 200px;
-	img{		
-		width: 100%;
-		margin-top: -20%;
-	}
-
-`;
-
 export const Container = styled.div`
-  	top: 15%;
-  	left: ${props=> props.type === "small" ? "25%" : "10%"};
-  	margin-bottom: 15%;
+	top: 15%;
+	left: ${props=> props.type === "small" ? "25%" : "10%"};
+	margin-bottom: 15%;
 	position: absolute
 	margin-left: auto;
 	margin-right: auto;

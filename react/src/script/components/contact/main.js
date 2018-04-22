@@ -80,7 +80,7 @@ export default class Contact extends React.Component{
 			email: this.feedback.email,
 			message : this.feedback.message
 		}).then(function(){
-		  alert("I've receive you message! :)");
+		  alert("I've received you message! :)");
 		}).catch(function(error) {
 		  alert("Oops, something went wrong :(" + error);
 		});
@@ -93,25 +93,25 @@ export default class Contact extends React.Component{
 				<Global.HomeBtn onClick = {this.historyBack}>
 		          <FaHome />
 		        </Global.HomeBtn>
-		        <Global.Title><h2>Get in touch with me!</h2></Global.Title>
+		        <Global.Title><h2>Any Message?</h2></Global.Title>
 		        <Global.HR />
 		        <Style.FormContainer>
-			        <Style.Form>
-			            <Style.Row>
+			        <Style.Form window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>
+			            <div>
 			              <label><span>Name</span>{this.state.name ? null : <Style.Warn>*Name missing</Style.Warn>}</label>
 			              <Style.Input type="text" name="name" onChange={this.updateFormData}/>
-			            </Style.Row>
-			            <Style.Row>
+			            </div>
+			            <div>
 			              <label><span>Email</span>{this.state.email ? null : <Style.Warn>*Invalid email</Style.Warn>}</label>
 			              <Style.Input type="text" name="email" onChange={this.updateFormData}/>
-			            </Style.Row>
-			            <Style.Row>
+			            </div>
+			            <div>
 			              <label><span>Message</span>{this.state.message ? null : <Style.Warn>No message for me? :(</Style.Warn>}</label>
 			              <Style.Comment name="message" onChange={this.updateFormData}/>
-			            </Style.Row>
-			            <Style.Row>
+			            </div>
+			            <div>
 			            	<Global.Btn onClick={this.formSubmit}>Send</Global.Btn>
-			            </Style.Row>
+			            </div>
 			        </Style.Form>
 		        </Style.FormContainer>
 		        <Style.EmailMe>Or, just email me directly at <a href="mailto:johnhckuo@gmail.com" target="_blank"><strong>johnhckuo@gmail.com</strong></a>.</Style.EmailMe>

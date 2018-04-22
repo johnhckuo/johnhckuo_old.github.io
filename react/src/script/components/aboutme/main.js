@@ -31,10 +31,10 @@ export default class Aboutme extends React.Component{
 
 	render(){
 		return(
-			<Global.Container active={this.state.init} type={this.props.width > Global.mobileWidth ? "small" : "large"}>
-				<Global.Banner>
+			<Global.Container active={this.state.init} type="large">
+				<Style.Banner>
 					<img src={myself} />
-				</Global.Banner>
+				</Style.Banner>
 				<Style.Intro>
 					<Global.HomeBtn onClick = {this.historyBack} >
 						<FaHome />
@@ -44,20 +44,23 @@ export default class Aboutme extends React.Component{
 						<Global.HR />
 						<h3>You can call me John! <FaSmileO /></h3>
 					</Global.Title>
-					<Style.IntroContent>
+					<div>
 
 						<Style.Aboutme>
-							I hold over 7 years of programming experience. <br />
-							Love to work on some side projects related to web development, blockchain applications, and 3D game development.
-							<Global.HR />
 							<Style.Characteristic width={this.props.width > Global.mobileWidth ? "100%" : "50%"}>
 								<div><FaAmericanSignLanguageInterpreting />I'm a team player</div>
 								<div><FaCode />I got mad skills</div>
 								<div><FaHeartO />I am passionate</div>
 							</Style.Characteristic>
+							I hold over 7 years of programming experience. <br />
+							Love to work on some side projects related to web development, blockchain applications, and 3D game development.
+							<Global.HR />
+							I've received my master degree in July, 2017.
+							My research is based on blockchain, and I've proposed a method to facilitate
+							the design of a blockchain-based ecosystem toward success and to make it self-sustaining.
 						</Style.Aboutme>
 
-					</Style.IntroContent>
+					</div>
 				</Style.Intro>
 			</Global.Container>
 		);

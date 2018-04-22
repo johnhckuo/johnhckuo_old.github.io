@@ -26,6 +26,7 @@ export const Characteristic = styled.div`
 		font-size: 1.2rem;
 		font-weight: bold;
 		margin-top: 20px;
+		text-align: center;
 	}
 	svg{
 		width: 50px;
@@ -47,7 +48,7 @@ export const Banner = styled.div`
 	overflow: hidden;
 	border-radius: 10px;
 	margin-bottom: 20px;
-	height: 350px;
+	height: 100%;
 	img{
 		width: 100%;
 		margin-top: -20%;

@@ -91,7 +91,7 @@ export const HomeBtn = styled.span`
 	left: 10px;
 	top: 10px;
 	color: #282828;
-	padding: 15px 18px;
+	padding: 10px 10px;
 	font-size: 14px;
 	font-size: .875rem;
 	display: inline-block;
@@ -105,7 +105,10 @@ export const HomeBtn = styled.span`
 	&:hover{
 		color: #383838;
 		box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
-
+	}
+	svg{
+		width: 30px;
+		height: 30px;
 	}
 `;
 

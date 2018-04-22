@@ -3,6 +3,7 @@ import * as Style from "./style"
 import {FaAmericanSignLanguageInterpreting, FaHome, FaCode, FaHeartO, FaSmileO } from 'react-icons/lib/fa';
 import myself from "../../../images/aboutme_cover.jpg"
 import * as Global from "../global/style"
+import HomeButton from "../global/HomeButton"
 
 export default class Aboutme extends React.Component{
 	constructor(props){
@@ -36,9 +37,9 @@ export default class Aboutme extends React.Component{
 					<img src={myself} />
 				</Style.Banner>
 				<Style.Intro>
-					<Global.HomeBtn onClick = {this.historyBack} >
+					<HomeButton history = {this.props.history} >
 						<FaHome />
-					</Global.HomeBtn>
+					</HomeButton>
 					<Global.Title>
 						<h2>Hello</h2>
 						<Global.HR />

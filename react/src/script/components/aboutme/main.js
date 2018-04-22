@@ -37,9 +37,9 @@ export default class Aboutme extends React.Component{
 					<img src={myself} />
 				</Style.Banner>
 				<Style.Intro>
-					<HomeButton history = {this.props.history} >
+					<Global.HomeBtn onClick = {this.historyBack} >
 						<FaHome />
-					</HomeButton>
+					</Global.HomeBtn>
 					<Global.Title>
 						<h2>Hello</h2>
 						<Global.HR />

@@ -46,7 +46,7 @@ export const Intro = styled.div`
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-  height: 35%;
+  height: ${props=> props.window === "mobile" ? "50%" : "35%"};
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-align: center;

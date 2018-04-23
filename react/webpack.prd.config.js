@@ -47,7 +47,6 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin('style.min.css'),
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.optimize.UglifyJsPlugin({
       compress:{
         warnings: false

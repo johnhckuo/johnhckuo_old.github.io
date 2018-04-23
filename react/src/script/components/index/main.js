@@ -32,7 +32,7 @@ export default class Index extends React.Component{
         <Style.Icon>
           <img src={myself} alt="My selfie"/>
         </Style.Icon>
-        <Style.Intro active={this.state.init}>
+        <Style.Intro active={this.state.init} window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>
           <h1>John Kuo</h1>
           <Style.HR />
           <h2>Passionate Programmer / Amateur Gamer</h2>

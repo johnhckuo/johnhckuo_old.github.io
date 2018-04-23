@@ -11,9 +11,7 @@ export default class Routes extends React.Component{
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.backgroundBlur = this.backgroundBlur.bind(this);
     this.state = {init: false, blur: false, width: window.innerWidth, height: window.innerHeight};
-    //this.baseURL = "/react/docs/";
-    this.baseURL = "/";
-
+    this.baseURL = "/react/docs/";
   }
 
   componentDidMount(){

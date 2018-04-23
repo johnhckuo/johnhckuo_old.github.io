@@ -30,7 +30,7 @@ export default class Index extends React.Component{
     return(
       <Style.IndexContainer width={this.props.width} active={this.state.init} >
         <Style.Icon>
-          <img src={myself} />
+          <img src={myself} alt="My selfie"/>
         </Style.Icon>
         <Style.Intro active={this.state.init}>
           <h1>John Kuo</h1>
@@ -44,12 +44,12 @@ export default class Index extends React.Component{
           <Link to={`${this.props.baseURL}contact`}><Style.Link lastLink={true}>Contact</Style.Link></Link>
         </Style.Links>
         <Style.SocialIcon width={this.props.width}>
-          <a href="https://github.com/johnhckuo" target="_blank"><FaGithubSquare /></a>
-          <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FaLinkedinSquare /></a>
-          <a href="https://www.facebook.com/johnhckuo" target="_blank"><FaFacebookSquare /></a>
-          <a href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FaGooglePlusSquare /></a>
-          <a href="mailto:johnhckuo@gmail.com" target="_blank"><FaEnvelopeSquare /></a>
-          <a href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FaSteamSquare /></a>
+          <a rel="noopener" name="github" href="https://github.com/johnhckuo" target="_blank"><FaGithubSquare /></a>
+          <a rel="noopener" name="linkedin" href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FaLinkedinSquare /></a>
+          <a rel="noopener" name="facebook" href="https://www.facebook.com/johnhckuo" target="_blank"><FaFacebookSquare /></a>
+          <a rel="noopener" name="googleplus" href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FaGooglePlusSquare /></a>
+          <a rel="noopener" name="email" href="mailto:johnhckuo@gmail.com" target="_blank"><FaEnvelopeSquare /></a>
+          <a rel="noopener" name="steam" href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FaSteamSquare /></a>
         </Style.SocialIcon>
       </Style.IndexContainer>
 

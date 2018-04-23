@@ -17,7 +17,7 @@ export default class Aboutme extends React.Component{
 		return(
 			<Global.Container active={this.state.init} type="large">
 				<Style.Banner>
-					<img src={myself} />
+					<img src={myself} alt="Me at Sweden"/>
 				</Style.Banner>
 				<Style.Intro>
 					<HomeButton history={this.props.history} setActive={(init)=>this.setState({init})} />

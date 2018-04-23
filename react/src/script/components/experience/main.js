@@ -20,22 +20,22 @@ export default class Experience extends React.Component{
 					<h3>Besides from my research, <br /> 
 					I've applied interships in various industries in order to pursue my dream</h3>
 				</Global.Title>
-				<Style.Timeline>
+				<Style.Timeline window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>
 					{
 						Experiences.map((experience, index)=>{
 							return (
-								<Style.Column key={index}>
-									<Style.Title>
+								<Style.Column key={index} window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>
+									<div>
 										<h2> <div>{experience.startDate} ─<br />{experience.endDate}</div> </h2>
 										<h1>{experience.title}</h1>
 										<h3>@ {experience.company}</h3>
 
-									</Style.Title>
-									<Style.Description>
+									</div>
+									<div>
 										{
 											experience.description.map((content, index)=><p key={index}>● {content}</p>)
 										}
-									</Style.Description>
+									</div>
 								</Style.Column>
 							);
 						})

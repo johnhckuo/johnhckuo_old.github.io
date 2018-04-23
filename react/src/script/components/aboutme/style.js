@@ -7,6 +7,25 @@ export const Intro = styled.div`
 
 `;
 
+export const Banner = styled.div`
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	height: 100%;
+	img{
+		width: 100%;
+		margin-top: -20%;
+	}
+`;
+
+export const Aboutme = styled.div`
+	text-align: left;
+	font-size: 1.1rem;
+	line-height: 1.5;
+`;
+
 export const Characteristic = styled.div`
 	margin-left: auto;
 	margin-right: auto;
@@ -36,22 +55,3 @@ export const Characteristic = styled.div`
 
 `;
 
-export const Aboutme = styled.div`
-	text-align: left;
-	font-size: 1.1rem;
-	line-height: 1.5;
-`;
-
-export const Banner = styled.div`
-	left: 0px;
-	top: 0px;
-	overflow: hidden;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	height: 100%;
-	img{
-		width: 100%;
-		margin-top: -20%;
-	}
-
-`;

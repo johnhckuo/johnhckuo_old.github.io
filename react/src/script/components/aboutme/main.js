@@ -27,7 +27,6 @@ export default class Aboutme extends React.Component{
 						<h3>You can call me John! <FaSmileO /></h3>
 					</Global.Title>
 					<div>
-
 						<Style.Aboutme>
 							<Style.Characteristic width={this.props.width > Global.mobileWidth ? "100%" : "50%"}>
 								<div><FaAmericanSignLanguageInterpreting />I'm a team player</div>
@@ -41,7 +40,6 @@ export default class Aboutme extends React.Component{
 							My research is based on blockchain, and I've proposed a method to facilitate
 							the design of a blockchain-based ecosystem toward success and to make it self-sustaining.
 						</Style.Aboutme>
-
 					</div>
 				</Style.Intro>
 			</Global.Container>

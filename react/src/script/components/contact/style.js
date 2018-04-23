@@ -16,8 +16,17 @@ function inputCommon() {
   	padding: 7px;
   	outline: none;
     width: 100%;
+    &:focus{
+   		border: 1px solid #0C0;
+    }
   `;
 }
+
+export const FormContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
 
 export const Form = styled.div`
 
@@ -25,9 +34,9 @@ export const Form = styled.div`
 	&>div{
 		display: flex;
 		margin-top: 5px;
-    flex-direction: ${props=> props.window === "mobile" ? "column" : "row"};
-    margin-top:25px;
-    margin-bottom:25px;
+	    flex-direction: ${props=> props.window === "mobile" ? "column" : "row"};
+	    margin-top:25px;
+	    margin-bottom:25px;
 	}
 	label{
 		position:relative;
@@ -43,29 +52,14 @@ export const Form = styled.div`
 	}
 `;
 
-export const FormContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-`;
-
-
 export const Input = styled.input`
     ${inputCommon()}
-    &:focus{
-    	border: 1px solid #0C0;
-    }
-
 `;
 
 
 export const Comment = styled.textarea`
 	${inputCommon()}
     height:100px;
-    &:focus{
-    	border: 1px solid #0C0;
-    }
 `;
 
 

@@ -12,7 +12,7 @@ export default class Portfolio extends React.Component{
     this.isContain = this.isContain.bind(this);
     this.state = {init: false, hashtagSearch: ""};
   }
-  
+
   filter(e){
     this.setState({
       hashtagSearch: e.target.value + ""
@@ -51,7 +51,7 @@ export default class Portfolio extends React.Component{
               }
               return(
 
-                <Style.List key={index}>
+                <div key={index}>
                   <Style.Title>
                     {FontAwesome[portfolio.icon]()}
                     <a href={portfolio.link}>{portfolio.title}</a>
@@ -64,7 +64,7 @@ export default class Portfolio extends React.Component{
                     portfolio.description.map((intro, index)=><li key={index}>{intro}</li>)
                   }
                   </Style.Description>
-                </Style.List>
+                </div>
               );
             })
           }

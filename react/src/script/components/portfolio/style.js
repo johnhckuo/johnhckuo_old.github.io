@@ -1,28 +1,47 @@
 import styled from 'styled-components';
+
+export const Filter = styled.div`
+	position: relative;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+`;
+
+export const FilterInput = styled.input.attrs({
+	placeholder: 'Enter a hashtag'
+})`
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	width:400px;
+	z-index: 2;
+`;
+
 export const Portfolio = styled.div`
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-`;
-
-
-export const List = styled.div`
-	text-decoration: none;
-	background: #fff;
-	color: #282828;
-	font-size: .875rem;
-  	line-height: 1.8571;
-	padding: 10px;
-	padding-bottom: 20px;
-	width: 380px;
-	& > div{
-		width: 80%;
+	&>div{
+		text-decoration: none;
+		background: #fff;
+		color: #282828;
+		font-size: .875rem;
+	  	line-height: 1.8571;
+		padding: 10px;
+		padding-bottom: 20px;
+		width: 380px;
+		& > div{
+			width: 80%;
+		}
 	}
-
-
 `;
-
 
 export const Title = styled.div`
 	font-size: 20px;
@@ -77,27 +96,4 @@ export const Description = styled.ul`
 	li{
 		width:100%;
 	}
-`;
-
-export const Filter = styled.div`
-	position: relative;
-	width: 100%;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
-`;
-
-export const FilterInput = styled.input.attrs({
-	placeholder: 'Enter a hashtag'
-})`
-	border: 1px solid transparent;
-	border-radius: 2px 0 0 2px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	height: 32px;
-	outline: none;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-	width:400px;
-	z-index: 2;
 `;

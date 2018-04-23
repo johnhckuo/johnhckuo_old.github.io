@@ -1,6 +1,20 @@
 import styled from 'styled-components'
 import {mobileWidth} from "../global/style"
 
+export const IndexContainer = styled.div`
+  position: relative;
+  width: ${props=> props.width > mobileWidth ? "50%" : "100%"};
+  padding: 5%;
+  display: block;
+  background: rgba(1, 1, 1, 0);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  height: 60%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-top: 2%;
+`;
+
 export const Icon = styled.div`
 
   img{
@@ -26,7 +40,6 @@ export const Icon = styled.div`
     background: #ffffff;
   }
 `;
-
 
 export const Intro = styled.div`
   position: relative;
@@ -112,37 +125,6 @@ export const Link = styled.span`
 
 `;
 
-
-export const IndexContainer = styled.div`
-  position: relative;
-  width: ${props=> props.width > mobileWidth ? "50%" : "100%"};
-  padding: 5%;
-  display: block;
-  background: rgba(1, 1, 1, 0);
-  transition: all 0.5s;
-  transition-timing-function: ease-out;
-  height: 60%;
-  color: #ffffff;
-  letter-spacing: 3px;
-  margin-top: 2%;
-`;
-
-
-
-export const HR = styled.hr`
-  position: absolute;
-  top: 50%;
-  border: 0;
-  height: 1px;
-  width: 100%;
-
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
-`;
-
-
-
 export const SocialIcon = styled.div`
   display: flex;
   text-align: center;
@@ -167,3 +149,18 @@ export const SocialIcon = styled.div`
     }
   }
 `;
+
+export const HR = styled.hr`
+  position: absolute;
+  top: 50%;
+  border: 0;
+  height: 1px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+`;
+
+
+

@@ -33,6 +33,7 @@ export default class Aboutme extends React.Component{
 								<div><FaCode />I got mad skills</div>
 								<div><FaHeartO />I am passionate</div>
 							</Style.Characteristic>
+							I am a graduate of the MIS department in National Chengchi University. <br />
 							I hold over 7 years of programming experience. <br />
 							Love to work on some side projects related to web development, blockchain applications, and 3D game development.
 							<Global.HR />

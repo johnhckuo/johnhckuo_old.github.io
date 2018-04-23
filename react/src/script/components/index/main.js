@@ -38,10 +38,10 @@ export default class Index extends React.Component{
           <h2>Passionate Programmer / Amateur Gamer</h2>
         </Style.Intro>
         <Style.Links width={this.props.width}>
-          <Link to="/aboutme"><Style.Link firstLink={true}>About Me</Style.Link></Link>
-          <Link to="/experience"><Style.Link>Experience</Style.Link></Link>
-          <Link to="/portfolio"><Style.Link>Portfolio</Style.Link></Link>
-          <Link to="/contact"><Style.Link lastLink={true}>Contact</Style.Link></Link>
+          <Link to={`${this.props.baseURL}aboutme`}><Style.Link firstLink={true}>About Me</Style.Link></Link>
+          <Link to={`${this.props.baseURL}experience`}><Style.Link>Experience</Style.Link></Link>
+          <Link to={`${this.props.baseURL}portfolio`}><Style.Link>Portfolio</Style.Link></Link>
+          <Link to={`${this.props.baseURL}contact`}><Style.Link lastLink={true}>Contact</Style.Link></Link>
         </Style.Links>
         <Style.SocialIcon width={this.props.width}>
           <a href="https://github.com/johnhckuo" target="_blank"><FaGithubSquare /></a>

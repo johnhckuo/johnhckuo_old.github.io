@@ -11,7 +11,9 @@ export default class Routes extends React.Component{
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.backgroundBlur = this.backgroundBlur.bind(this);
     this.state = {init: false, blur: false, width: window.innerWidth, height: window.innerHeight};
-    this.baseURL = "/react/docs/";
+    //this.baseURL = "/react/docs/";
+    this.baseURL = "/";
+
   }
 
   componentDidMount(){
@@ -46,7 +48,7 @@ export default class Routes extends React.Component{
             <Switch>
                 <Route exact path={this.baseURL} render={
                   props=> 
-                    <Index {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } />
+                    <Index {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } baseURL={this.baseURL}/>
                   }
                 />
                 <Route exact path={`${this.baseURL}aboutme`} render={

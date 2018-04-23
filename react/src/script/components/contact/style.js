@@ -78,7 +78,7 @@ export const Warn = styled.i`
 	display: inline-block;
 	width: 150px;
 	color: red;
-	font-size: .1rem;
+	font-size: 1rem;
 	position: absolute;
 	top: -1rem;
 	font-weight: normal;

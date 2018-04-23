@@ -98,8 +98,7 @@ export const Links = styled.div`
 export const Link = styled.span`
   color: #ffffff;
   padding: 15px 18px;
-  font-size: 14px;
-  font-size: .875rem;
+  font-size: 1rem;
   display: inline-block;
   border: 1px solid;
   border-color: #ffffff;

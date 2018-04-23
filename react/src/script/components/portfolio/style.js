@@ -32,7 +32,7 @@ export const Portfolio = styled.div`
 		text-decoration: none;
 		background: #fff;
 		color: #282828;
-		font-size: .875rem;
+		font-size: 1rem;
 	  	line-height: 1.8571;
 		padding: 10px;
 		padding-bottom: 20px;

@@ -92,8 +92,7 @@ export const HomeBtn = styled.span`
 	top: 10px;
 	color: #282828;
 	padding: 10px 10px;
-	font-size: 14px;
-	font-size: .875rem;
+	font-size: 1rem;
 	display: inline-block;
 	border: 1px solid;
 	border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
@@ -115,8 +114,7 @@ export const HomeBtn = styled.span`
 export const Btn = styled.span`
 	color: #282828;
 	padding: 15px 18px;
-	font-size: 14px;
-	font-size: .875rem;
+	font-size: 1rem;
 	display: inline-block;
 	border: 1px solid;
 	border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;

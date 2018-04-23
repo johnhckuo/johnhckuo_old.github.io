@@ -13,9 +13,7 @@ export default class HomeButton extends React.Component{
 	}
 
 	historyBack(){
- 		this.setState({
-			init:false
-		})
+		this.props.setActive(false)
 		setTimeout(()=>{
 			this.props.history.goBack();
 		}, 500)
@@ -23,7 +21,7 @@ export default class HomeButton extends React.Component{
 
 	componentDidMount(){
 		setTimeout(()=>{
-			this.setState({init : true})
+			this.props.setActive(true)
 		}, 500)
 	}
 

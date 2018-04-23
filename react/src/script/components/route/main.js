@@ -1,7 +1,6 @@
 import React from "react"
-
 import {Index, Aboutme, Contact, Experience, Portfolio} from "../"
-import { Link, Router, Route, Switch } from 'react-router-dom'
+import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import * as Style from "./style"
 import * as Global from "../global/style"
 
@@ -81,5 +80,6 @@ export default class Routes extends React.Component{
 }
 
 const GenericNotFound = ()=>{
-  return (<div>Not Found</div>)
+  alert("Page not found! Redirecting you to the main page...");
+  return <Redirect to='/'/>
 }

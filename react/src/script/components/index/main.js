@@ -1,9 +1,7 @@
 import React from "react"
-
-import {Aboutme, Contact, Experience, Portfolio} from "../"
-import { Link, Router, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import * as Style from "./style"
-import * as FontAwesome from 'react-icons/lib/fa';
+import { FaGithubSquare, FaLinkedinSquare, FaFacebookSquare, FaGooglePlusSquare, FaEnvelopeSquare, FaSteamSquare } from 'react-icons/lib/fa';
 import myself from "../../../images/me.jpg"
 import * as Global from "../global/style"
 
@@ -46,12 +44,12 @@ export default class Index extends React.Component{
           <Link to="/contact"><Style.Link lastLink={true}>Contact</Style.Link></Link>
         </Style.Links>
         <Style.SocialIcon width={this.props.width}>
-          <a href="https://github.com/johnhckuo" target="_blank"><FontAwesome.FaGithubSquare /></a>
-          <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FontAwesome.FaLinkedinSquare /></a>
-          <a href="https://www.facebook.com/johnhckuo" target="_blank"><FontAwesome.FaFacebookSquare /></a>
-          <a href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FontAwesome.FaGooglePlusSquare /></a>
-          <a href="mailto:johnhckuo@gmail.com" target="_blank"><FontAwesome.FaEnvelopeSquare /></a>
-          <a href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FontAwesome.FaSteamSquare /></a>
+          <a href="https://github.com/johnhckuo" target="_blank"><FaGithubSquare /></a>
+          <a href="https://www.linkedin.com/in/johnhckuo/" target="_blank"><FaLinkedinSquare /></a>
+          <a href="https://www.facebook.com/johnhckuo" target="_blank"><FaFacebookSquare /></a>
+          <a href="https://plus.google.com/u/0/+HungChungKuo" target="_blank"><FaGooglePlusSquare /></a>
+          <a href="mailto:johnhckuo@gmail.com" target="_blank"><FaEnvelopeSquare /></a>
+          <a href="https://steamcommunity.com/id/johnhckuo/" target="_blank"><FaSteamSquare /></a>
         </Style.SocialIcon>
       </Style.IndexContainer>
 

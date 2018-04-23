@@ -1,34 +1,18 @@
 import React from "react"
-
 import * as Style from "./style.js"
 import * as Global from "../global/style"
-import * as FontAwesome from 'react-icons/lib/fa';
+import * as FontAwesome from 'react-icons/lib/fa'
 import Portfolios from "./data"
+import HomeButton from "../global/HomeButton"
 
 export default class Portfolio extends React.Component{
   constructor(props){
     super(props);
-    this.historyBack = this.historyBack.bind(this);
     this.filter = this.filter.bind(this);
     this.isContain = this.isContain.bind(this);
     this.state = {init: false, hashtagSearch: ""};
   }
-
-  historyBack(){
-    this.setState({
-      init:false
-    })
-    setTimeout(()=>{
-      this.props.history.goBack();
-    }, 500)
-	}
-
-  componentDidMount(){
-    setTimeout(()=>{
-      this.setState({init : true})
-    }, 500)
-  }
-
+  
   filter(e){
     this.setState({
       hashtagSearch: e.target.value + ""
@@ -47,9 +31,7 @@ export default class Portfolio extends React.Component{
   render(){
     return (
       <Global.Container type="large" active={this.state.init}>
-        <Global.HomeBtn onClick = {this.historyBack}>
-          <FontAwesome.FaHome />
-        </Global.HomeBtn>
+        <HomeButton history={this.props.history} setActive={(init)=>this.setState({init})} />
         <Global.Title>
           <h2>Portfolio</h2>
           <Global.HR />

@@ -1,13 +1,12 @@
 import React from "react"
 import * as Style from "./style"
 import * as Global from "../global/style"
-import {FaHome} from 'react-icons/lib/fa'
 import firebase from "firebase"
+import HomeButton from "../global/HomeButton"
 
 export default class Contact extends React.Component{
 	constructor(props){
 		super(props);
-		this.historyBack = this.historyBack.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
 		this.updateFormData = this.updateFormData.bind(this);
 		this.validateInput = this.validateInput.bind(this);
@@ -24,15 +23,6 @@ export default class Contact extends React.Component{
 		}
 	}
 
-	historyBack(){
- 		this.setState({
-			init:false
-		})
-		setTimeout(()=>{
-			this.props.history.goBack();
-		}, 500)
-	}
-
 	componentDidMount(){
 		if (!firebase){
 			var config = {
@@ -45,12 +35,6 @@ export default class Contact extends React.Component{
 			};
 			firebase.initializeApp(config);
 		}
-
-		setTimeout(()=>{
-			this.setState({
-				init:true
-			})
-		}, 500)
 	}
 
 	validateInput(type, input) {
@@ -90,9 +74,7 @@ export default class Contact extends React.Component{
 		return(
 			<Global.Container type={this.props.width > Global.mobileWidth ? "small" : "large"} active={this.state.init}>
 
-				<Global.HomeBtn onClick = {this.historyBack}>
-		          <FaHome />
-		        </Global.HomeBtn>
+				<HomeButton history={this.props.history} setActive={(init)=>this.setState({init})} />
 		        <Global.Title><h2>Any Message?</h2></Global.Title>
 		        <Global.HR />
 		        <Style.FormContainer>

@@ -38,7 +38,7 @@ export const Characteristic = styled.div`
 
 export const Aboutme = styled.div`
 	text-align: left;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	line-height: 1.5;
 `;
 

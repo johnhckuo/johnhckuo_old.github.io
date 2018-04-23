@@ -1,39 +1,19 @@
 import React from "react"
-
 import * as Style from "./style.js"
 import * as Global from "../global/style"
-import * as FontAwesome from 'react-icons/lib/fa'
 import Experiences from "./data"
+import HomeButton from "../global/HomeButton"
 
 export default class Experience extends React.Component{
 	constructor(props){
 		super(props);
-		this.historyBack = this.historyBack.bind(this);
 		this.state = { init: false };
-
-	}
-
- 	historyBack(){
- 		this.setState({
-			init:false
-		})
-		setTimeout(()=>{
-			this.props.history.goBack();
-		}, 500)
-	}
-
-	componentDidMount(){
-		setTimeout(()=>{
-			this.setState({init : true})
-		}, 500)
 	}
 
 	render(){
 		return (
 			<Global.Container type="large" active={this.state.init}>
-				<Global.HomeBtn onClick = {this.historyBack}>
-					<FontAwesome.FaHome />
-				</Global.HomeBtn>
+				<HomeButton history={this.props.history} setActive={(init)=>this.setState({init})} />
 				<Global.Title>
 					<h2>Experience</h2>
 					<Global.HR />

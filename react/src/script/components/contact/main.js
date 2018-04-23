@@ -80,15 +80,15 @@ export default class Contact extends React.Component{
 		        <Style.FormContainer>
 			        <Style.Form window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>
 			            <div>
-			              <label><span>Name</span>{this.state.name ? null : <Style.Warn>*Name missing</Style.Warn>}</label>
+			              <label><span>Name</span>{this.state.name ? null : <Style.Warn window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>*Name missing</Style.Warn>}</label>
 			              <Style.Input type="text" name="name" onChange={this.updateFormData}/>
 			            </div>
 			            <div>
-			              <label><span>Email</span>{this.state.email ? null : <Style.Warn>*Invalid email</Style.Warn>}</label>
+			              <label><span>Email</span>{this.state.email ? null : <Style.Warn window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>*Invalid email</Style.Warn>}</label>
 			              <Style.Input type="text" name="email" onChange={this.updateFormData}/>
 			            </div>
 			            <div>
-			              <label><span>Message</span>{this.state.message ? null : <Style.Warn>No message for me? :(</Style.Warn>}</label>
+			              <label><span>Message</span>{this.state.message ? null : <Style.Warn window={this.props.width > Global.mobileWidth ? "laptop" : "mobile"}>No message for me? :(</Style.Warn>}</label>
 			              <Style.Comment name="message" onChange={this.updateFormData}/>
 			            </div>
 			            <div>

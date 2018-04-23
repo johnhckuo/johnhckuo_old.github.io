@@ -75,11 +75,11 @@ export const EmailMe = styled.p`
 
 
 export const Warn = styled.i`
-	display: inline-block;
-	width: 150px;
+	display: ${props=>props.window === "mobile" ? "none" : "inline-block"};
+	width: 200px;
 	color: red;
 	font-size: 1rem;
 	position: absolute;
-	top: -1rem;
-	font-weight: normal;
+	top: -1.1rem;
+	font-weight: lighter;
 `;

@@ -45,34 +45,34 @@ export default class Routes extends React.Component{
             <Global.Background blur={this.state.blur}/>
             <Switch>
                 <Route exact path={this.baseURL} render={
-                  props=> 
+                  props=>
                     <Index {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } baseURL={this.baseURL}/>
                   }
                 />
                 <Route exact path={`${this.baseURL}aboutme`} render={
-                  props=> 
+                  props=>
                     <Aboutme {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } />
-                  } 
+                  }
                 />
                 <Route exact path={`${this.baseURL}experience`} render={
-                  props=> 
-                    <Experience {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } /> 
-                  } 
+                  props=>
+                    <Experience {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height } />
+                  }
                 />
                 <Route exact path={`${this.baseURL}portfolio`} render={
-                  props=> 
+                  props=>
                     <Portfolio {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
-                  } 
+                  }
                 />
                 <Route exact path={`${this.baseURL}contact`} render={
-                  props=> 
+                  props=>
                     <Contact {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
-                  } 
+                  }
                 />
                 <Route render={
-                  props=> 
+                  props=>
                     <GenericNotFound {...props} blur={this.backgroundBlur} width={this.state.width} height={this.state.height }/>
-                  } 
+                  }
                 />
             </Switch>
         </Style.RootContainer>

@@ -10,13 +10,34 @@ const Portfolios = [
     link:"https://blockfarm.herokuapp.com/",
     icon:"FaBitcoin"
   },{
-    title: "Terrain Generator",
+    title: "Minecraft",
     description:[
-      "Randomly generating island terrain using diamond-square algorithm."
+      "Simulate terrain generation and day/night transition in Minecraft.",
+      "Randomly generated Minecraft-style terrain using Perlin noise.",
+      "Sky color transition is rendered in GLSL shader(GPU accelerated)."
     ],
     keywords:["Three.js", "WebGL", "Javascript"],
-    link:"http://johnhckuo.github.io/Island_Generator/normal",
-    icon:"FaGlobe"
+    link:"http://johnhckuo.github.io/Minecraft/",
+    icon:"FaCubes"
+  },{
+    title: "Open Data Crawler",
+    description:[
+      "A web crawler built to fetch the open data from Taiwan government.",
+      "parse the DOM element of the open data page, and use Python & Selenium to fetch these data according to its XPath.",
+    ],
+    keywords:["Python", "Selenium", "Open Data"],
+    link:"https://github.com/johnhckuo/Selenium_Project",
+    icon:"FaBug"
+  },{
+    title: "Localized Chat",
+    description: [
+      "Hello Neighbor chat is a localized chatting app built upon React.js.",
+      "User can create a chatroom near him/her to begin a chat on Google map ",
+      "Each chatroom are categorized into different hashtag so that users can find the chatrooms they interested the most."
+    ],
+    keywords:["React.js", "Redux", "Javascript"],
+    link:"https://hello-neighbor.github.io/Hello-Neighbor-Chat/",
+    icon:"FaComments"
   },{
     title: "Ocean",
     description: [
@@ -28,14 +49,13 @@ const Portfolios = [
     link:"https://johnhckuo.github.io/Water-Shader/",
     icon:"FaTint"
   },{
-    title: "Minecraft",
+    title: "Terrain Generator",
     description:[
-      "Simulate terrain generation and day/night transition in Minecraft.",
-      "Randomly generated Minecraft-style terrain."
+      "Randomly generating island terrain using diamond-square algorithm."
     ],
     keywords:["Three.js", "WebGL", "Javascript"],
-    link:"http://johnhckuo.github.io/Minecraft/",
-    icon:"FaCubes"
+    link:"http://johnhckuo.github.io/Island_Generator/normal",
+    icon:"FaGlobe"
   },{
     title:"Gomoku",
     description:[
@@ -46,6 +66,14 @@ const Portfolios = [
     link:"https://johnhckuo.github.io/Gomoku/",
     icon:"FaCircleO"
   },{
+    title:"Fitness Club Page",
+    description:[
+      "Using HTML/CSS to build an elaborate fitness club official website."
+    ],
+    keywords:["HTML5", "CSS"],
+    link:"http://johnhckuo.github.io/FitnessClub_WebPage/",
+    icon:"FaDribbble"
+  },{
     title: "3D Modeling App",
     description:[
       "A web-based 3D modeling application which enable users to create their 3D content without installing sophiticated software.",
@@ -54,10 +82,23 @@ const Portfolios = [
     keywords:["Three.js", "Node.js", "Javascript"],
     link:"http://johnhckuo.github.io/3D_Modeling_System/",
     icon:"FaCube"
-  },
-  {
+  },{
+    title: "Todo List",
+    description:[
+      "A simple todo list built with react.js"
+    ],
+    keywords:["React.js", "Javascript"],
+    link:"https://johnhckuo.github.io/Todo-List/",
+    icon:"FaListUl"
+  },{
+    title: "CSS3D Carousel",
+    description: ["Applying CSS on image 3D slideshow."],
+    keywords: ["CSS", "Javascript", "HTML5"],
+    link:"http://johnhckuo.github.io/CSS3D_Carousel/",
+    icon:"FaImage"
+  },{
     title: "Fireflies Simulator",
-    description: [" Simulate fireflies flying route and handle the transform of light."],
+    description: ["Simulate fireflies flying route and handle the transform of light."],
     keywords: ["Three.js", "WebGL", "Javascript"],
     link:"http://johnhckuo.github.io/Fireflies/",
     icon:"FaBug"
@@ -98,6 +139,15 @@ const Portfolios = [
     keywords: ["D3.js", "Ajax", "Canvas.js"],
     link:"http://johnhckuo.github.io/Taiwan_RealTime_Disaster/",
     icon:"FaBarChart"
+  },
+  {
+    title: "Shaders",
+    description:[
+      "Some interesting shader applications."
+    ],
+    keywords:["Shader", "WebGL", "Javascript"],
+    link:"https://johnhckuo.github.io/Shader-Projects/",
+    icon:"FaCube"
   },
   {
     title: "Web-based AR Tag Detector",

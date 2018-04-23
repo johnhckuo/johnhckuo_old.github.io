@@ -34,7 +34,7 @@ export const Portfolio = styled.div`
 		color: #282828;
 		font-size: 1rem;
 	  	line-height: 1.8571;
-		padding: 10px;
+		padding: 20px;
 		padding-bottom: 20px;
 		width: 380px;
 		& > div{

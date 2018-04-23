@@ -16,9 +16,6 @@ export default class Aboutme extends React.Component{
 	render(){
 		return(
 			<Global.Container active={this.state.init} type="large">
-				<Style.Banner>
-					<img src={myself} alt="Me at Sweden"/>
-				</Style.Banner>
 				<Style.Intro>
 					<HomeButton history={this.props.history} setActive={(init)=>this.setState({init})} />
 					<Global.Title>
@@ -26,6 +23,9 @@ export default class Aboutme extends React.Component{
 						<Global.HR />
 						<h3>You can call me John! <FaSmileO /></h3>
 					</Global.Title>
+					<Style.Banner>
+						<img src={myself} alt="Me at Sweden"/>
+					</Style.Banner>
 					<div>
 						<Style.Aboutme>
 							<Style.Characteristic width={this.props.width > Global.mobileWidth ? "100%" : "50%"}>
